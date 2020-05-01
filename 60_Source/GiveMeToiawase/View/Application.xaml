@@ -1,0 +1,62 @@
+﻿<Application
+    x:Class="Application"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:MahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    StartupUri="frmMenu.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--  MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive!  -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--  Accent and AppTheme setting  -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Teal.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style BasedOn="{StaticResource MetroDataGridColumnHeader}" TargetType="{x:Type DataGridColumnHeader}">
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <!--<Style.Triggers>
+                    <MultiTrigger>
+                        <MultiTrigger.Conditions>
+                            <Condition Property="IsMouseOver" Value="True" />
+                            <Condition Property="SortDirection" Value="{x:Null}" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="Background" Value="Teal" />
+                    </MultiTrigger>
+                </Style.Triggers>-->
+            </Style>
+            <!--<Style BasedOn="{StaticResource BaseMetroDialog }" TargetType="{x:Type DataGridColumnHeader}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            </Style>-->
+            <Style x:Key="BaseTileStyle" TargetType="MahApps:Tile">
+                <Setter Property="BorderBrush" Value="{StaticResource AccentColorBrush}" />
+                <Setter Property="Background" Value="SteelBlue" />
+                <Setter Property="Opacity" Value="0.8" />
+                <Setter Property="Focusable" Value="True" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="TiltFactor" Value="5" />
+                <Setter Property="CountFontSize" Value="18" />
+                <Setter Property="TitleFontSize" Value="20" />
+                <Setter Property="TitleFontSize" Value="20" />
+
+                <Setter Property="VerticalTitleAlignment" Value="top" />
+                <Setter Property="VerticalContentAlignment" Value="Bottom" />
+                <Setter Property="HorizontalTitleAlignment" Value="right" />
+                <Setter Property="HorizontalContentAlignment" Value="left" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Margin" Value="0,0,-8,0" />
+                        <Setter Property="Opacity" Value="0.5" />
+                    </Trigger>
+                    <!--<Trigger Property="IsFocused" Value="True">
+                        <Setter Property="Margin" Value="0,0,-8,0"/>
+                        <Setter Property="Opacity" Value="0.5"></Setter>
+                    </Trigger>-->
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,998 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SiU.Process.Common.Functions.CommonMethod
+</name>
+</assembly>
+<members>
+<member name="T:SiU.Process.Common.Functions.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:SiU.Process.Common.Functions.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:SiU.Process.Common.Functions.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.Applications.StartUpQuery">
+ <summary>
+ アプリケーションの起動に使用されるクエリーです。
+ </summary>
+</member>
+<member name="M:SiU.Process.Common.Functions.Applications.StartUpQuery.#ctor(System.String,System.String,System.Int32,System.String)">
+ <summary>
+ アプリケーションの起動に必要なパラメーターで新しいインスタンスを初期化します。
+ </summary>
+ <param name="rootEndPoint"></param>
+ <param name="accessToken"></param>
+ <param name="programCode"></param>
+ <param name="startUpKey"></param>
+</member>
+<member name="M:SiU.Process.Common.Functions.Applications.StartUpQuery.#ctor(System.String)">
+ <summary>
+ クエリー文字列で新しいインスタンスを初期化します。
+ </summary>
+ <param name="queryString"></param>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod">
+ <summary>
+ CommonMethod -- 共通関数
+ </summary>
+ <remarks></remarks>
+ <history version="5.0.0.0" date="" name="">初版不明</history>
+ <history version="5.0.0.0" date="2009.03.02" name="大内 登志也">部門コードの文字コード化対応</history>
+ <history version="5.0.0.0" date="2009.03.25" name="千葉 友則">関数の引数がNothingの場合、クラスの初期値（MinValue）として扱うように修正</history>
+ <history version="5.0.0.0" date="2009.06.01" name="高嶋 直樹">切り抜いた文字列のバイト数取得不正を修正</history>
+ <history version="5.0.0.0" date="2009.08.13" name="内田 久義">年なしの日付書式にもカルチャを指定</history>
+ <history version="5.0.0.0" date="2010.03.04" name="米井 優顕">fSqlStrTypeを追加</history>
+ <history version="5.0.0.0" date="2010.03.30" name="清水 勝也">製品名定数を追加</history>
+ <history version="5.0.0.0" date="2010.04.08" name="米井 優顕">ZeiCalculateを追加</history>
+ <history version="5.0.0.0" date="2010.05.13" name="清水 勝也">部門権限に関する共通メソッドを追加</history>
+ <history version="5.0.0.0" date="2010.05.26" name="清水 勝也">(課題表:3091)SiuFormatの和暦の扱いでエラーが無限ループするのを修正</history>
+ <history version="5.0.0.0" date="2010.07.02" name="清水 勝也">fSqlStrをoverloadしてDataColumnから型・PROCESSでの用途を判断して置換する処理を追加
+                                                               DataRowからINSERT/UPDATE/DELETEを生成するfSqlStrInsert等を追加</history>
+ <history version="5.0.0.0" date="2010.07.26" name="HANH-LV">現場システムオフライン対応</history>
+ <history version="5.0.1.1" date="2011.12.14" name="内田 久義">(SCで落ちる原因になっていた為)EventLogへの書き込みエラーは何もしようがないのでスルーする</history>
+ <history version="5.0.1.1" date="2014.03.12" name="内田 久義">時刻の書式指定が不正な為、12時間制でフォーマットされる(参照問題が発生するかもしれないのでバージョンは上げません)</history>
+ <history version="5.0.1.1" date="2014.06.26" name="TRI-PQ">(TID.3220-IID.26713)SSL化(参照問題が発生するかもしれないのでバージョンは上げません)</history>
+ <history version="6.0.0.0" date="2017.08.24" name="HAI-NM">SQLをPROCES.S5からSERVER2016(プロジェクト武蔵)に移行する。</history>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.ProductName">
+ <summary>
+ ProductName -- 製品名
+ </summary>
+ <remarks>変更禁止</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.IsOfflineMode">
+ <summary>オフラインモードの識別</summary>
+ <remarks> </remarks>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr">
+ <summary>BrowsefSqlStr -- ORACLE SQL列修飾用変数</summary>
+ <remarks></remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_BigInt">
+ <summary>BigInt型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Binary">
+ <summary>Binary型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Boolean">
+ <summary>Boolean型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Byte">
+ <summary>Byte型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Char">
+ <summary>Char型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Currency">
+ <summary>Currency型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_DATE">
+ <summary>DATE型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Decimal">
+ <summary>Decimal型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Double">
+ <summary>Double型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Float">
+ <summary>Float型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_GUID">
+ <summary>GUID型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Integer">
+ <summary>Integer型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Long">
+ <summary>Long型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_LongBinary">
+ <summary>LongBinary型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Memo">
+ <summary>Memo型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Numeric">
+ <summary>Numeric型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Single">
+ <summary>Single型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Text">
+ <summary>Text型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_Time">
+ <summary>Time型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_TimeStamp">
+ <summary>TimeStamp型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_VarBinary">
+ <summary>VarBinary型</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr.fSqlStr_DateTime">
+ <summary>DateTime型</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber">
+ <summary>BrowsefToNumber -- fToNumber返却値の数値ﾀｲﾌﾟ</summary>
+ <remarks></remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_INTEGER">
+ <summary>Integer型に変換</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_LONG">
+ <summary>Long型に変換</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_SINGLE">
+ <summary>Single型に変換</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_DOUBLE">
+ <summary>Double型に変換</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_DECIMAL">
+ <summary>Decimal型に変換</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber.fToNumber_SHORT">
+ <summary>Short型に変換</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.BrowsefToDate">
+ <summary>BrowsefToDate -- fToDate返却値の数値ﾀｲﾌﾟ</summary>
+ <remarks></remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToDate.fToDate_DateTime">
+ <summary>日付時刻で返却</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToDate.fToDate_DateOnly">
+ <summary>日付のみで返却</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowsefToDate.fToDate_TimeOnly">
+ <summary>時刻のみで返却</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.BrowseHasu">
+ <summary>BrowseHasu -- 端数処理区分</summary>
+ <remarks></remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowseHasu.bHasu_Kiriage">
+ <summary>切り上げ</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowseHasu.bHasu_Kirisute">
+ <summary>切捨て</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrowseHasu.bHasu_Shisyagonyu">
+ <summary>四捨五入</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.BrouseConfig">
+ <summary>
+ ラベル状態区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.NoData">
+ <summary>未登録文字</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.NewData">
+ <summary>新規登録文字(入力開始前)</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.NewDataInput">
+ <summary>新規登録文字(入力開始後)</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.UpdData">
+ <summary>修正登録文字(入力開始前)</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.UpdDataInput">
+ <summary>修正登録文字(入力開始後)</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.NoSec">
+ <summary>権限無し文字</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.Running">
+ <summary>更新中文字</summary>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.BrouseConfig.Initialize">
+ <summary>初期化(ラベルの非表示)</summary>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.ControlKbn">
+ <summary>ControlKbn -- コントロール区分</summary>
+ <remarks>コントロールが単独または範囲（開始/終了）の判定フラグ</remarks>
+ <history version="1" date="2008.05.23" name="千葉 友則">新規作成</history>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.ControlKbn.Only">
+ <summary>Only</summary>
+ <remarks>単独指定</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.ControlKbn.From">
+ <summary>From</summary>
+ <remarks>開始値指定</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.ControlKbn.To">
+ <summary>To</summary>
+ <remarks>終了値指定</remarks>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.SysCodeType">
+ <summary>SysCodeType -- システムコード区分</summary>
+ <remarks>各種システムコード（SysMin***/SysMax***）を識別</remarks>
+ <history version="1" date="2008.05.23" name="千葉 友則">新規作成</history>
+ <history version="2" date="2009.03.02" name="大内 登志也">部門コードの文字コード化対応</history>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Code">
+ <summary>Code</summary>
+ <remarks>SysMinCode/SysMaxCode</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Date">
+ <summary>Date</summary>
+ <remarks>SysMinDate/SysMaxDate</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.SKoj">
+ <summary>SKoj</summary>
+ <remarks>SysMinSKoj/SysMaxSKoj</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Koj">
+ <summary>Koj</summary>
+ <remarks>SysMinKoj/SysMaxKoj</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.KojUw">
+ <summary>KojUw</summary>
+ <remarks>SysMinKojUw/SysMaxKojUw</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Tor">
+ <summary>Tor</summary>
+ <remarks>SysMinTor/SysMaxTor</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Soko">
+ <summary>Soko</summary>
+ <remarks>SysMinSoko/SysMaxSoko</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Syohin">
+ <summary>Syohin</summary>
+ <remarks>SysMinSyohin/SysMaxSyohin</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Jyu">
+ <summary>Jyu</summary>
+ <remarks>SysMinJyu/SysMaxJyu</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Hac">
+ <summary>Hac</summary>
+ <remarks>SysMinHac/SysMaxHac</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Syu">
+ <summary>Syu</summary>
+ <remarks>SysMinSyu/SysMaxSyu</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Uri">
+ <summary>Uri</summary>
+ <remarks>SysMinUri/SysMaxUri</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Nyu">
+ <summary>Nyu</summary>
+ <remarks>SysMinNyu/SysMaxNyu</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Sir">
+ <summary>Sir</summary>
+ <remarks>SysMinSir/SysMaxSir</remarks>
+</member>
+<member name="F:SiU.Process.Common.Functions.CommonMethod.SysCodeType.Bmn">
+ <summary>Bmn</summary>
+ <remarks>SysMinBmn/SysMaxBmn</remarks>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.UpdType">
+ <summary>
+ UpdType -- 更新区分(1:新規, 2:更新, 3:削除)
+ </summary>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.ActionType">
+ <summary>ActionType</summary>
+ <remarks>アクション定数</remarks>
+ <history version="1" date="2008.06.20" name="千葉 友則">新規作成</history>
+</member>
+<member name="T:SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType">
+ <summary>
+ CheckBmnSecType -- 部門権限に関する共通メソッドの引数
+ </summary>
+ <remarks></remarks>
+ <history version="2" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fReplaceString(System.String,System.String,System.String,System.Boolean)">
+ <summary>fReplaceString -- 文字列の中の文字列を置換します。</summary>
+ <param name="pString">処理する文字列</param>
+ <param name="pShString">検索する文字列</param>
+ <param name="pRepString">置換する文字列</param>
+ <param name="fCaseSensitive">大文字／小文字を区別  する場合はTrue、区別しない場合はFalse</param>
+ <returns>置換後の文字列</returns>
+ <remarks>文字列の中の文字列を置換します。</remarks>
+ <作成者>Total VB SourceBook 6</作成者>
+ <備考></備考>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fReplaceString(System.String,System.String,System.String,System.Int32)">
+ <summary>fReplaceString -- 文字列の中の文字列を置換します。</summary>
+ <param name="pString">処理する文字列</param>
+ <param name="pShString">検索する文字列</param>
+ <param name="pRepString">置換する文字列</param>
+ <param name="pOption">大文字／小文字を区別  する場合は0、区別しない場合は1</param>
+ <returns>置換後の文字列</returns>
+ <remarks>
+ 文字列の中の文字列を置換します。
+ ※fChangeStrの名称を変更（同じ機能は同じ名前に収束）
+ </remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStr(System.Object,SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr)">
+ <summary>fSqlStr -- オラクルSQL文字列化</summary>
+ <param name="pSourceString">元変数</param>
+ <param name="pSourceStringType">変数タイプ</param>
+ <returns>オラクルSQLに組み込める文字列</returns>
+ <remarks>データタイプ別にオラクルsql文字列を作成して戻します</remarks>
+ <作成者>米井 優顕</作成者>
+ <備考></備考>
+ <history version ="2" date ="2009.06.08" name ="伊藤 匡明">クライアントの日付書式に影響されるので日付変換にカルチャを指定</history>
+ <history version ="3" date ="2010.07.26" name="HANH-LV">対応内容：現場システムオフライン対応</history>
+ <history version ="4" date ="2017.08.24" name="HAI-NM">SQLをPROCES.S5からSERVER2016(プロジェクト武蔵)に移行する。</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStr(System.Object)">
+ <summary>
+ fSqlStr
+ </summary>
+ <param name="pKeyCode">変換対象変数</param>
+ <returns>変換後文字列</returns>
+ <remarks></remarks>
+ <history version ="1" date ="2010.04.08" name ="米井 優顕">シグネーチャの追加（内部でfsqlstrTypeの呼び出し）</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStrType(System.Object)">
+ <summary>
+ fSqlStrType
+ </summary>
+ <param name="pKeyCode">編集対象文字</param>
+ <returns></returns>
+ <remarks>指定型により、fSqlStrを設定後文字列を返却</remarks>
+ <history version ="1" date ="2010.03.04" name="米井 優顕">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fDtSqlStr(System.Object,SiU.Process.Common.Functions.CommonMethod.BrowsefSqlStr)">
+ <summary>fDtSqlStr</summary>
+ <param name="pSourceString">元変数</param>
+ <param name="pSourceStringType">変数タイプ</param>
+ <returns></returns>
+ <remarks>DataTable Sql文字列化</remarks>
+ <history version ="1" date ="2007.03.05" name ="米井 優顕">V4fJetSqlStrより移行</history>
+ <history version ="2" date ="2008.10.01" name ="米井 優顕">SQL文字列の規約がMDBとDataTableで違うために処理を改修</history>
+ <history version ="3" date ="2009.03.25" name ="千葉 友則">引数判定にNothing判定を追加</history>
+ <history version ="4" date ="2009.06.08" name ="伊藤 匡明">クライアントの日付書式に影響されるので日付変換にカルチャを指定</history>
+ <history version ="5" date ="2014.03.12" name ="内田 久義">時刻の書式指定が不正な為、12時間制でフォーマットされる</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fChangeTilde(System.String)">
+ <summary>fChangeTilde -- 文字列の中の"～"のコードを変換する</summary>
+ <param name="pString">処理する文字列</param>
+ <returns>置換後の文字列</returns>
+ <remarks>＆H301C を ＆HFF5E に変換する</remarks>
+ <作成者>米井 優顕</作成者>
+ <備考>Oracle vs Microsoft 非互換</備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fCodeformat(System.Object,System.Int32,System.String)">
+ <summary>fCodeformat -- 数値を指定桁数の右詰め文字でもどす｡</summary>
+ <param name="pCode">数値</param>
+ <param name="pKeta">指定桁数</param>
+ <param name="pFormat">フォーマット文字(Format関数準拠)</param>
+ <returns>右詰め文字</returns>
+ <remarks>指定数値を指定桁数の文字数で文字列として返す</remarks>
+ <作成者>金井　恵史</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SiuFormat(System.Object,System.String)">
+ <summary>SiuFormat -- 和暦対応フォーマット関数</summary>
+ <param name="Expression">変換対象オブジェクト</param>
+ <param name="Style">変換文字フォーマット</param>
+ <returns>変換後文字列</returns>
+ <remarks></remarks>
+ <history version ="2" date ="2009.06.08" name ="伊藤 匡明">クライアントの日付書式に影響されるので日付変換にカルチャを指定</history>
+ <history version ="3" date ="2009.08.13" name ="内田 久義">年なしの日付書式にもカルチャを指定</history>
+ <history version ="4" date ="2009.08.19" name ="千葉 友則">西暦指定時にカレント書式を使用するように変更</history>
+ <history version ="5" date ="2009.08.20" name ="千葉 友則">ver4を無効にして、リメイク</history>
+ <history version ="6" date ="2010.05.26" name ="清水 勝也">(課題表:3091)SiuFormatの和暦の扱いでエラーが無限ループするのを修正</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.ReplaceJapaneseDayOfWeek(System.DateTime,System.String)">
+ <summary>
+ ReplaceJapaneseDayOfWeek -- 曜日書式を和暦で置換
+ </summary>
+ <param name="targetDate">対象日付</param>
+ <param name="style">書式</param>
+ <returns>置換した書式</returns>
+ <remarks></remarks>
+ <history version="1" date="2010.05.26" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.ConvCrLf(System.String,System.Int32)">
+ <summary>ConvCrLf -- vbCrLf←→\n</summary>
+ <param name="str">変換対象文字列</param>
+ <param name="mode">0:vbCrLf→\n 1:\n→vbCrLf</param>
+ <returns>変換後文字列</returns>
+ <remarks></remarks>
+ <history version="1" date="2008.05.12" name="千葉 友則">新規作成</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.NumDateFormat(System.String)">
+ <summary>
+ NumDateFormat
+ </summary>
+ <param name="strTextChk"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStr(System.Object,System.Data.DataColumn,SiU.Process.Common.Functions.CommonMethod.UpdType)">
+ <summary>
+ fSqlStr -- DataColumnから型やPROCESSでの用途を判断してOracle形式のSQL値に変換
+ </summary>
+ <param name="value"></param>
+ <param name="col"></param>
+ <param name="updSyubetu"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+ <history version="2" date="2017.08.24" name="HAI-NM">SQLをPROCES.S5からSERVER2016(プロジェクト武蔵)に移行する。</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStrInsert(System.String,System.Data.DataRow)">
+ <summary>
+ fSqlStrInsert -- DataRowからInsert文を生成
+ </summary>
+ <param name="tableName"></param>
+ <param name="source"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStrInsert(System.String,System.Data.DataRow,SiU.Process.Common.Functions.CommonMethod.UpdType)">
+ <summary>
+ fSqlStrInsert -- DataRowからInsert文を生成
+ </summary>
+ <param name="tableName"></param>
+ <param name="source"></param>
+ <param name="updSyubetu"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStrUpdate(System.String,System.Data.DataRow,System.String[])">
+ <summary>
+ fSqlStrUpdate -- DataRowとKey配列からUpdate文を生成
+ </summary>
+ <param name="tableName"></param>
+ <param name="source"></param>
+ <param name="keyColNames"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fSqlStrDelete(System.String,System.Data.DataRow,System.String[])">
+ <summary>
+ fSqlStrDelete -- DataRowとKey配列からDelete文を生成
+ </summary>
+ <param name="tableName"></param>
+ <param name="source"></param>
+ <param name="keyColNames"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2010.07.02" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fLeftByte(System.Object,System.Int32,System.Int32)">
+ <summary>fLeftByte -- 左部文字列抽出</summary>
+ <param name="pSource">対象文字列</param>
+ <param name="pLeftLen">抽出バイト数</param>
+ <param name="pCharSet">エンコード指定: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
+ <returns>抽出文字列</returns>
+ <remarks>指定文字列の左から指定バイト数を抽出する</remarks>
+ <作成者>Process4からの複製作成</作成者>
+ <備考>全角文字の半分で終了する場合は切り捨てる</備考>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fStrCompSJIS(System.String,System.String)">
+ <summary>fStrCompSJIS -- 文字列をSJISで比較する</summary>
+ <param name="pxFrom">開始文字列</param>
+ <param name="pxTo">終了文字列</param>
+ <returns>
+ True  :開始文字列 ＜= 終了文字列
+ False :開始文字列 ＞ 終了文字列
+ </returns>
+ <remarks>文字列をSJISで比較する</remarks>
+ <作成者>Process4からの複製作成</作成者>
+ <備考></備考>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SplitString(System.String)">
+ <summary>SplitString -- 文字列を一時ずつ分解し配列に落としこむ</summary>
+ <param name="str">対象文字列</param>
+ <returns></returns>
+ <remarks>Splitのセパレーターが無い版</remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.LenB(System.String)">
+ <summary>LenB -- バイト数取得</summary>
+ <param name="Expression">カウント対象文字列</param>
+ <returns>カウント結果</returns>
+ <remarks></remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.LenB(System.String,System.Int32)">
+ <summary>LenB -- バイト数取得</summary>
+ <param name="Expression">カウント対象文字列</param>
+ <param name="pCodingNumber">エンコード指定: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
+ <returns>カウント結果</returns>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SysCodeEquals(System.Object)">
+ <summary>SysCodeEquals -- 各種システムコードの最小/最大比較</summary>
+ <param name="value">比較対象値</param>
+ <returns>同値の場合はTrue</returns>
+ <remarks>SysMinCodeとの比較</remarks>
+ <history version="1" date="2008.05.23" name="千葉 友則">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SysCodeEquals(System.Object,System.Int32)">
+ <summary>SysCodeEquals -- 各種システムコードの最小/最大比較</summary>
+ <param name="value">比較対象値</param>
+ <param name="conkbn">ControlKbn列挙体</param>
+ <returns>同値の場合はTrue</returns>
+ <remarks>SysMinCode/SysMaxCodeとの比較</remarks>
+ <history version="1" date="2008.05.23" name="千葉 友則">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SysCodeEquals(System.Object,System.Int32,SiU.Process.Common.Functions.CommonMethod.SysCodeType)">
+ <summary>SysCodeEquals -- 各種システムコードの最小/最大比較</summary>
+ <param name="value">比較対象値</param>
+ <param name="conkbn">ControlKbn列挙体</param>
+ <param name="type">SysCodeType列挙体</param>
+ <returns>同値の場合はTrue</returns>
+ <remarks>typeで指定されたSysMin***/SysMax***との比較</remarks>
+ <history version="1" date="2008.05.23" name="千葉 友則">新規作成</history>
+ <history version="2" date="2009.03.02" name="大内 登志也">部門コードの文字コード化対応</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fStartDate(System.Object,System.Int32)">
+ <summary>
+ fStartDate--月度開始日算出
+ </summary>
+ <param name="pDdate">月度</param>
+ <param name="pSIME">締日</param>
+ <returns>月度開始日</returns>
+ <remarks>指定月度の開始日を月度＋締日で算出する。</remarks>
+ <作成者>Process4からの複製作成</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fEndDate(System.Object,System.Int32)">
+ <summary>
+ fEndDate--月度末日算出
+ </summary>
+ <param name="pDdate">月度</param>
+ <param name="pSIME">締日</param>
+ <returns>月度末日</returns>
+ <remarks>指定月度の最終日を月度＋締日で算出する。</remarks>
+ <作成者>Process4からの複製作成</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fProcessMonth(System.Object,System.Int32)">
+ <summary>
+ fProcessMonth--月度を算出する
+ </summary>
+ <param name="pDdate">該当年月日</param>
+ <param name="pSIME">締日</param>
+ <returns>対象月度</returns>
+ <remarks>該当日付がどの月度に属するか戻す</remarks>
+ <作成者>金井　恵史</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fKishuMonth(System.Object,System.Object)">
+ <summary>fKishuMonth -- 期首年月を出す</summary>
+ <param name="pNengetu">画面で指定された年月</param>
+ <param name="pStart_YM">事業開始年月</param>
+ <returns>期首年月</returns>
+ <remarks>画面の年月と事業開始年月から期首の月を求める</remarks>
+ <history version="" date="" name="千葉 友則">Process4からの複製</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fRound(System.Object,SiU.Process.Common.Functions.CommonMethod.BrowseHasu,System.Object)">
+ <summary>fRound -- 端数処理</summary>
+ <param name="pKin">対象金額</param>
+ <param name="pHasuu">端数処理区分</param>
+ <param name="pTani">丸め単位(1で小数点以下，10で10円以下)</param>
+ <returns>計算結果</returns>
+ <remarks>指定単位で数値の丸め処理を行います。</remarks>
+ <作成者>Process4からの複製作成</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.ZeiCalculate(System.Decimal,System.Int32,System.Decimal,System.Int32)">
+ <summary>
+ ZeiCalculate
+ </summary>
+ <param name="pKin">対象金額</param>
+ <param name="pZeiInput">税入力区分</param>
+ <param name="pZeiRitsu">税率</param>
+ <param name="pHasu">端数処理区分</param>
+ <returns>税額</returns>
+ <remarks></remarks>
+ <history version ="1" date ="2010.04.08" name="米井 優顕">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fNvl(System.Object,System.Object)">
+ <summary>fNvl -- Null置き換え</summary>
+ <param name="pValue">対象変数</param>
+ <param name="pRepValue">Null時置き換え変数</param>
+ <returns>Null置き換え後の値</returns>
+ <remarks>pValueがNothingまたはNullの場合はpRepValueを，それ以外はpValueをそのまま返す</remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fNvlEx(System.Object@,System.Object)">
+ <summary>fNvlEx -- Null置き換え</summary>
+ <param name="pValue">対象変数</param>
+ <param name="pRepValue">Null時置き換え変数</param>
+ <remarks>
+ pValueがNothingまたはNullの場合はpRepValueを，それ以外はpValueをそのまま返す
+ Option Strict = True の対応
+ </remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToNumber(System.Object,SiU.Process.Common.Functions.CommonMethod.BrowsefToNumber)">
+ <summary>fToNumber -- 数値化</summary>
+ <param name="pVal">対象変数</param>
+ <param name="pRetType">返却値の数値ﾀｲﾌﾟ 省略時はDecimalにて返却</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToNumberEx(System.Object)">
+ <summary>fToNumberEx -- 数値化　　※型指定省略</summary>
+ <param name="pVal">対象変数</param>
+ <returns>Decimal型の数値</returns>
+ <remarks>
+ Option Strict = True の対応
+ </remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToNumberEx``1(System.Object)">
+ <summary>fToNumberEx -- 数値化</summary>
+ <typeparam name="NumericType">返却値の数値ﾀｲﾌﾟ</typeparam>
+ <param name="pVal">対象変数</param>
+ <returns>NumericTypeで指定された型の数値</returns>
+ <remarks>
+ Option Strict = True の対応
+ </remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToText(System.Object)">
+ <summary>fToText -- 文字化</summary>
+ <param name="pVal">対象変数</param>
+ <returns>文字列</returns>
+ <remarks>pValをﾃｷｽﾄ項目化します｡NULL指定された場合は空白が返却されます｡</remarks>
+ <作成者></作成者>
+ <備考>DB項目よりテキスト項目への転記など，Nullが許されない項目への転記に使用する</備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fTrimSingleQuotes(System.String)">
+ <summary>
+ fTrimSingleQuotesの関数
+ </summary>
+ <param name="str"></param>
+ <returns></returns>
+ <history version="1" date="2017.09.21" name="PHONG-BTT">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToDate(System.Object,System.DateTime,SiU.Process.Common.Functions.CommonMethod.BrowsefToDate)">
+ <summary>fToDate -- 日付項目化</summary>
+ <param name="pDate">対象変数</param>
+ <param name="pErrDate">エラー時の値</param>
+ <param name="pRetType">返却値の日付ﾀｲﾌﾟ(省略可 1:日付+時間,2:日付のみ,3:時間のみ) 既定値 1:日付+時間</param>
+ <returns>日付</returns>
+ <remarks>pDateを日付目化します｡日付項目外が指定された場合は,ﾊﾟﾗﾒｰﾀ2を,省略された場合はｼｽﾃﾑ最小値を返却します</remarks>
+ <作成者>米井 優顕</作成者>
+ <備考></備考>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToInt(System.Object)">
+ <summary>fToInt -- Int化</summary>
+ <param name="pVal">変換対象値</param>
+ <returns>Integer</returns>
+ <remarks>内部でfToNumberExへ処理を引き渡す</remarks>
+ <history version="1" date="2008.04.07" name="千葉 友則">新規作成</history> 
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToDbl(System.Object)">
+ <summary>fToDbl -- Double化</summary>
+ <param name="pVal">変換対象値</param>
+ <returns>Integer</returns>
+ <remarks>内部でfToNumberExへ処理を引き渡す</remarks>
+ <history version="1" date="2008.04.07" name="千葉 友則">新規作成</history> 
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.fToDec(System.Object)">
+ <summary>fToDec -- Decimal化</summary>
+ <param name="pVal">変換対象値</param>
+ <returns>Integer</returns>
+ <remarks>内部でfToNumberExへ処理を引き渡す</remarks>
+ <history version="1" date="2008.04.07" name="千葉 友則">新規作成</history> 
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.MidB(System.String,System.Int32,System.Int32)">
+ <summary>Mid関数のバイト版。文字数と位置をバイト数で指定して文字列を切り抜く。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Start">切り抜き開始位置。全角文字を分割するよう位置が指定された場合、戻り値の文字列の先頭は意味不明の半角文字となる。</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切り抜かれた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+ <history version="3" date="2009.06.01" name="高嶋 直樹">切り抜いた文字列のバイト数取得不正を修正</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.LobDataDivision(System.String)">
+ <summary>
+ LobDataDivision
+ </summary>
+ <param name="pLobStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.Camelize(System.String,System.Boolean)">
+ <summary>Camelize -- アンダースコア繋ぎの文字列をキャメル形式・パスカル形式に変換します</summary>
+ <param name="str">文字列</param>
+ <param name="toUpper">先頭文字を大文字にするか（True: する / False: しない）</param>
+ <returns>String</returns>
+ <remarks>デフォルトはキャメル形式（先頭小文字）</remarks>
+ <history version="1" date="2009.08.27" name="伊藤 匡明">新規作成</history> 
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.Underscore(System.String,System.Boolean)">
+ <summary>Underscore -- キャメル形式・パスカル形式の文字列をアンダースコア繋ぎに変換します</summary>
+ <param name="str">文字列</param>
+ <param name="toUpper">大文字にするか（True: 大文字 / False: 小文字）</param>
+ <returns>String</returns>
+ <remarks>デフォルトは大文字</remarks>
+ <history version="1" date="2009.08.27" name="伊藤 匡明">新規作成</history> 
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.ShowExceptionMessage(System.Exception,System.String)">
+ <summary>ShowExceptionMessage -- 例外からメッセージボックスを表示する</summary>
+ <param name="ex">例外クラス</param>
+ <param name="MessageTitle">メッセージタイトル</param>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+ <history version="3" date="2009.04.24" name="千葉 友則">エラーメッセージの生成を別メソッドに分離</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.CreateExceptionString(System.Exception,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="ex"></param>
+ <param name="lev"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2009.04.24" name="千葉 友則">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.ConvertException(System.Exception)">
+ <summary>ConvertException -- 各種例外クラスを基底例外クラスに変換する</summary>
+ <param name="ex">例外クラス</param>
+ <returns>基底例外クラス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.WriteEventLog(System.Exception,System.String)">
+ <summary>
+ WriteEventLog -- イベントログを出力する
+ </summary>
+ <param name="pEx">例外クラス</param>
+ <param name="pMsg">エラーメッセージ</param>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+ <history version="3" date="2011.12.14" name="内田 久義">(SCで落ちる原因になっていた為)EventLogへの書き込みエラーは何もしようがないのでスルーする</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.CreateApplicationDownloadUrl(System.String,System.String,SiU.Process.Common.Functions.Applications.StartUpQuery)">
+ <summary>
+ ClicOnce アプリケーションを起動するための URL を作成します。
+ </summary>
+ <param name="deploymentUrl"></param>
+ <param name="kidoName"></param>
+ <param name="query"></param>
+ <returns></returns>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.CreateProcessInfo(System.String,System.String,SiU.Process.Common.Functions.Applications.StartUpQuery)">
+ <summary>
+ ClicOnce アプリケーションを起動するための IE のプロセス情報を作成します。
+ </summary>
+ <param name="deploymentUrl"></param>
+ <param name="kidoName"></param>
+ <param name="query"></param>
+ <returns></returns>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.CreateProcessInfo(System.String,System.Diagnostics.ProcessWindowStyle)">
+ <summary>CretateProcessInfo -- </summary>
+ <param name="arg"></param>
+ <returns></returns>
+ <remarks></remarks>
+ <history version="1" date="2009.07.22" name="千葉 友則">オーバーロード実装（引数をそのままセットする）</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.SetLabelConfig(System.Windows.Forms.Label,SiU.Process.Common.Functions.CommonMethod.BrouseConfig)">
+ <summary>
+ SetLabelConfig
+ </summary>
+ <param name="LabelControl"></param>
+ <param name="Index"></param>
+ <remarks></remarks>
+ <history version="1" date="" name="">初版不明</history>
+ <history version="2" date="2009.03.25" name="千葉 友則">引数判定追加</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.GetWhereStrBmnSecurity(SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType,System.Int32)">
+ <summary>
+ GetWhereStrBmnSecurity -- 部門権限を考慮するためのWhere句を取得
+ </summary>
+ <param name="checkType">CheckBmnSecType列挙体</param>
+ <param name="userNo">USER_NO</param>
+ <returns>Where句</returns>
+ <remarks>SearchPanelからの呼出も考慮してCommonMethodに実装
+          Formアプリで使用する場合はBaseFormの同名Methodを呼出すこと</remarks>
+ <history version="1" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.GetWhereStrBmnSecurity(System.String,SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType,System.Int32)">
+ <summary>
+ GetWhereStrBmnSecurity -- 部門権限を考慮するためのWhere句を取得
+ </summary>
+ <param name="field">Field名 in (権限マスタ.CODE)</param>
+ <param name="checkType">CheckBmnSecType列挙体</param>
+ <param name="userNo">USER_NO</param>
+ <returns>Where句</returns>
+ <remarks>SearchPanelからの呼出も考慮してCommonMethodに実装
+          Formアプリで使用する場合はBaseFormの同名Methodを呼出すこと</remarks>
+ <history version="1" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.GetWhereStrBmnKaisouSecurity(SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType,System.Int32)">
+ <summary>
+ GetWhereStrBmnKaisouSecurity -- 部門権限を考慮するためのWhere句を取得
+ </summary>
+ <param name="checkType">CheckBmnSecType列挙体</param>
+ <param name="userNo">USER_NO</param>
+ <returns>Where句</returns>
+ <remarks>SearchPanelからの呼出も考慮してCommonMethodに実装
+          Formアプリで使用する場合はBaseFormの同名Methodを呼出すこと</remarks>
+ <history version="1" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.GetWhereStrBmnKaisouSecurity(System.String,SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType,System.Int32)">
+ <summary>
+ GetWhereStrBmnSecurity -- 部門権限を考慮するためのWhere句を取得
+ </summary>
+ <param name="field">Field名 in (権限マスタ.CODE)</param>
+ <param name="checkType">CheckBmnSecType列挙体</param>
+ <param name="userNo">USER_NO</param>
+ <returns>Where句</returns>
+ <remarks>SearchPanelからの呼出も考慮してCommonMethodに実装
+          Formアプリで使用する場合はBaseFormの同名Methodを呼出すこと</remarks>
+ <history version="1" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.CommonMethod.FormatStrBmnSecurity(System.String,SiU.Process.Common.Functions.CommonMethod.CheckBmnSecType,System.Int32)">
+ <summary>
+ FormatStrBmnSecurity(Private) -- 部門権限考慮用のString.Format
+ </summary>
+ <param name="xSqlTxt">変換項目を含むString({0}:権限マスタ, {1}:USER_NO)</param>
+ <param name="checkType">CheckBmnSecType列挙体</param>
+ <param name="userNo">USER_NO</param>
+ <returns>変換後のString</returns>
+ <remarks>Private</remarks>
+ <history version="1" date="2010.05.13" name="清水 勝也">新規作成</history>
+</member>
+<member name="T:SiU.Process.Common.Functions.Soap.CompressionSoapExtension">
+ <summary>
+ Soap通信圧縮Extention
+ </summary>
+ <remarks>圧縮可否フラグがONの場合のみ、Deflate圧縮をかけます。</remarks>
+ <history version="5.0.0.0" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+ <history version="5.0.0.0" date="2010.01.04" name="千葉 友則">圧縮フラグ判定方式を変更（下位互換不能）</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo,System.Web.Services.Protocols.SoapExtensionAttribute)">
+ <summary>
+ カスタム属性を適用するように拡張機能を指定した場合実行されます
+ 戻り値にはSOAP拡張機能でキャッシングしたい値を返します 
+ </summary>
+ <param name="methodInfo">LogicalMethodInfo</param>
+ <param name="attribute">SoapExtensionAttribute</param>
+ <returns>SOAP拡張機能でキャッシングしたい値</returns>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.GetInitializer(System.Type)">
+ <summary>
+ web.config構成ファイルまたはapp.configファイルに参照を追加した場合実行されます
+ 戻り値にはSOAP拡張機能でキャッシングしたい値を返します 
+ </summary>
+ <param name="serviceType"></param>
+ <returns>SOAP拡張機能でキャッシングしたい値</returns>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.Initialize(System.Object)">
+ <summary>
+ SOAP機能拡張の初期化時に一度のみ実行されます
+ GetInitializerメソッドでの戻り値がパラメータとして渡されます
+ </summary>
+ <param name="initializer"></param>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.ChainStream(System.IO.Stream)">
+ <summary>
+ 引数で渡されたSOAPメッセージへの参照をメンバ変数に設定します
+ 戻り値はSOAP機能拡張で利用される戻り値への参照となります
+ </summary>
+ <param name="stream"></param>
+ <returns>SOAP機能拡張で利用される戻り値への参照</returns>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.ProcessMessage(System.Web.Services.Protocols.SoapMessage)">
+ <summary>
+ SOAP拡張機能のすべてのSoapMessageStage段階で実行されます
+ </summary>
+ <param name="message"></param>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+ <history version="2" date="2010.01.04" name="千葉 友則">シリアル化前にコンテンツエンコードを指定するように変更、逆シリアル化前にコンテンツエンコードから圧縮されているか否かを取得</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.CompressStream(System.IO.Stream,System.IO.Stream)">
+ <summary>
+ ストリーム圧縮処理
+ </summary>
+ <param name="from"></param>
+ <param name="To"></param>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+ <history version="2" date="2010.01.04" name="千葉 友則">圧縮フラグをクラス変数から取得するように変更</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.CompressionSoapExtension.DecompressStream(System.IO.Stream,System.IO.Stream)">
+ <summary>
+ ストリーム解凍処理
+ </summary>
+ <param name="from"></param>
+ <param name="To"></param>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+ <history version="2" date="2010.01.04" name="千葉 友則">圧縮フラグをクラス変数から取得するように変更</history>
+</member>
+<member name="T:SiU.Process.Common.Functions.Soap.SoapExtensionSettings">
+ <summary>
+ クライアント用 app.config設定（SoapExtention）
+ </summary>
+ <remarks></remarks>
+ <history version="5.0.0.0" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.SoapExtensionSettings.IsCompressionSoapExtensionSetteing">
+ <summary>
+ app.cofingに、soapExtensionTypesが設定されているか判定します。
+ </summary>
+ <returns>soapExtensionTypesが設定されているか</returns>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+<member name="M:SiU.Process.Common.Functions.Soap.SoapExtensionSettings.CompressionSoapExtensionSetting">
+ <summary>
+ app.configに、soapExtentionを設定します。
+ </summary>
+ <remarks></remarks>
+ <history version="1" date="2009.10.22" name="伊藤 匡明">新規作成</history>
+</member>
+</members>
+</doc>

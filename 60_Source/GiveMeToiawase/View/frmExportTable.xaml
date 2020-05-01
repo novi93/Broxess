@@ -1,0 +1,80 @@
+﻿<Controls:MetroWindow
+    x:Class="frmExportTable"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:controlzex="urn:controlzex"
+    x:Name="frmExport"
+    Title="Give Me Some Data"
+    Width="800"
+    Height="600"
+    Icon="/GiveMeToiawase;component/Resource/P5.ico"
+    Loaded="frmExport_Loaded"
+    WindowStartupLocation="CenterOwner">
+    <Grid Margin="5,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39" />
+            <RowDefinition />
+            <RowDefinition Height="49" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="Header" Margin="5,2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBox
+                x:Name="txtServer"
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="2"
+                Controls:TextBoxHelper.Watermark="Data Source"
+                TabIndex="110" />
+        </Grid>
+        <DataGrid
+            x:Name="grdMain"
+            Grid.Row="1"
+            Margin="5"
+            AutoGenerateColumns="True"
+            BorderThickness="1"
+            CellStyle="{StaticResource MetroDataGridCell}"
+            ColumnWidth="*"
+            GridLinesVisibility="All"
+            HeadersVisibility="All"
+            MinColumnWidth="50"
+            RowDetailsVisibilityMode="Visible"
+            RowHeaderWidth="20"
+            SelectionUnit="CellOrRowHeader"
+            Style="{StaticResource AzureDataGrid}"
+            TabIndex="210" />
+        <Grid x:Name="Footer" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="120" />
+            </Grid.ColumnDefinitions>
+            <TextBox
+                x:Name="txtPath"
+                Margin="10"
+                VerticalContentAlignment="Center"
+                TabIndex="310"
+                Text="Path"
+                TextWrapping="Wrap" />
+            <Button
+                x:Name="btnExport"
+                Grid.Column="1"
+                Margin="5,10"
+                Controls:ControlsHelper.ContentCharacterCasing="Normal"
+                Content="Export"
+                Style="{StaticResource AccentedSquareButtonStyle}"
+                TabIndex="320" />
+            <Button
+                x:Name="btnCancel"
+                Grid.Column="3"
+                Margin="5,10"
+                Controls:ControlsHelper.ContentCharacterCasing="Normal"
+                Content="Cancel"
+                RenderTransformOrigin="0.507,-0.25"
+                Style="{DynamicResource SquareButtonStyle}"
+                TabIndex="330" />
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>

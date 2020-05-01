@@ -1,0 +1,99 @@
+﻿<Controls:MetroWindow
+    x:Class="frmMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:controlzex="urn:controlzex"
+    x:Name="frmExport"
+    Title="Give Me A Cakes!"
+    Width="800"
+    Height="600"
+    Icon="/GiveMeToiawase;component/Resource/P5.ico"
+    WindowStartupLocation="CenterScreen">
+    <Grid Margin="30,30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="65*" />
+        </Grid.ColumnDefinitions>
+        <Controls:Tile
+            Name="tltExp"
+            Title="Data"
+            Width="Auto"
+            Height="Auto"
+            Click="Tile_Click"
+            Content="Export"
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="110" />
+        <Controls:Tile
+            Name="tltCopyToiMSS"
+            Title="Toiawase"
+            Grid.Row="1"
+            Width="Auto"
+            Height="Auto"
+            Content="Export "
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="210" />
+        <Controls:Tile
+            Name="tltCopyToiKMT"
+            Title="Toiawase"
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="Auto"
+            Height="Auto"
+            Content="Duplicate"
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="220" />
+        <Controls:Tile
+            Name="tltDuptoiwase"
+            Grid.Row="3"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"
+            Width="Auto"
+            Height="Auto"
+            Margin="10,10,10,120"
+            Content="Comming Soon..."
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="310"
+            Visibility="Hidden" />
+        <Controls:Tile
+            Name="tltSettingSearch_Dup"
+            Title="Setting Search"
+            Grid.Row="2"
+            Width="Auto"
+            Height="Auto"
+            Content="Duplicate"
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="130" />
+        <Controls:Tile
+            x:Name="tltInitData"
+            Title="Init Data"
+            Grid.Row="3"
+            Width="Auto"
+            Height="Auto"
+            Margin="10"
+            Content="Data"
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="130" />
+        <Controls:Tile
+        	x:Name="tltSetupV5"
+        	Title="PROCES.S5"
+        	Grid.Row="4"
+        	Width="Auto"
+        	Height="Auto"
+        	Margin="10,10,10,20"
+        	Content="Setup"
+        	Style="{StaticResource BaseTileStyle}"
+        	TabIndex="130" />
+
+    </Grid>
+</Controls:MetroWindow>

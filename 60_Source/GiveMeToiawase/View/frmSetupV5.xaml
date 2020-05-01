@@ -1,0 +1,183 @@
+﻿<Controls:MetroWindow
+    x:Class="frmSetupV5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Setup PROCES.S5"
+    Width="1069"
+    Height="528"
+    VerticalAlignment="Top"
+    VerticalContentAlignment="Stretch"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="665" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="215*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <GroupBox
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Margin="10"
+            Header="Option"
+            RenderTransformOrigin="0.5,0.5"
+            TabIndex="30">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label
+                    x:Name="lblSource"
+                    Height="36"
+                    Margin="2,0,2,2"
+                    VerticalAlignment="Bottom"
+                    VerticalContentAlignment="Center"
+                    Content="Source" />
+                <TextBox
+                    x:Name="txtSource"
+                    Grid.Column="1"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Controls:TextBoxHelper.ClearTextButton="True"
+                    Controls:TextBoxHelper.WatermarkWrapping="NoWrap"
+                    TabIndex="310"
+                    Text="Path" />
+                <Label
+                    x:Name="lblPostfix"
+                    Grid.Row="1"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Content="Postfix" />
+                <TextBox
+                    x:Name="txtPostfix"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Controls:TextBoxHelper.ClearTextButton="True"
+                    Controls:TextBoxHelper.WatermarkWrapping="NoWrap"
+                    TabIndex="310"
+                    Text="Path" />
+                <Label
+                    x:Name="lblDevenv2k5"
+                    Grid.Row="2"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Content="Devenv2k5" />
+                <TextBox
+                    x:Name="txtDevenv2k5"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Controls:TextBoxHelper.ClearTextButton="True"
+                    Controls:TextBoxHelper.WatermarkWrapping="NoWrap"
+                    TabIndex="310"
+                    Text="Path" />
+                <Button
+                    x:Name="btnbuild"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Width="104"
+                    Height="35"
+                    Margin="0,5,10,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Controls:ControlsHelper.ContentCharacterCasing="Normal"
+                    Content="Build"
+                    Style="{StaticResource AccentedSquareButtonStyle}"
+                    TabIndex="410" />
+                <Label
+                    x:Name="lblProcess"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Content="Process" />
+                <ComboBox
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Margin="5" />
+                <Label
+                    x:Name="lblProxy"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Content="Proxy" />
+                <ComboBox
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Margin="5" />
+                <Label
+                    x:Name="lblMVC"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Margin="2"
+                    VerticalContentAlignment="Center"
+                    Content="MVC" />
+                <ComboBox
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Margin="5" />
+            </Grid>
+        </GroupBox>
+        <Grid
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            Margin="5,5,10,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="btnOK"
+                Grid.Column="1"
+                Width="75"
+                Height="32"
+                Margin="5"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Controls:ControlsHelper.ContentCharacterCasing="Normal"
+                Content="OK"
+                Style="{StaticResource AccentedSquareButtonStyle}"
+                TabIndex="410" />
+            <Button
+                x:Name="btnCancel"
+                Grid.Column="2"
+                Width="75"
+                Height="32"
+                Margin="5"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Controls:ControlsHelper.ContentCharacterCasing="Normal"
+                Content="Cancel"
+                RenderTransformOrigin="0.507,-0.25"
+                Style="{DynamicResource SquareButtonStyle}"
+                TabIndex="420" />
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>
