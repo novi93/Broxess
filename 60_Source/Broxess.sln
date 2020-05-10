@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GiveMeToiawase", "GiveMeToiawase\GiveMeToiawase.vbproj", "{8B0BFFE6-02BC-45EC-8A56-BD20D6A70302}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Broxess", "GiveMeToiawase\Broxess.vbproj", "{8B0BFFE6-02BC-45EC-8A56-BD20D6A70302}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CommonMethod", "CommonMethod\CommonMethod.vbproj", "{BE414461-4DD5-43FA-986F-1917DA621BB5}"
 EndProject
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D415EA8F-85FD-4045-9E3B-593379704387}
 	EndGlobalSection
 EndGlobal

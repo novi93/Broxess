@@ -8,7 +8,7 @@
     Title="Give Me Some Data"
     Width="800"
     Height="600"
-    Icon="/GiveMeToiawase;component/Resource/P5.ico"
+    Icon="/Broxess;component/Resource/P5.ico"
     Loaded="frmExport_Loaded"
     WindowStartupLocation="CenterOwner">
     <Grid Margin="5,0">

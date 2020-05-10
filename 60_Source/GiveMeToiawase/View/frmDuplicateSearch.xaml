@@ -12,7 +12,7 @@
     VerticalAlignment="Top"
     VerticalContentAlignment="Stretch"
     Closing="MetroWindow_Closing"
-    Icon="/GiveMeToiawase;component/Resource/P5.ico"
+    Icon="/Broxess;component/Resource/P5.ico"
     Loaded="Window_Loaded"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">

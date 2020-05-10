@@ -8,7 +8,7 @@
     Title="Give Me A Cakes!"
     Width="800"
     Height="600"
-    Icon="/GiveMeToiawase;component/Resource/P5.ico"
+    Icon="/Broxess;component/Resource/P5.ico"
     WindowStartupLocation="CenterScreen">
     <Grid Margin="30,30">
         <Grid.RowDefinitions>
