@@ -7,7 +7,6 @@ Imports MahApps.Metro.Controls.Dialogs
 Public Class frmMenu
     Inherits MetroWindow
 
-
     Private Sub Tile_Click(sender As Object, e As RoutedEventArgs)
         Dim frm As New frmExportTable()
         frm.Owner = Me
@@ -31,11 +30,15 @@ Public Class frmMenu
         Me.ShowMessageAsync("Lỳ....", xMsg)
     End Sub
 
-    Private Sub frmExport_Loaded(sender As Object, e As RoutedEventArgs) Handles frmExport.Loaded
+    Private Sub frm_Loaded(sender As Object, e As RoutedEventArgs) Handles frmExport.Loaded
         Dim config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
         Me.Title = String.Format("{0} [{1}]",
                                  Me.Title,
                                 config.AppSettings.Settings("Version").Value)
+
+        Me.tltSettingSearch_Dup.Visibility = Visibility.Hidden
+        Me.tltInitData.Visibility = Visibility.Hidden
+        Me.tltSetupV5.Visibility = Visibility.Hidden
 
     End Sub
 
