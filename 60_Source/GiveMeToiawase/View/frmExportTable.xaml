@@ -10,7 +10,7 @@
     Height="600"
     Icon="/Broxess;component/Resource/P5.ico"
     Loaded="frmExport_Loaded"
-    WindowStartupLocation="CenterOwner">
+    WindowStartupLocation="CenterOwner" ShowIconOnTitleBar="False">
     <Grid Margin="5,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="39" />

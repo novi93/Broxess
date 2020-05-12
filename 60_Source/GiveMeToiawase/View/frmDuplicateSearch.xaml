@@ -12,10 +12,10 @@
     VerticalAlignment="Top"
     VerticalContentAlignment="Stretch"
     Closing="MetroWindow_Closing"
-    Icon="/Broxess;component/Resource/P5.ico"
+    Icon="pack://siteoforigin:,,,/Assets/stupidBear.png"
     Loaded="Window_Loaded"
     WindowStartupLocation="CenterOwner"
-    mc:Ignorable="d">
+    mc:Ignorable="d" ShowIconOnTitleBar="False">
     <Controls:MetroWindow.Resources />
     <Grid>
         <Grid.ColumnDefinitions>
