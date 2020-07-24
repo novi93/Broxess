@@ -3,11 +3,12 @@ Imports SiU.Process.Common.Functions.CommonMethod
 Imports SiU.Process.Common.Functions.SystemValue
 Imports System.Text
 Imports System.IO
+Imports System.Configuration
 
 Public Class SqlGenerator
 
+    Private Shared config As Configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
 #Region "メソッド"
-
     Protected Shared Function GetSqlDeleteDataSet(dsMaster As DataSet) As DataTable
 
         If dsMaster Is Nothing Then
@@ -103,25 +104,25 @@ Public Class SqlGenerator
 
                                 '値
                                 Select Case fToText(dsMaster.Tables(i).Columns(k).ColumnName)
-                                    'Case "UD_DATE"
-                                    '    xSqlValue = xSqlValue & "GETDATE()"
-                                    'Case "AD_DATE"  ''新規時はSYSDATE、修正時は前回の値
-                                    '    If nUpdSyubetu = 1 Then
-                                    '        xSqlValue = xSqlValue & "GETDATE()"
-                                    '    Else
-                                    '        xSqlValue = xSqlValue & fSqlStr(fToDate(dsMaster.Tables(i).Rows(j).Item(k)), BrowsefSqlStr.fSqlStr_DateTime)
-                                    '    End If
-                                    'Case "OPID"
-                                    '    xSqlValue = xSqlValue & fSqlStr(SysOpid, BrowsefSqlStr.fSqlStr_Text)
-                                    'Case "UD_USER"
-                                    '    xSqlValue = xSqlValue & fSqlStr(SysUserNo, BrowsefSqlStr.fSqlStr_Long)
-                                    'Case "YOBI_DATE1", "YOBI_DATE2", "YOBI_DATE3", "YOBI_DATE4", "YOBI_DATE5", _
-                                    '     "YOBI_DATE6", "YOBI_DATE7", "YOBI_DATE8", "YOBI_DATE9", "YOBI_DATE10"
-                                    '    If fToDate(dsMaster.Tables(i).Rows(j).Item(k)) = SysMinDate Then
-                                    '        xSqlValue = xSqlValue & "NULL"
-                                    '    Else
-                                    '        xSqlValue = xSqlValue & fSqlStr(fToDate(dsMaster.Tables(i).Rows(j).Item(k)), BrowsefSqlStr.fSqlStr_DateTime)
-                                    '    End If
+                                    Case "UD_DATE", "UpdateDateTime"
+                                        xSqlValue = xSqlValue & config.AppSettings.Settings("UD_DATE").Value
+                                    Case "AD_DATE", "CreateDateTime" ''新規時はSYSDATE、修正時は前回の値
+                                        If nUpdSyubetu = 1 Then
+                                            xSqlValue = xSqlValue & config.AppSettings.Settings("AD_DATE").Value
+                                        Else
+                                            xSqlValue = xSqlValue & fSqlStr(fToDate(dsMaster.Tables(i).Rows(j).Item(k)), BrowsefSqlStr.fSqlStr_DateTime)
+                                        End If
+                                    Case "OPID"
+                                        xSqlValue = xSqlValue & fSqlStr(config.AppSettings.Settings("OPID").Value, BrowsefSqlStr.fSqlStr_Text)
+                                    Case "UD_USER", "CreateUserId", "UpdateUserId"
+                                        xSqlValue = xSqlValue & fSqlStr(config.AppSettings.Settings("UD_USER").Value, BrowsefSqlStr.fSqlStr_Long)
+                                        'Case "YOBI_DATE1", "YOBI_DATE2", "YOBI_DATE3", "YOBI_DATE4", "YOBI_DATE5", _
+                                        '     "YOBI_DATE6", "YOBI_DATE7", "YOBI_DATE8", "YOBI_DATE9", "YOBI_DATE10"
+                                        '    If fToDate(dsMaster.Tables(i).Rows(j).Item(k)) = SysMinDate Then
+                                        '        xSqlValue = xSqlValue & "NULL"
+                                        '    Else
+                                        '        xSqlValue = xSqlValue & fSqlStr(fToDate(dsMaster.Tables(i).Rows(j).Item(k)), BrowsefSqlStr.fSqlStr_DateTime)
+                                        '    End If
                                     Case Else
                                         If IsDBNull(dsMaster.Tables(i).Rows(j).Item(k)) Then
                                             'NULL時はNULLで更新
@@ -160,7 +161,7 @@ Public Class SqlGenerator
 
                             'データテーブルへ格納
                             dr.Item(0) = nGno
-                            dr.Item(1) = xSqlTxt & xSqlCol & xSqlValue
+                            dr.Item(1) = xSqlTxt & xSqlCol & xSqlValue.MiniSlashTo2Qoute()
                             dr.Item(2) = MyMainTable
                             dr.Item(3) = 1      '追加
                             dt.Rows.Add(dr)

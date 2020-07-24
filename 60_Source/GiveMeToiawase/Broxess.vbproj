@@ -26,7 +26,7 @@
     <InstallUrl>http://localhost:8082/App/Broxess/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -130,6 +130,7 @@
     <Compile Include="Config\DataConfigManager.vb" />
     <Compile Include="Config\GlobalSetting.vb" />
     <Compile Include="Data\SerializableDictionary.vb" />
+    <Compile Include="Helper\Db\StringExtension.vb" />
     <Compile Include="Helper\MyUtilities.vb" />
     <Compile Include="Helper\Soure\IGenSource.vb" />
     <Compile Include="View\frmDuplicateSearch.xaml.vb">
@@ -281,7 +282,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 および x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
