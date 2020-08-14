@@ -191,7 +191,7 @@ Public Class DbHelper
     Public Shared Function GetNewMenuId(parentId As String, programId As String) As DataTable
         Dim xTableName As String = TableName.Menu
         Dim xSql As String = String.Empty
-        xSql = "SELECT MAX(MN.OrderNumber) AS OrderNumber, MAX(EX2.MENU_A) AS MENU_A, MAX(EX2.MENU_B) AS MENU_B, MAX(EX2.MENU_C) AS MENU_C FROM ProcessProxy.[dbo].[T_MENU_EXTENSION] EX1"
+        xSql = "SELECT MAX(MN.OrderNumber) AS OrderNumber, MAX(EX2.MENU_A) AS MENU_A, MAX(EX2.MENU_B) AS MENU_B, MAX(EX2.MENU_C) AS MENU_C FROM [dbo].[T_MENU_EXTENSION] EX1"
         xSql = xSql & vbCrLf & " LEFT JOIN [dbo].[T_MENU_EXTENSION] AS EX2"
         xSql = xSql & vbCrLf & " ON EX1.MENU_A = EX2.MENU_A"
         xSql = xSql & vbCrLf & " AND EX1.MENU_B = EX2.MENU_B"
