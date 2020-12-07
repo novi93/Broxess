@@ -8,45 +8,45 @@ Imports System.Collections.Generic
 Namespace Soap
 
     ''' <summary>
-    ''' Soap’ÊMˆ³kExtention
+    ''' Soapé€šä¿¡åœ§ç¸®Extention
     ''' </summary>
-    ''' <remarks>ˆ³k‰Â”Ûƒtƒ‰ƒO‚ªON‚Ìê‡‚Ì‚İADeflateˆ³k‚ğ‚©‚¯‚Ü‚·B</remarks>
-    ''' <history version="5.0.0.0" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
-    ''' <history version="5.0.0.0" date="2010.01.04" name="ç—t —F‘¥">ˆ³kƒtƒ‰ƒO”»’è•û®‚ğ•ÏXi‰ºˆÊŒİŠ·•s”\j</history>
+    ''' <remarks>åœ§ç¸®å¯å¦ãƒ•ãƒ©ã‚°ãŒONã®å ´åˆã®ã¿ã€Deflateåœ§ç¸®ã‚’ã‹ã‘ã¾ã™ã€‚</remarks>
+    ''' <history version="5.0.0.0" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
+    ''' <history version="5.0.0.0" date="2010.01.04" name="åƒè‘‰ å‹å‰‡">åœ§ç¸®ãƒ•ãƒ©ã‚°åˆ¤å®šæ–¹å¼ã‚’å¤‰æ›´ï¼ˆä¸‹ä½äº’æ›ä¸èƒ½ï¼‰</history>
     Public Class CompressionSoapExtension
         Inherits SoapExtension
 
-#Region "  ’è”éŒ¾  "
+#Region "  å®šæ•°å®£è¨€  "
 
         '' 2010.01.04 DEL START
-        '' SoapHeaderI—¹ƒ^ƒO
+        '' SoapHeaderçµ‚äº†ã‚¿ã‚°
         'Private Const SOAP_HEADER_END As String = "</soap:Header>"
-        '' SoapBodyŠJnƒ^ƒO
+        '' SoapBodyé–‹å§‹ã‚¿ã‚°
         'Private Const SOAP_BODY_START As String = "<soap:Body>"
-        '' ProcessSoapHeaderI—¹ƒ^ƒO
+        '' ProcessSoapHeaderçµ‚äº†ã‚¿ã‚°
         'Private Const PROCESS_SOAP_HEADER_END As String = "</ProcessSoapHeader>"
-        ' ˆ³k‰Â”Ûƒtƒ‰ƒO
+        ' åœ§ç¸®å¯å¦ãƒ•ãƒ©ã‚°
         'Private Const IS_COMPRESSION_TRUE As String = "IsCompression=""true"""
         'Private Const IS_COMPRESSION_FALSE As String = "IsCompression=""false"""
 
-        '' I—¹”»’èƒ^ƒOŒŸõƒpƒ^[ƒ“
-        'Private Const REG_PATURN As String = "(</.*:Header>)|(<[^/].*:Body>)"      '©‚±‚Ìƒpƒ^[ƒ“g‚¤‚ÆAŒƒ’x
+        '' çµ‚äº†åˆ¤å®šã‚¿ã‚°æ¤œç´¢ãƒ‘ã‚¿ãƒ¼ãƒ³
+        'Private Const REG_PATURN As String = "(</.*:Header>)|(<[^/].*:Body>)"      'â†ã“ã®ãƒ‘ã‚¿ãƒ¼ãƒ³ä½¿ã†ã¨ã€æ¿€é…
         'Private Const REG_PAT_HD_ST As String = "<[^/].*:Header"
         'Private Const REG_PAT_HD_ED As String = "</.*:Header>"
         'Private Const REG_PAT_BD_ST As String = "<[^/].*:Body>"
         '' 2010.01.04 DEL END
 
-        '' ‘—M‘¤ˆ³k”»’è—p
+        '' é€ä¿¡å´åœ§ç¸®åˆ¤å®šç”¨
         Private IsComp As Boolean
         Private Const TYPE_OF_COMP As String = "deflate"
 
 #End Region
 
-#Region "  ƒCƒ“ƒXƒ^ƒ“ƒX•Ï”  "
+#Region "  ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å¤‰æ•°  "
 
-        'BeforeDeserialize‚ÅƒVƒŠƒAƒ‹‰»‚³‚ê‚½SOAPƒƒbƒZ[ƒW‚ğ•Û‚·‚éƒƒ“ƒo•Ï”
+        'BeforeDeserializeã§ã‚·ãƒªã‚¢ãƒ«åŒ–ã•ã‚ŒãŸSOAPãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ä¿æŒã™ã‚‹ãƒ¡ãƒ³ãƒå¤‰æ•°
         Private _oldStream As Stream
-        'AfterSerialize‚ÅƒVƒŠƒAƒ‹‰»‚³‚ê‚½SOAPƒƒbƒZ[ƒW‚ğ•Û‚·‚éƒƒ“ƒo•Ï”
+        'AfterSerializeã§ã‚·ãƒªã‚¢ãƒ«åŒ–ã•ã‚ŒãŸSOAPãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ä¿æŒã™ã‚‹ãƒ¡ãƒ³ãƒå¤‰æ•°
         Private _newStream As Stream
 
 #End Region
@@ -54,14 +54,14 @@ Namespace Soap
 #Region "  Public Method  "
 
         ''' <summary>
-        ''' ƒJƒXƒ^ƒ€‘®«‚ğ“K—p‚·‚é‚æ‚¤‚ÉŠg’£‹@”\‚ğw’è‚µ‚½ê‡Às‚³‚ê‚Ü‚·
-        ''' –ß‚è’l‚É‚ÍSOAPŠg’£‹@”\‚ÅƒLƒƒƒbƒVƒ“ƒO‚µ‚½‚¢’l‚ğ•Ô‚µ‚Ü‚· 
+        ''' ã‚«ã‚¹ã‚¿ãƒ å±æ€§ã‚’é©ç”¨ã™ã‚‹ã‚ˆã†ã«æ‹¡å¼µæ©Ÿèƒ½ã‚’æŒ‡å®šã—ãŸå ´åˆå®Ÿè¡Œã•ã‚Œã¾ã™
+        ''' æˆ»ã‚Šå€¤ã«ã¯SOAPæ‹¡å¼µæ©Ÿèƒ½ã§ã‚­ãƒ£ãƒƒã‚·ãƒ³ã‚°ã—ãŸã„å€¤ã‚’è¿”ã—ã¾ã™ 
         ''' </summary>
         ''' <param name="methodInfo">LogicalMethodInfo</param>
         ''' <param name="attribute">SoapExtensionAttribute</param>
-        ''' <returns>SOAPŠg’£‹@”\‚ÅƒLƒƒƒbƒVƒ“ƒO‚µ‚½‚¢’l</returns>
+        ''' <returns>SOAPæ‹¡å¼µæ©Ÿèƒ½ã§ã‚­ãƒ£ãƒƒã‚·ãƒ³ã‚°ã—ãŸã„å€¤</returns>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Overloads Overrides Function GetInitializer( _
                         ByVal methodInfo As System.Web.Services.Protocols.LogicalMethodInfo, _
                         ByVal attribute As System.Web.Services.Protocols.SoapExtensionAttribute) As Object
@@ -69,35 +69,35 @@ Namespace Soap
         End Function
 
         ''' <summary>
-        ''' web.config\¬ƒtƒ@ƒCƒ‹‚Ü‚½‚Íapp.configƒtƒ@ƒCƒ‹‚ÉQÆ‚ğ’Ç‰Á‚µ‚½ê‡Às‚³‚ê‚Ü‚·
-        ''' –ß‚è’l‚É‚ÍSOAPŠg’£‹@”\‚ÅƒLƒƒƒbƒVƒ“ƒO‚µ‚½‚¢’l‚ğ•Ô‚µ‚Ü‚· 
+        ''' web.configæ§‹æˆãƒ•ã‚¡ã‚¤ãƒ«ã¾ãŸã¯app.configãƒ•ã‚¡ã‚¤ãƒ«ã«å‚ç…§ã‚’è¿½åŠ ã—ãŸå ´åˆå®Ÿè¡Œã•ã‚Œã¾ã™
+        ''' æˆ»ã‚Šå€¤ã«ã¯SOAPæ‹¡å¼µæ©Ÿèƒ½ã§ã‚­ãƒ£ãƒƒã‚·ãƒ³ã‚°ã—ãŸã„å€¤ã‚’è¿”ã—ã¾ã™ 
         ''' </summary>
         ''' <param name="serviceType"></param>
-        ''' <returns>SOAPŠg’£‹@”\‚ÅƒLƒƒƒbƒVƒ“ƒO‚µ‚½‚¢’l</returns>
+        ''' <returns>SOAPæ‹¡å¼µæ©Ÿèƒ½ã§ã‚­ãƒ£ãƒƒã‚·ãƒ³ã‚°ã—ãŸã„å€¤</returns>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Overloads Overrides Function GetInitializer(ByVal serviceType As System.Type) As Object
             Return Nothing
         End Function
 
         ''' <summary>
-        ''' SOAP‹@”\Šg’£‚Ì‰Šú‰»‚Éˆê“x‚Ì‚İÀs‚³‚ê‚Ü‚·
-        ''' GetInitializerƒƒ\ƒbƒh‚Å‚Ì–ß‚è’l‚ªƒpƒ‰ƒ[ƒ^‚Æ‚µ‚Ä“n‚³‚ê‚Ü‚·
+        ''' SOAPæ©Ÿèƒ½æ‹¡å¼µã®åˆæœŸåŒ–æ™‚ã«ä¸€åº¦ã®ã¿å®Ÿè¡Œã•ã‚Œã¾ã™
+        ''' GetInitializerãƒ¡ã‚½ãƒƒãƒ‰ã§ã®æˆ»ã‚Šå€¤ãŒãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¨ã—ã¦æ¸¡ã•ã‚Œã¾ã™
         ''' </summary>
         ''' <param name="initializer"></param>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Overloads Overrides Sub Initialize(ByVal initializer As Object)
         End Sub
 
         ''' <summary>
-        ''' ˆø”‚Å“n‚³‚ê‚½SOAPƒƒbƒZ[ƒW‚Ö‚ÌQÆ‚ğƒƒ“ƒo•Ï”‚Éİ’è‚µ‚Ü‚·
-        ''' –ß‚è’l‚ÍSOAP‹@”\Šg’£‚Å—˜—p‚³‚ê‚é–ß‚è’l‚Ö‚ÌQÆ‚Æ‚È‚è‚Ü‚·
+        ''' å¼•æ•°ã§æ¸¡ã•ã‚ŒãŸSOAPãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¸ã®å‚ç…§ã‚’ãƒ¡ãƒ³ãƒå¤‰æ•°ã«è¨­å®šã—ã¾ã™
+        ''' æˆ»ã‚Šå€¤ã¯SOAPæ©Ÿèƒ½æ‹¡å¼µã§åˆ©ç”¨ã•ã‚Œã‚‹æˆ»ã‚Šå€¤ã¸ã®å‚ç…§ã¨ãªã‚Šã¾ã™
         ''' </summary>
         ''' <param name="stream"></param>
-        ''' <returns>SOAP‹@”\Šg’£‚Å—˜—p‚³‚ê‚é–ß‚è’l‚Ö‚ÌQÆ</returns>
+        ''' <returns>SOAPæ©Ÿèƒ½æ‹¡å¼µã§åˆ©ç”¨ã•ã‚Œã‚‹æˆ»ã‚Šå€¤ã¸ã®å‚ç…§</returns>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Overloads Overrides Function ChainStream(ByVal stream As Stream) As Stream
             Me._oldStream = stream
             Me._newStream = New MemoryStream()
@@ -106,31 +106,31 @@ Namespace Soap
         End Function
 
         ''' <summary>
-        ''' SOAPŠg’£‹@”\‚Ì‚·‚×‚Ä‚ÌSoapMessageStage’iŠK‚ÅÀs‚³‚ê‚Ü‚·
+        ''' SOAPæ‹¡å¼µæ©Ÿèƒ½ã®ã™ã¹ã¦ã®SoapMessageStageæ®µéšã§å®Ÿè¡Œã•ã‚Œã¾ã™
         ''' </summary>
         ''' <param name="message"></param>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
-        ''' <history version="2" date="2010.01.04" name="ç—t —F‘¥">ƒVƒŠƒAƒ‹‰»‘O‚ÉƒRƒ“ƒeƒ“ƒcƒGƒ“ƒR[ƒh‚ğw’è‚·‚é‚æ‚¤‚É•ÏXA‹tƒVƒŠƒAƒ‹‰»‘O‚ÉƒRƒ“ƒeƒ“ƒcƒGƒ“ƒR[ƒh‚©‚çˆ³k‚³‚ê‚Ä‚¢‚é‚©”Û‚©‚ğæ“¾</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
+        ''' <history version="2" date="2010.01.04" name="åƒè‘‰ å‹å‰‡">ã‚·ãƒªã‚¢ãƒ«åŒ–å‰ã«ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã‚’æŒ‡å®šã™ã‚‹ã‚ˆã†ã«å¤‰æ›´ã€é€†ã‚·ãƒªã‚¢ãƒ«åŒ–å‰ã«ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã‹ã‚‰åœ§ç¸®ã•ã‚Œã¦ã„ã‚‹ã‹å¦ã‹ã‚’å–å¾—</history>
         Public Overloads Overrides Sub ProcessMessage(ByVal message As System.Web.Services.Protocols.SoapMessage)
 
             Select Case message.Stage
                 Case SoapMessageStage.BeforeSerialize
 
-                    '' SOAPˆ³kƒtƒ‰ƒO‚Ì“Ç‚İo‚µ
+                    '' SOAPåœ§ç¸®ãƒ•ãƒ©ã‚°ã®èª­ã¿å‡ºã—
                     For Each sh As SoapHeader In message.Headers
-                        '' ProcessSoapHeaderˆÈŠO‚Í–³‹
+                        '' ProcessSoapHeaderä»¥å¤–ã¯ç„¡è¦–
                         If Not sh.GetType.Name.Equals("ProcessSoapHeader") Then Continue For
 
-                        '' ƒvƒƒpƒeƒBƒƒ“ƒoŠm”F
+                        '' ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ¡ãƒ³ãƒç¢ºèª
                         For Each p As System.Reflection.PropertyInfo In sh.GetType.GetProperties()
-                            '' IsCompressionˆÈŠO‚Í–³‹
+                            '' IsCompressionä»¥å¤–ã¯ç„¡è¦–
                             If Not p.Name.Equals("IsCompression") Then Continue For
 
-                            '' IsCompression‚ğæ“¾
+                            '' IsCompressionã‚’å–å¾—
                             IsComp = DirectCast(p.GetValue(sh, Nothing), Boolean)
                             If IsComp Then
-                                '' ƒRƒ“ƒeƒ“ƒc‚ÌƒGƒ“ƒR[ƒh‚Éˆ³k‚ğw’è
+                                '' ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã«åœ§ç¸®ã‚’æŒ‡å®š
                                 message.ContentEncoding = TYPE_OF_COMP
                             End If
                             Exit Select
@@ -140,15 +140,15 @@ Namespace Soap
                 Case SoapMessageStage.AfterSerialize
 
                     _newStream.Position = 0
-                    'ƒVƒŠƒAƒ‰ƒCƒYŒã‚Éˆ³k‚µ‚Ü‚·iSOAP‘S•¶‚ª‘ÎÛj
+                    'ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºå¾Œã«åœ§ç¸®ã—ã¾ã™ï¼ˆSOAPå…¨æ–‡ãŒå¯¾è±¡ï¼‰
                     Me.CompressStream(_newStream, _oldStream)
 
                 Case SoapMessageStage.BeforeDeserialize
 
-                    '' ƒRƒ“ƒeƒ“ƒcƒGƒ“ƒR[ƒh‚ªˆ³k‚©”Û‚©
+                    '' ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ãŒåœ§ç¸®ã‹å¦ã‹
                     IsComp = CommonMethod.fToText(message.ContentEncoding).Equals(TYPE_OF_COMP)
 
-                    'ƒfƒVƒŠƒAƒ‰ƒCƒY‘O‚É‰ğ“€‚µ‚Ü‚·iSOAP‘S•¶‚ª‘ÎÛj
+                    'ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºå‰ã«è§£å‡ã—ã¾ã™ï¼ˆSOAPå…¨æ–‡ãŒå¯¾è±¡ï¼‰
                     Me.DecompressStream(_oldStream, _newStream)
                     _newStream.Position = 0
 
@@ -161,16 +161,16 @@ Namespace Soap
 #Region "  Private Method  "
 
         ''' <summary>
-        ''' ƒXƒgƒŠ[ƒ€ˆ³kˆ—
+        ''' ã‚¹ãƒˆãƒªãƒ¼ãƒ åœ§ç¸®å‡¦ç†
         ''' </summary>
         ''' <param name="from"></param>
         ''' <param name="To"></param>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
-        ''' <history version="2" date="2010.01.04" name="ç—t —F‘¥">ˆ³kƒtƒ‰ƒO‚ğƒNƒ‰ƒX•Ï”‚©‚çæ“¾‚·‚é‚æ‚¤‚É•ÏX</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
+        ''' <history version="2" date="2010.01.04" name="åƒè‘‰ å‹å‰‡">åœ§ç¸®ãƒ•ãƒ©ã‚°ã‚’ã‚¯ãƒ©ã‚¹å¤‰æ•°ã‹ã‚‰å–å¾—ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´</history>
         Private Sub CompressStream(ByVal from As Stream, ByVal [To] As Stream)
 
-            '' SoapHeader‚æ‚èAˆ³k‰Â”Ûƒtƒ‰ƒO‚ğæ“¾
+            '' SoapHeaderã‚ˆã‚Šã€åœ§ç¸®å¯å¦ãƒ•ãƒ©ã‚°ã‚’å–å¾—
             'Dim isCompres As Boolean = CompressionSoapExtension.IsCompression(from, [To])
             Dim isCompres As Boolean = IsComp
 
@@ -179,7 +179,7 @@ Namespace Soap
 
             If isCompres Then
 
-                ' ˆ³kˆ—
+                ' åœ§ç¸®å‡¦ç†
                 Using compressedStream As New DeflateStream([To], CompressionMode.Compress, True)
 
                     While True
@@ -194,7 +194,7 @@ Namespace Soap
                 End Using
 
             Else
-                ' ˆ³k‚µ‚È‚¢ˆ—
+                ' åœ§ç¸®ã—ãªã„å‡¦ç†
                 While True
                     readSize = from.Read(buffer, 0, buffer.Length)
                     If readSize = 0 Then
@@ -208,23 +208,23 @@ Namespace Soap
         End Sub
 
         ''' <summary>
-        ''' ƒXƒgƒŠ[ƒ€‰ğ“€ˆ—
+        ''' ã‚¹ãƒˆãƒªãƒ¼ãƒ è§£å‡å‡¦ç†
         ''' </summary>
         ''' <param name="from"></param>
         ''' <param name="To"></param>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
-        ''' <history version="2" date="2010.01.04" name="ç—t —F‘¥">ˆ³kƒtƒ‰ƒO‚ğƒNƒ‰ƒX•Ï”‚©‚çæ“¾‚·‚é‚æ‚¤‚É•ÏX</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
+        ''' <history version="2" date="2010.01.04" name="åƒè‘‰ å‹å‰‡">åœ§ç¸®ãƒ•ãƒ©ã‚°ã‚’ã‚¯ãƒ©ã‚¹å¤‰æ•°ã‹ã‚‰å–å¾—ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´</history>
         Private Sub DecompressStream(ByVal from As Stream, ByVal [To] As Stream)
 
-            ' SoapHeader‚æ‚èAˆ³k‰Â”Ûƒtƒ‰ƒO‚ğæ“¾
+            ' SoapHeaderã‚ˆã‚Šã€åœ§ç¸®å¯å¦ãƒ•ãƒ©ã‚°ã‚’å–å¾—
             'Dim isCompres As Boolean = CompressionSoapExtension.IsCompression(from, [To])
             Dim isCompres As Boolean = IsComp
 
             Dim buffer(1023) As Byte
             Dim readSize As Integer
             If isCompres Then
-                ' ‰ğ“€ˆ—
+                ' è§£å‡å‡¦ç†
                 Using compressedStream As DeflateStream = New DeflateStream(from, CompressionMode.Decompress)
 
                     While True
@@ -237,7 +237,7 @@ Namespace Soap
                     [To].Flush()
                 End Using
             Else
-                ' ‰ğÁ‚µ‚È‚¢ˆ—
+                ' è§£æ¶ˆã—ãªã„å‡¦ç†
                 While True
                     readSize = from.Read(buffer, 0, buffer.Length)
                     If readSize = 0 Then
@@ -252,11 +252,11 @@ Namespace Soap
 
         '' 2010.01.04 DEL START
         '''' <summary>
-        '''' SoapHeader‚æ‚èAˆ³k‰Â”Ûƒtƒ‰ƒO‚ğæ“¾
+        '''' SoapHeaderã‚ˆã‚Šã€åœ§ç¸®å¯å¦ãƒ•ãƒ©ã‚°ã‚’å–å¾—
         '''' </summary>
         '''' <param name="from"></param>
         '''' <param name="To"></param>
-        '''' <returns>ˆ³k‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO</returns>
+        '''' <returns>åœ§ç¸®ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°</returns>
         '''' <remarks></remarks>
         'Private Shared Function IsCompression(ByVal from As Stream, ByVal [To] As Stream) As Boolean
 
@@ -275,7 +275,7 @@ Namespace Soap
 
         '        readInt = from.ReadByte()
         '        If readInt = -1 Then
-        '            ' “Ç‚İ‚İ‚ªÅŒã‚Ü‚Å“’B‚µ‚½ê‡Aˆ—I—¹
+        '            ' èª­ã¿è¾¼ã¿ãŒæœ€å¾Œã¾ã§åˆ°é”ã—ãŸå ´åˆã€å‡¦ç†çµ‚äº†
         '            [To].Write(byteBuf.ToArray, 0, byteBuf.ToArray.Length)
         '            Exit While
         '        End If
@@ -288,19 +288,19 @@ Namespace Soap
         '        End If
 
         '        If byteBuf.Count <= 150 Then
-        '            '' 150ƒoƒCƒg‚Ü‚Å‚Í–³ğŒ‚Å“Ç‚İ‚İ
+        '            '' 150ãƒã‚¤ãƒˆã¾ã§ã¯ç„¡æ¡ä»¶ã§èª­ã¿è¾¼ã¿
         '            Continue While
         '        ElseIf UseHeader And byteBuf.Count <= 500 Then
-        '            '' ƒwƒbƒ_g—p”»•ÊŒãA500ƒoƒCƒg‚Ü‚Å‚Í–³ğŒ‚Å“Ç‚İ‚İ
+        '            '' ãƒ˜ãƒƒãƒ€ä½¿ç”¨åˆ¤åˆ¥å¾Œã€500ãƒã‚¤ãƒˆã¾ã§ã¯ç„¡æ¡ä»¶ã§èª­ã¿è¾¼ã¿
         '            Continue While
         '        End If
 
-        '        '' Header‚ª‚Ü‚¾Œ©‚Â‚©‚Á‚Ä‚¢‚È‚¢
+        '        '' HeaderãŒã¾ã è¦‹ã¤ã‹ã£ã¦ã„ãªã„
         '        If Not UseHeader Then
-        '            '' Header‚ª‚ ‚é‚©H
+        '            '' HeaderãŒã‚ã‚‹ã‹ï¼Ÿ
         '            UseHeader = regHead.IsMatch(strBuf.ToString)
         '            If UseHeader Then
-        '                '' Œ©‚Â‚©‚Á‚½ê‡‚ÍAHeader‚ÌI—¹ƒ^ƒO‚ğƒ^[ƒQƒbƒg‚ÉØ‚è‘Ö‚¦‚é
+        '                '' è¦‹ã¤ã‹ã£ãŸå ´åˆã¯ã€Headerã®çµ‚äº†ã‚¿ã‚°ã‚’ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã«åˆ‡ã‚Šæ›¿ãˆã‚‹
         '                regTarget = New System.Text.RegularExpressions.Regex(REG_PAT_HD_ED, RegularExpressions.RegexOptions.Compiled)
         '                Continue While
         '            End If
@@ -309,10 +309,10 @@ Namespace Soap
         '        'If strBuf.ToString.Contains(PROCESS_SOAP_HEADER_END) OrElse strBuf.ToString.Contains(SOAP_HEADER_END) OrElse strBuf.ToString.Contains(SOAP_BODY_START) Then
         '        'If IsCompletedReadHeader(regex, strBuf) Then
         '        If regTarget.IsMatch(strBuf.ToString) Then
-        '            ' SoapHeader•”•ª‚ğ“ÇŠ®—¹
+        '            ' SoapHeaderéƒ¨åˆ†ã‚’èª­è¾¼å®Œäº†
         '            If strBuf.ToString.Contains(IS_COMPRESSION_TRUE) Then
-        '                ' "SoapHeader‚ÉAIsCompression="true"‚ğŠÜ‚Şê‡
-        '                ' ˆ³k‚·‚é
+        '                ' "SoapHeaderã«ã€IsCompression="true"ã‚’å«ã‚€å ´åˆ
+        '                ' åœ§ç¸®ã™ã‚‹
         '                result = True
         '            End If
         '            [To].Write(byteBuf.ToArray, 0, byteBuf.ToArray.Length)

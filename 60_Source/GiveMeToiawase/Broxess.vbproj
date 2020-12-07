@@ -71,7 +71,7 @@
     <ApplicationIcon>stupidBear.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>82A0CB9713871157524ABB13F0BD5FD57D6F2CAA</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>718E6B85CD278A8F19FAF29DE6061F74362D2600</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Broxess_TemporaryKey.pfx</ManifestKeyFile>
@@ -80,7 +80,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">

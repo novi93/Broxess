@@ -4,27 +4,27 @@ Imports System.Web.Services.Configuration
 Namespace Soap
 
     ''' <summary>
-    ''' ƒNƒ‰ƒCƒAƒ“ƒg—p app.configİ’èiSoapExtentionj
+    ''' ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆç”¨ app.configè¨­å®šï¼ˆSoapExtentionï¼‰
     ''' </summary>
     ''' <remarks></remarks>
-    ''' <history version="5.0.0.0" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+    ''' <history version="5.0.0.0" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
     Public Class SoapExtensionSettings
 
-#Region "  ’è”éŒ¾  "
+#Region "  å®šæ•°å®£è¨€  "
 
-        ' app.config “Çæ—pƒvƒƒpƒeƒB’l
+        ' app.config èª­å–ç”¨ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å€¤
         Private Const SOAP_EXTENSION_SECTION_GROUP As String = "system.web"
         Private Const SOAP_EXTENSION_SECTION As String = "webServices"
         Private Const SOAP_EXTENSION_PROPERTIES As String = "soapExtensionTypes"
 
 #End Region
 
-#Region "  Shared•Ï”   "
+#Region "  Sharedå¤‰æ•°   "
 
         ' app.config
         Private Shared _appConfig As Configuration = _
                         ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
-        ' app.config SoapExtensionİ’èƒIƒuƒWƒFƒNƒg
+        ' app.config SoapExtensionè¨­å®šã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
         Private Shared _soapExtensionType As PropertyInformation = _
                         _appConfig.GetSectionGroup(SOAP_EXTENSION_SECTION_GROUP) _
                             .Sections(SOAP_EXTENSION_SECTION) _
@@ -35,11 +35,11 @@ Namespace Soap
 #Region "  Shared Method  "
 
         ''' <summary>
-        ''' app.cofing‚ÉAsoapExtensionTypes‚ªİ’è‚³‚ê‚Ä‚¢‚é‚©”»’è‚µ‚Ü‚·B
+        ''' app.cofingã«ã€soapExtensionTypesãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ã‹åˆ¤å®šã—ã¾ã™ã€‚
         ''' </summary>
-        ''' <returns>soapExtensionTypes‚ªİ’è‚³‚ê‚Ä‚¢‚é‚©</returns>
+        ''' <returns>soapExtensionTypesãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ã‹</returns>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Shared Function IsCompressionSoapExtensionSetteing() As Boolean
 
             Dim result As Boolean = False
@@ -59,10 +59,10 @@ Namespace Soap
 
 
         ''' <summary>
-        ''' app.config‚ÉAsoapExtention‚ğİ’è‚µ‚Ü‚·B
+        ''' app.configã«ã€soapExtentionã‚’è¨­å®šã—ã¾ã™ã€‚
         ''' </summary>
         ''' <remarks></remarks>
-        ''' <history version="1" date="2009.10.22" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history>
+        ''' <history version="1" date="2009.10.22" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history>
         Public Shared Sub CompressionSoapExtensionSetting()
 
             If IsCompressionSoapExtensionSetteing() = False Then

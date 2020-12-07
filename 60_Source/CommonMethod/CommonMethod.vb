@@ -13,176 +13,176 @@ Imports System.Deployment.Application
 ''2008.10.01 ADD END
 
 ''' <summary>
-''' CommonMethod -- ‹¤’ÊŠÖ”
+''' CommonMethod -- å…±é€šé–¢æ•°
 ''' </summary>
 ''' <remarks></remarks>
-''' <history version="5.0.0.0" date="" name="">‰”Å•s–¾</history>
-''' <history version="5.0.0.0" date="2009.03.02" name="‘å“à “ou–ç">•”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰</history>
-''' <history version="5.0.0.0" date="2009.03.25" name="ç—t —F‘¥">ŠÖ”‚Ìˆø”‚ªNothing‚Ìê‡AƒNƒ‰ƒX‚Ì‰Šú’liMinValuej‚Æ‚µ‚Äˆµ‚¤‚æ‚¤‚ÉC³</history>
-''' <history version="5.0.0.0" date="2009.06.01" name="‚“ˆ ’¼÷">Ø‚è”²‚¢‚½•¶š—ñ‚ÌƒoƒCƒg”æ“¾•s³‚ğC³</history>
-''' <history version="5.0.0.0" date="2009.08.13" name="“à“c ‹v‹`">”N‚È‚µ‚Ì“ú•t‘®‚É‚àƒJƒ‹ƒ`ƒƒ‚ğw’è</history>
-''' <history version="5.0.0.0" date="2010.03.04" name="•Äˆä —DŒ°">fSqlStrType‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.03.30" name="´… Ÿ–ç">»•i–¼’è”‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.04.08" name="•Äˆä —DŒ°">ZeiCalculate‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.05.13" name="´… Ÿ–ç">•”–åŒ ŒÀ‚ÉŠÖ‚·‚é‹¤’Êƒƒ\ƒbƒh‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.05.26" name="´… Ÿ–ç">(‰Û‘è•\:3091)SiuFormat‚Ì˜a—ï‚Ìˆµ‚¢‚ÅƒGƒ‰[‚ª–³ŒÀƒ‹[ƒv‚·‚é‚Ì‚ğC³</history>
-''' <history version="5.0.0.0" date="2010.07.02" name="´… Ÿ–ç">fSqlStr‚ğoverload‚µ‚ÄDataColumn‚©‚çŒ^EPROCESS‚Å‚Ì—p“r‚ğ”»’f‚µ‚Ä’uŠ·‚·‚éˆ—‚ğ’Ç‰Á
-'''                                                               DataRow‚©‚çINSERT/UPDATE/DELETE‚ğ¶¬‚·‚éfSqlStrInsert“™‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.07.26" name="HANH-LV">Œ»êƒVƒXƒeƒ€ƒIƒtƒ‰ƒCƒ“‘Î‰</history>
-''' <history version="5.0.1.1" date="2011.12.14" name="“à“c ‹v‹`">(SC‚Å—‚¿‚éŒ´ˆö‚É‚È‚Á‚Ä‚¢‚½ˆ×)EventLog‚Ö‚Ì‘‚«‚İƒGƒ‰[‚Í‰½‚à‚µ‚æ‚¤‚ª‚È‚¢‚Ì‚ÅƒXƒ‹[‚·‚é</history>
-''' <history version="5.0.1.1" date="2014.03.12" name="“à“c ‹v‹`">‚Ì‘®w’è‚ª•s³‚Èˆ×A12ŠÔ§‚ÅƒtƒH[ƒ}ƒbƒg‚³‚ê‚é(QÆ–â‘è‚ª”­¶‚·‚é‚©‚à‚µ‚ê‚È‚¢‚Ì‚Åƒo[ƒWƒ‡ƒ“‚Íã‚°‚Ü‚¹‚ñ)</history>
-''' <history version="5.0.1.1" date="2014.06.26" name="TRI-PQ">(TID.3220-IID.26713)SSL‰»(QÆ–â‘è‚ª”­¶‚·‚é‚©‚à‚µ‚ê‚È‚¢‚Ì‚Åƒo[ƒWƒ‡ƒ“‚Íã‚°‚Ü‚¹‚ñ)</history>
-''' <history version="6.0.0.0" date="2017.08.24" name="HAI-NM">SQL‚ğPROCES.S5‚©‚çSERVER2016(ƒvƒƒWƒFƒNƒg•‘ )‚ÉˆÚs‚·‚éB</history>
+''' <history version="5.0.0.0" date="" name="">åˆç‰ˆä¸æ˜</history>
+''' <history version="5.0.0.0" date="2009.03.02" name="å¤§å†… ç™»å¿—ä¹Ÿ">éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ</history>
+''' <history version="5.0.0.0" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">é–¢æ•°ã®å¼•æ•°ãŒNothingã®å ´åˆã€ã‚¯ãƒ©ã‚¹ã®åˆæœŸå€¤ï¼ˆMinValueï¼‰ã¨ã—ã¦æ‰±ã†ã‚ˆã†ã«ä¿®æ­£</history>
+''' <history version="5.0.0.0" date="2009.06.01" name="é«˜å¶‹ ç›´æ¨¹">åˆ‡ã‚ŠæŠœã„ãŸæ–‡å­—åˆ—ã®ãƒã‚¤ãƒˆæ•°å–å¾—ä¸æ­£ã‚’ä¿®æ­£</history>
+''' <history version="5.0.0.0" date="2009.08.13" name="å†…ç”° ä¹…ç¾©">å¹´ãªã—ã®æ—¥ä»˜æ›¸å¼ã«ã‚‚ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š</history>
+''' <history version="5.0.0.0" date="2010.03.04" name="ç±³äº• å„ªé¡•">fSqlStrTypeã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.03.30" name="æ¸…æ°´ å‹ä¹Ÿ">è£½å“åå®šæ•°ã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.04.08" name="ç±³äº• å„ªé¡•">ZeiCalculateã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">éƒ¨é–€æ¨©é™ã«é–¢ã™ã‚‹å…±é€šãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.05.26" name="æ¸…æ°´ å‹ä¹Ÿ">(èª²é¡Œè¡¨:3091)SiuFormatã®å’Œæš¦ã®æ‰±ã„ã§ã‚¨ãƒ©ãƒ¼ãŒç„¡é™ãƒ«ãƒ¼ãƒ—ã™ã‚‹ã®ã‚’ä¿®æ­£</history>
+''' <history version="5.0.0.0" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">fSqlStrã‚’overloadã—ã¦DataColumnã‹ã‚‰å‹ãƒ»PROCESSã§ã®ç”¨é€”ã‚’åˆ¤æ–­ã—ã¦ç½®æ›ã™ã‚‹å‡¦ç†ã‚’è¿½åŠ 
+'''                                                               DataRowã‹ã‚‰INSERT/UPDATE/DELETEã‚’ç”Ÿæˆã™ã‚‹fSqlStrInsertç­‰ã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.07.26" name="HANH-LV">ç¾å ´ã‚·ã‚¹ãƒ†ãƒ ã‚ªãƒ•ãƒ©ã‚¤ãƒ³å¯¾å¿œ</history>
+''' <history version="5.0.1.1" date="2011.12.14" name="å†…ç”° ä¹…ç¾©">(SCã§è½ã¡ã‚‹åŸå› ã«ãªã£ã¦ã„ãŸç‚º)EventLogã¸ã®æ›¸ãè¾¼ã¿ã‚¨ãƒ©ãƒ¼ã¯ä½•ã‚‚ã—ã‚ˆã†ãŒãªã„ã®ã§ã‚¹ãƒ«ãƒ¼ã™ã‚‹</history>
+''' <history version="5.0.1.1" date="2014.03.12" name="å†…ç”° ä¹…ç¾©">æ™‚åˆ»ã®æ›¸å¼æŒ‡å®šãŒä¸æ­£ãªç‚ºã€12æ™‚é–“åˆ¶ã§ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã•ã‚Œã‚‹(å‚ç…§å•é¡ŒãŒç™ºç”Ÿã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã®ã§ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¯ä¸Šã’ã¾ã›ã‚“)</history>
+''' <history version="5.0.1.1" date="2014.06.26" name="TRI-PQ">(TID.3220-IID.26713)SSLåŒ–(å‚ç…§å•é¡ŒãŒç™ºç”Ÿã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã®ã§ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¯ä¸Šã’ã¾ã›ã‚“)</history>
+''' <history version="6.0.0.0" date="2017.08.24" name="HAI-NM">SQLã‚’PROCES.S5ã‹ã‚‰SERVER2016(ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆæ­¦è”µ)ã«ç§»è¡Œã™ã‚‹ã€‚</history>
 Public Class CommonMethod
 
     ''2010.03.30 ADD START SHIMIZU
     ''' <summary>
-    ''' ProductName -- »•i–¼
+    ''' ProductName -- è£½å“å
     ''' </summary>
-    ''' <remarks>•ÏX‹Ö~</remarks>
+    ''' <remarks>å¤‰æ›´ç¦æ­¢</remarks>
     Public Const ProductName As String = "Ussol.Process"
     ''2010.03.30 ADD END
 
     '' 2010.07.26 ADD START HANH-LV
-    '' ‘Î‰“à—eFŒ»êƒVƒXƒeƒ€ƒIƒtƒ‰ƒCƒ“‘Î‰
-    ''' <summary>ƒIƒtƒ‰ƒCƒ“ƒ‚[ƒh‚Ì¯•Ê</summary>
+    '' å¯¾å¿œå†…å®¹ï¼šç¾å ´ã‚·ã‚¹ãƒ†ãƒ ã‚ªãƒ•ãƒ©ã‚¤ãƒ³å¯¾å¿œ
+    ''' <summary>ã‚ªãƒ•ãƒ©ã‚¤ãƒ³ãƒ¢ãƒ¼ãƒ‰ã®è­˜åˆ¥</summary>
     ''' <remarks> </remarks>
     Public Shared IsOfflineMode As Boolean = False
     '' 2010.07.26 ADD END HANH-LV
 
-#Region " —ñ‹“‘Ì "
+#Region " åˆ—æŒ™ä½“ "
     ''***************************************************************************************************************************************************
 
-    ''' <summary>BrowsefSqlStr -- ORACLE SQL—ñCü—p•Ï”</summary>
+    ''' <summary>BrowsefSqlStr -- ORACLE SQLåˆ—ä¿®é£¾ç”¨å¤‰æ•°</summary>
     ''' <remarks></remarks>
     Public Enum BrowsefSqlStr
-        ''' <summary>BigIntŒ^</summary>
+        ''' <summary>BigIntå‹</summary>
         fSqlStr_BigInt = 16
-        ''' <summary>BinaryŒ^</summary>
+        ''' <summary>Binaryå‹</summary>
         fSqlStr_Binary = 9
-        ''' <summary>BooleanŒ^</summary>
+        ''' <summary>Booleanå‹</summary>
         fSqlStr_Boolean = 1
-        ''' <summary>ByteŒ^</summary>
+        ''' <summary>Byteå‹</summary>
         fSqlStr_Byte = 2
-        ''' <summary>CharŒ^</summary>
+        ''' <summary>Charå‹</summary>
         fSqlStr_Char = 18
-        ''' <summary>CurrencyŒ^</summary>
+        ''' <summary>Currencyå‹</summary>
         fSqlStr_Currency = 5
-        ''' <summary>DATEŒ^</summary>
+        ''' <summary>DATEå‹</summary>
         fSqlStr_DATE = 8
-        ''' <summary>DecimalŒ^</summary>
+        ''' <summary>Decimalå‹</summary>
         fSqlStr_Decimal = 20
-        ''' <summary>DoubleŒ^</summary>
+        ''' <summary>Doubleå‹</summary>
         fSqlStr_Double = 7
-        ''' <summary>FloatŒ^</summary>
+        ''' <summary>Floatå‹</summary>
         fSqlStr_Float = 21
-        ''' <summary>GUIDŒ^</summary>
+        ''' <summary>GUIDå‹</summary>
         fSqlStr_GUID = 15
-        ''' <summary>IntegerŒ^</summary>
+        ''' <summary>Integerå‹</summary>
         fSqlStr_Integer = 3
-        ''' <summary>LongŒ^</summary>
+        ''' <summary>Longå‹</summary>
         fSqlStr_Long = 4
-        ''' <summary>LongBinaryŒ^</summary>
+        ''' <summary>LongBinaryå‹</summary>
         fSqlStr_LongBinary = 11
-        ''' <summary>MemoŒ^</summary>
+        ''' <summary>Memoå‹</summary>
         fSqlStr_Memo = 12
-        ''' <summary>NumericŒ^</summary>
+        ''' <summary>Numericå‹</summary>
         fSqlStr_Numeric = 19
-        ''' <summary>SingleŒ^</summary>
+        ''' <summary>Singleå‹</summary>
         fSqlStr_Single = 6
-        ''' <summary>TextŒ^</summary>
+        ''' <summary>Textå‹</summary>
         fSqlStr_Text = 10
-        ''' <summary>TimeŒ^</summary>
+        ''' <summary>Timeå‹</summary>
         fSqlStr_Time = 22
-        ''' <summary>TimeStampŒ^</summary>
+        ''' <summary>TimeStampå‹</summary>
         fSqlStr_TimeStamp = 23
-        ''' <summary>VarBinaryŒ^</summary>
+        ''' <summary>VarBinaryå‹</summary>
         fSqlStr_VarBinary = 17
-        ''' <summary>DateTimeŒ^</summary>
+        ''' <summary>DateTimeå‹</summary>
         fSqlStr_DateTime = 51
     End Enum
 
-    ''' <summary>BrowsefToNumber -- fToNumber•Ô‹p’l‚Ì”’lÀ²Ìß</summary>
+    ''' <summary>BrowsefToNumber -- fToNumberè¿”å´å€¤ã®æ•°å€¤ï¾€ï½²ï¾Œï¾Ÿ</summary>
     ''' <remarks></remarks>
     Public Enum BrowsefToNumber
-        ''' <summary>IntegerŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Integerå‹ã«å¤‰æ›</summary>
         fToNumber_INTEGER = 1
-        ''' <summary>LongŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Longå‹ã«å¤‰æ›</summary>
         fToNumber_LONG = 2
-        ''' <summary>SingleŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Singleå‹ã«å¤‰æ›</summary>
         fToNumber_SINGLE = 3
-        ''' <summary>DoubleŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Doubleå‹ã«å¤‰æ›</summary>
         fToNumber_DOUBLE = 4
-        ''' <summary>DecimalŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Decimalå‹ã«å¤‰æ›</summary>
         fToNumber_DECIMAL = 5
-        ''' <summary>ShortŒ^‚É•ÏŠ·</summary>
+        ''' <summary>Shortå‹ã«å¤‰æ›</summary>
         fToNumber_SHORT = 6
     End Enum
 
-    ''' <summary>BrowsefToDate -- fToDate•Ô‹p’l‚Ì”’lÀ²Ìß</summary>
+    ''' <summary>BrowsefToDate -- fToDateè¿”å´å€¤ã®æ•°å€¤ï¾€ï½²ï¾Œï¾Ÿ</summary>
     ''' <remarks></remarks>
     Public Enum BrowsefToDate
-        ''' <summary>“ú•t‚Å•Ô‹p</summary>
+        ''' <summary>æ—¥ä»˜æ™‚åˆ»ã§è¿”å´</summary>
         fToDate_DateTime = 1
-        ''' <summary>“ú•t‚Ì‚İ‚Å•Ô‹p</summary>
+        ''' <summary>æ—¥ä»˜ã®ã¿ã§è¿”å´</summary>
         fToDate_DateOnly = 2
-        ''' <summary>‚Ì‚İ‚Å•Ô‹p</summary>
+        ''' <summary>æ™‚åˆ»ã®ã¿ã§è¿”å´</summary>
         fToDate_TimeOnly = 3
     End Enum
 
-    ''' <summary>BrowseHasu -- ’[”ˆ—‹æ•ª</summary>
+    ''' <summary>BrowseHasu -- ç«¯æ•°å‡¦ç†åŒºåˆ†</summary>
     ''' <remarks></remarks>
     Public Enum BrowseHasu
-        ''' <summary>Ø‚èã‚°</summary>
+        ''' <summary>åˆ‡ã‚Šä¸Šã’</summary>
         bHasu_Kiriage = 1
-        ''' <summary>ØÌ‚Ä</summary>
+        ''' <summary>åˆ‡æ¨ã¦</summary>
         bHasu_Kirisute = 2
-        ''' <summary>lÌŒÜ“ü</summary>
+        ''' <summary>å››æ¨äº”å…¥</summary>
         bHasu_Shisyagonyu = 3
     End Enum
 
     ''' <summary>
-    ''' ƒ‰ƒxƒ‹ó‘Ô‹æ•ª
+    ''' ãƒ©ãƒ™ãƒ«çŠ¶æ…‹åŒºåˆ†
     ''' </summary>
     ''' <remarks></remarks>
     Public Enum BrouseConfig
-        ''' <summary>–¢“o˜^•¶š</summary>
+        ''' <summary>æœªç™»éŒ²æ–‡å­—</summary>
         NoData = 1
-        ''' <summary>V‹K“o˜^•¶š(“ü—ÍŠJn‘O)</summary>
+        ''' <summary>æ–°è¦ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å‰)</summary>
         NewData = 2
-        ''' <summary>V‹K“o˜^•¶š(“ü—ÍŠJnŒã)</summary>
+        ''' <summary>æ–°è¦ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å¾Œ)</summary>
         NewDataInput = 3
-        ''' <summary>C³“o˜^•¶š(“ü—ÍŠJn‘O)</summary>
+        ''' <summary>ä¿®æ­£ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å‰)</summary>
         UpdData = 4
-        ''' <summary>C³“o˜^•¶š(“ü—ÍŠJnŒã)</summary>
+        ''' <summary>ä¿®æ­£ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å¾Œ)</summary>
         UpdDataInput = 5
-        ''' <summary>Œ ŒÀ–³‚µ•¶š</summary>
+        ''' <summary>æ¨©é™ç„¡ã—æ–‡å­—</summary>
         NoSec = 6
-        ''' <summary>XV’†•¶š</summary>
+        ''' <summary>æ›´æ–°ä¸­æ–‡å­—</summary>
         Running = 7
-        ''' <summary>‰Šú‰»(ƒ‰ƒxƒ‹‚Ì”ñ•\¦)</summary>
+        ''' <summary>åˆæœŸåŒ–(ãƒ©ãƒ™ãƒ«ã®éè¡¨ç¤º)</summary>
         Initialize = 99
     End Enum
 
-    ''' <summary>ControlKbn -- ƒRƒ“ƒgƒ[ƒ‹‹æ•ª</summary>
-    ''' <remarks>ƒRƒ“ƒgƒ[ƒ‹‚ª’P“Æ‚Ü‚½‚Í”ÍˆÍiŠJn/I—¹j‚Ì”»’èƒtƒ‰ƒO</remarks>
-    ''' <history version="1" date="2008.05.23" name="ç—t —F‘¥">V‹Kì¬</history>
+    ''' <summary>ControlKbn -- ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«åŒºåˆ†</summary>
+    ''' <remarks>ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãŒå˜ç‹¬ã¾ãŸã¯ç¯„å›²ï¼ˆé–‹å§‹/çµ‚äº†ï¼‰ã®åˆ¤å®šãƒ•ãƒ©ã‚°</remarks>
+    ''' <history version="1" date="2008.05.23" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
     Public Enum ControlKbn As Integer
         ''' <summary>Only</summary>
-        ''' <remarks>’P“Æw’è</remarks>
+        ''' <remarks>å˜ç‹¬æŒ‡å®š</remarks>
         Only = 0
         ''' <summary>From</summary>
-        ''' <remarks>ŠJn’lw’è</remarks>
+        ''' <remarks>é–‹å§‹å€¤æŒ‡å®š</remarks>
         From = 1
         ''' <summary>To</summary>
-        ''' <remarks>I—¹’lw’è</remarks>
+        ''' <remarks>çµ‚äº†å€¤æŒ‡å®š</remarks>
         [To] = 2
     End Enum
 
-    ''' <summary>SysCodeType -- ƒVƒXƒeƒ€ƒR[ƒh‹æ•ª</summary>
-    ''' <remarks>ŠeíƒVƒXƒeƒ€ƒR[ƒhiSysMin***/SysMax***j‚ğ¯•Ê</remarks>
-    ''' <history version="1" date="2008.05.23" name="ç—t —F‘¥">V‹Kì¬</history>
-    ''' <history version="2" date="2009.03.02" name="‘å“à “ou–ç">•”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰</history>
+    ''' <summary>SysCodeType -- ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ‰åŒºåˆ†</summary>
+    ''' <remarks>å„ç¨®ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ‰ï¼ˆSysMin***/SysMax***ï¼‰ã‚’è­˜åˆ¥</remarks>
+    ''' <history version="1" date="2008.05.23" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
+    ''' <history version="2" date="2009.03.02" name="å¤§å†… ç™»å¿—ä¹Ÿ">éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ</history>
     Public Enum SysCodeType As Integer
         ''' <summary>Code</summary>
         ''' <remarks>SysMinCode/SysMaxCode</remarks>
@@ -232,10 +232,10 @@ Public Class CommonMethod
     End Enum
 
     ''' <summary>
-    ''' UpdType -- XV‹æ•ª(1:V‹K, 2:XV, 3:íœ)
+    ''' UpdType -- æ›´æ–°åŒºåˆ†(1:æ–°è¦, 2:æ›´æ–°, 3:å‰Šé™¤)
     ''' </summary>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Enum UpdType As Integer
         Insert = 1
         Update = 2
@@ -243,8 +243,8 @@ Public Class CommonMethod
     End Enum
 
     ''' <summary>ActionType</summary>
-    ''' <remarks>ƒAƒNƒVƒ‡ƒ“’è”</remarks>
-    ''' <history version="1" date="2008.06.20" name="ç—t —F‘¥">V‹Kì¬</history>
+    ''' <remarks>ã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šæ•°</remarks>
+    ''' <history version="1" date="2008.06.20" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
     Public Enum ActionType As Integer
         DrillDown = 0
         Preview = 6
@@ -265,17 +265,17 @@ Public Class CommonMethod
         F11 = 11
         F12 = 12
 
-        '' FuncƒL[–¢‘Î‰‚Ì±¸¼®İ’è”‚Í100`
+        '' Funcã‚­ãƒ¼æœªå¯¾å¿œã®ï½±ï½¸ï½¼ï½®ï¾å®šæ•°ã¯100ï½
         ExportHTML = 101
 
     End Enum
 
-    ''2010.05.13 ADD START SHIMIZU •”–åŒ ŒÀ‚ÉŠÖ‚·‚é‹¤’Êƒƒ\ƒbƒh‚Ìˆø”‚ğBoolean‚Å‚Í‚È‚­Integer(—ñ‹“‘Ìg—p)‚ÉC³
+    ''2010.05.13 ADD START SHIMIZU éƒ¨é–€æ¨©é™ã«é–¢ã™ã‚‹å…±é€šãƒ¡ã‚½ãƒƒãƒ‰ã®å¼•æ•°ã‚’Booleanã§ã¯ãªãInteger(åˆ—æŒ™ä½“ä½¿ç”¨)ã«ä¿®æ­£
     ''' <summary>
-    ''' CheckBmnSecType -- •”–åŒ ŒÀ‚ÉŠÖ‚·‚é‹¤’Êƒƒ\ƒbƒh‚Ìˆø”
+    ''' CheckBmnSecType -- éƒ¨é–€æ¨©é™ã«é–¢ã™ã‚‹å…±é€šãƒ¡ã‚½ãƒƒãƒ‰ã®å¼•æ•°
     ''' </summary>
     ''' <remarks></remarks>
-    ''' <history version="2" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="2" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Enum CheckBmnSecType As Integer
         Sansyo = 1
         Input = 2
@@ -284,20 +284,20 @@ Public Class CommonMethod
 
 #End Region
 
-#Region " ’uŠ·ŠÖ” "
+#Region " ç½®æ›é–¢æ•° "
     ''***************************************************************************************************************************************************
 
-    ''' <summary>fReplaceString -- •¶š—ñ‚Ì’†‚Ì•¶š—ñ‚ğ’uŠ·‚µ‚Ü‚·B</summary>
-    ''' <param name="pString">ˆ—‚·‚é•¶š—ñ</param>
-    ''' <param name="pShString">ŒŸõ‚·‚é•¶š—ñ</param>
-    ''' <param name="pRepString">’uŠ·‚·‚é•¶š—ñ</param>
-    ''' <param name="fCaseSensitive">‘å•¶š^¬•¶š‚ğ‹æ•Ê  ‚·‚éê‡‚ÍTrueA‹æ•Ê‚µ‚È‚¢ê‡‚ÍFalse</param>
-    ''' <returns>’uŠ·Œã‚Ì•¶š—ñ</returns>
-    ''' <remarks>•¶š—ñ‚Ì’†‚Ì•¶š—ñ‚ğ’uŠ·‚µ‚Ü‚·B</remarks>
-    ''' <ì¬Ò>Total VB SourceBook 6</ì¬Ò>
-    ''' <”õl></”õl>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <summary>fReplaceString -- æ–‡å­—åˆ—ã®ä¸­ã®æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚</summary>
+    ''' <param name="pString">å‡¦ç†ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="pShString">æ¤œç´¢ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="pRepString">ç½®æ›ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="fCaseSensitive">å¤§æ–‡å­—ï¼å°æ–‡å­—ã‚’åŒºåˆ¥  ã™ã‚‹å ´åˆã¯Trueã€åŒºåˆ¥ã—ãªã„å ´åˆã¯False</param>
+    ''' <returns>ç½®æ›å¾Œã®æ–‡å­—åˆ—</returns>
+    ''' <remarks>æ–‡å­—åˆ—ã®ä¸­ã®æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚</remarks>
+    ''' <ä½œæˆè€…>Total VB SourceBook 6</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     <DebuggerStepThrough()>
     Public Shared Function fReplaceString(ByVal pString As String, ByVal pShString As String, ByVal pRepString As String, Optional ByVal fCaseSensitive As Boolean = True) As String
         Dim strTmp As String
@@ -314,11 +314,11 @@ Public Class CommonMethod
             pRepString = String.Empty
         End If
 
-        '' —^‚¦‚ç‚ê‚½ƒpƒ‰ƒ[ƒ^‚©‚ç”äŠrƒ^ƒCƒv‚ğİ’è
+        '' ä¸ãˆã‚‰ã‚ŒãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‹ã‚‰æ¯”è¼ƒã‚¿ã‚¤ãƒ—ã‚’è¨­å®š
         If fCaseSensitive Then
             'StringComparison = System.StringComparison.CurrentCulture
 
-            '‘å•¶š/¬•¶š‚Ì‹æ•Ê‚ğ‚·‚éê‡‚ÍString.Replace‚ğg—p‚·‚é
+            'å¤§æ–‡å­—/å°æ–‡å­—ã®åŒºåˆ¥ã‚’ã™ã‚‹å ´åˆã¯String.Replaceã‚’ä½¿ç”¨ã™ã‚‹
             Return pString.Replace(pShString, pRepString)
         Else
             StringComparison = System.StringComparison.CurrentCultureIgnoreCase
@@ -327,16 +327,16 @@ Public Class CommonMethod
 
         Try
 
-            '' Å‰‚ÌŒŸõ‚ğs‚¢‚Ü‚·B
+            '' æœ€åˆã®æ¤œç´¢ã‚’è¡Œã„ã¾ã™ã€‚
             intPos = strTmp.IndexOf(pShString, 0, StringComparison)
 
             If pRepString.Length = 0 Then
                 strTmp = pString.Replace(pShString, pRepString)
             Else
                 Do While intPos > -1
-                    ' •¶š—ñ‚ÌŒŸõ‚ğŒJ‚è•Ô‚µ‚Ü‚·B
+                    ' æ–‡å­—åˆ—ã®æ¤œç´¢ã‚’ç¹°ã‚Šè¿”ã—ã¾ã™ã€‚
                     strTmp = strTmp.Substring(0, intPos) & pRepString & strTmp.Substring(intPos + pRepString.Length, strTmp.Length - (intPos + pRepString.Length))
-                    ' Ÿ‚ÌŒŸõ‚ğs‚¢‚Ü‚·B
+                    ' æ¬¡ã®æ¤œç´¢ã‚’è¡Œã„ã¾ã™ã€‚
                     intPos = strTmp.IndexOf(pShString, intPos + pRepString.Length, StringComparison)
                 Loop
             End If
@@ -344,25 +344,25 @@ Public Class CommonMethod
 
         Catch ex As Exception
 
-            Throw New Exception("fReplaceString:•¶š—ñ’uŠ·‚É¸”s‚µ‚Ü‚µ‚½¡" & vbCrLf & ex.Message)
+            Throw New Exception("fReplaceString:æ–‡å­—åˆ—ç½®æ›ã«å¤±æ•—ã—ã¾ã—ãŸï½¡" & vbCrLf & ex.Message)
             strTmp = pString
 
         End Try
 
-        '' ’l‚ğ•Ô‚µ‚Ü‚·B
+        '' å€¤ã‚’è¿”ã—ã¾ã™ã€‚
         Return strTmp
 
     End Function
 
-    ''' <summary>fReplaceString -- •¶š—ñ‚Ì’†‚Ì•¶š—ñ‚ğ’uŠ·‚µ‚Ü‚·B</summary>
-    ''' <param name="pString">ˆ—‚·‚é•¶š—ñ</param>
-    ''' <param name="pShString">ŒŸõ‚·‚é•¶š—ñ</param>
-    ''' <param name="pRepString">’uŠ·‚·‚é•¶š—ñ</param>
-    ''' <param name="pOption">‘å•¶š^¬•¶š‚ğ‹æ•Ê  ‚·‚éê‡‚Í0A‹æ•Ê‚µ‚È‚¢ê‡‚Í1</param>
-    ''' <returns>’uŠ·Œã‚Ì•¶š—ñ</returns>
+    ''' <summary>fReplaceString -- æ–‡å­—åˆ—ã®ä¸­ã®æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚</summary>
+    ''' <param name="pString">å‡¦ç†ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="pShString">æ¤œç´¢ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="pRepString">ç½®æ›ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <param name="pOption">å¤§æ–‡å­—ï¼å°æ–‡å­—ã‚’åŒºåˆ¥  ã™ã‚‹å ´åˆã¯0ã€åŒºåˆ¥ã—ãªã„å ´åˆã¯1</param>
+    ''' <returns>ç½®æ›å¾Œã®æ–‡å­—åˆ—</returns>
     ''' <remarks>
-    ''' •¶š—ñ‚Ì’†‚Ì•¶š—ñ‚ğ’uŠ·‚µ‚Ü‚·B
-    ''' ¦fChangeStr‚Ì–¼Ì‚ğ•ÏXi“¯‚¶‹@”\‚Í“¯‚¶–¼‘O‚Éû‘©j
+    ''' æ–‡å­—åˆ—ã®ä¸­ã®æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚
+    ''' â€»fChangeStrã®åç§°ã‚’å¤‰æ›´ï¼ˆåŒã˜æ©Ÿèƒ½ã¯åŒã˜åå‰ã«åæŸï¼‰
     ''' </remarks>
     <DebuggerStepThrough()>
     Public Shared Function fReplaceString(ByVal pString As String, ByVal pShString As String, ByVal pRepString As String, ByVal pOption As Integer) As String
@@ -371,16 +371,16 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>fSqlStr -- ƒIƒ‰ƒNƒ‹SQL•¶š—ñ‰»</summary>
-    ''' <param name="pSourceString">Œ³•Ï”</param>
-    ''' <param name="pSourceStringType">•Ï”ƒ^ƒCƒv</param>
-    ''' <returns>ƒIƒ‰ƒNƒ‹SQL‚É‘g‚İ‚ß‚é•¶š—ñ</returns>
-    ''' <remarks>ƒf[ƒ^ƒ^ƒCƒv•Ê‚ÉƒIƒ‰ƒNƒ‹sql•¶š—ñ‚ğì¬‚µ‚Ä–ß‚µ‚Ü‚·</remarks>
-    ''' <ì¬Ò>•Äˆä —DŒ°</ì¬Ò>
-    ''' <”õl></”õl>
-    ''' <history version ="2" date ="2009.06.08" name ="ˆÉ“¡ ‹§–¾">ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚Å“ú•t•ÏŠ·‚ÉƒJƒ‹ƒ`ƒƒ‚ğw’è</history>
-    ''' <history version ="3" date ="2010.07.26" name="HANH-LV">‘Î‰“à—eFŒ»êƒVƒXƒeƒ€ƒIƒtƒ‰ƒCƒ“‘Î‰</history>
-    ''' <history version ="4" date ="2017.08.24" name="HAI-NM">SQL‚ğPROCES.S5‚©‚çSERVER2016(ƒvƒƒWƒFƒNƒg•‘ )‚ÉˆÚs‚·‚éB</history>
+    ''' <summary>fSqlStr -- ã‚ªãƒ©ã‚¯ãƒ«SQLæ–‡å­—åˆ—åŒ–</summary>
+    ''' <param name="pSourceString">å…ƒå¤‰æ•°</param>
+    ''' <param name="pSourceStringType">å¤‰æ•°ã‚¿ã‚¤ãƒ—</param>
+    ''' <returns>ã‚ªãƒ©ã‚¯ãƒ«SQLã«çµ„ã¿è¾¼ã‚ã‚‹æ–‡å­—åˆ—</returns>
+    ''' <remarks>ãƒ‡ãƒ¼ã‚¿ã‚¿ã‚¤ãƒ—åˆ¥ã«ã‚ªãƒ©ã‚¯ãƒ«sqlæ–‡å­—åˆ—ã‚’ä½œæˆã—ã¦æˆ»ã—ã¾ã™</remarks>
+    ''' <ä½œæˆè€…>ç±³äº• å„ªé¡•</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
+    ''' <history version ="2" date ="2009.06.08" name ="ä¼Šè—¤ åŒ¡æ˜">ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§æ—¥ä»˜å¤‰æ›ã«ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š</history>
+    ''' <history version ="3" date ="2010.07.26" name="HANH-LV">å¯¾å¿œå†…å®¹ï¼šç¾å ´ã‚·ã‚¹ãƒ†ãƒ ã‚ªãƒ•ãƒ©ã‚¤ãƒ³å¯¾å¿œ</history>
+    ''' <history version ="4" date ="2017.08.24" name="HAI-NM">SQLã‚’PROCES.S5ã‹ã‚‰SERVER2016(ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆæ­¦è”µ)ã«ç§»è¡Œã™ã‚‹ã€‚</history>
     <DebuggerStepThrough()>
     Public Shared Function fSqlStr(ByVal pSourceString As Object, ByVal pSourceStringType As BrowsefSqlStr) As String
         Dim xRet As String
@@ -405,10 +405,10 @@ Public Class CommonMethod
     ''' <summary>
     ''' fSqlStr
     ''' </summary>
-    ''' <param name="pKeyCode">•ÏŠ·‘ÎÛ•Ï”</param>
-    ''' <returns>•ÏŠ·Œã•¶š—ñ</returns>
+    ''' <param name="pKeyCode">å¤‰æ›å¯¾è±¡å¤‰æ•°</param>
+    ''' <returns>å¤‰æ›å¾Œæ–‡å­—åˆ—</returns>
     ''' <remarks></remarks>
-    ''' <history version ="1" date ="2010.04.08" name ="•Äˆä —DŒ°">ƒVƒOƒl[ƒ`ƒƒ‚Ì’Ç‰Ái“à•”‚ÅfsqlstrType‚ÌŒÄ‚Ño‚µj</history>
+    ''' <history version ="1" date ="2010.04.08" name ="ç±³äº• å„ªé¡•">ã‚·ã‚°ãƒãƒ¼ãƒãƒ£ã®è¿½åŠ ï¼ˆå†…éƒ¨ã§fsqlstrTypeã®å‘¼ã³å‡ºã—ï¼‰</history>
     Public Shared Function fSqlStr(ByVal pKeyCode As Object) As String
         Return fSqlStrType(pKeyCode)
     End Function
@@ -416,18 +416,18 @@ Public Class CommonMethod
     ''' <summary>
     ''' fSqlStrType
     ''' </summary>
-    ''' <param name="pKeyCode">•ÒW‘ÎÛ•¶š</param>
+    ''' <param name="pKeyCode">ç·¨é›†å¯¾è±¡æ–‡å­—</param>
     ''' <returns></returns>
-    ''' <remarks>w’èŒ^‚É‚æ‚èAfSqlStr‚ğİ’èŒã•¶š—ñ‚ğ•Ô‹p</remarks>
-    ''' <history version ="1" date ="2010.03.04" name="•Äˆä —DŒ°">V‹Kì¬</history>
-    <Browsable(True), Description("–¾¦“I‚ÉŒ^w’è‚³‚ê‚½€–Ú‚ğfSqlStr‚ğ‚©‚¯‚Ä•Ô‹p")>
+    ''' <remarks>æŒ‡å®šå‹ã«ã‚ˆã‚Šã€fSqlStrã‚’è¨­å®šå¾Œæ–‡å­—åˆ—ã‚’è¿”å´</remarks>
+    ''' <history version ="1" date ="2010.03.04" name="ç±³äº• å„ªé¡•">æ–°è¦ä½œæˆ</history>
+    <Browsable(True), Description("æ˜ç¤ºçš„ã«å‹æŒ‡å®šã•ã‚ŒãŸé …ç›®ã‚’fSqlStrã‚’ã‹ã‘ã¦è¿”å´")>
     Public Shared Function fSqlStrType(ByVal pKeyCode As Object) As String
         Dim xTxt As String
-        If TypeOf pKeyCode Is String Then       ''•¶š—ñ
+        If TypeOf pKeyCode Is String Then       ''æ–‡å­—åˆ—
             xTxt = fSqlStr(pKeyCode, BrowsefSqlStr.fSqlStr_Text)
-        ElseIf TypeOf pKeyCode Is Date Then     ''“ú•t
+        ElseIf TypeOf pKeyCode Is Date Then     ''æ—¥ä»˜
             xTxt = fSqlStr(pKeyCode, BrowsefSqlStr.fSqlStr_DATE)
-        Else                                    ''‚»‚êˆÈŠO‚Í”’l
+        Else                                    ''ãã‚Œä»¥å¤–ã¯æ•°å€¤
             xTxt = fSqlStr(pKeyCode, BrowsefSqlStr.fSqlStr_Numeric)
         End If
         Return xTxt
@@ -435,16 +435,16 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>fDtSqlStr</summary>
-    ''' <param name="pSourceString">Œ³•Ï”</param>
-    ''' <param name="pSourceStringType">•Ï”ƒ^ƒCƒv</param>
+    ''' <param name="pSourceString">å…ƒå¤‰æ•°</param>
+    ''' <param name="pSourceStringType">å¤‰æ•°ã‚¿ã‚¤ãƒ—</param>
     ''' <returns></returns>
-    ''' <remarks>DataTable Sql•¶š—ñ‰»</remarks>
-    ''' <history version ="1" date ="2007.03.05" name ="•Äˆä —DŒ°">V4fJetSqlStr‚æ‚èˆÚs</history>
-    ''' <history version ="2" date ="2008.10.01" name ="•Äˆä —DŒ°">SQL•¶š—ñ‚Ì‹K–ñ‚ªMDB‚ÆDataTable‚Åˆá‚¤‚½‚ß‚Éˆ—‚ğ‰üC</history>
-    ''' <history version ="3" date ="2009.03.25" name ="ç—t —F‘¥">ˆø””»’è‚ÉNothing”»’è‚ğ’Ç‰Á</history>
-    ''' <history version ="4" date ="2009.06.08" name ="ˆÉ“¡ ‹§–¾">ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚Å“ú•t•ÏŠ·‚ÉƒJƒ‹ƒ`ƒƒ‚ğw’è</history>
-    ''' <history version ="5" date ="2014.03.12" name ="“à“c ‹v‹`">‚Ì‘®w’è‚ª•s³‚Èˆ×A12ŠÔ§‚ÅƒtƒH[ƒ}ƒbƒg‚³‚ê‚é</history>
-    <DebuggerStepThrough(), Description("DataTable Sql•¶š—ñ‰»")>
+    ''' <remarks>DataTable Sqlæ–‡å­—åˆ—åŒ–</remarks>
+    ''' <history version ="1" date ="2007.03.05" name ="ç±³äº• å„ªé¡•">V4fJetSqlStrã‚ˆã‚Šç§»è¡Œ</history>
+    ''' <history version ="2" date ="2008.10.01" name ="ç±³äº• å„ªé¡•">SQLæ–‡å­—åˆ—ã®è¦ç´„ãŒMDBã¨DataTableã§é•ã†ãŸã‚ã«å‡¦ç†ã‚’æ”¹ä¿®</history>
+    ''' <history version ="3" date ="2009.03.25" name ="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šã«Nothingåˆ¤å®šã‚’è¿½åŠ </history>
+    ''' <history version ="4" date ="2009.06.08" name ="ä¼Šè—¤ åŒ¡æ˜">ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§æ—¥ä»˜å¤‰æ›ã«ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š</history>
+    ''' <history version ="5" date ="2014.03.12" name ="å†…ç”° ä¹…ç¾©">æ™‚åˆ»ã®æ›¸å¼æŒ‡å®šãŒä¸æ­£ãªç‚ºã€12æ™‚é–“åˆ¶ã§ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã•ã‚Œã‚‹</history>
+    <DebuggerStepThrough(), Description("DataTable Sqlæ–‡å­—åˆ—åŒ–")>
     Public Shared Function fDtSqlStr(ByVal pSourceString As Object, ByVal pSourceStringType As BrowsefSqlStr) As String
         Dim xRet As String
 
@@ -453,7 +453,7 @@ Public Class CommonMethod
         Else
             Select Case pSourceStringType
                 Case BrowsefSqlStr.fSqlStr_DateTime
-                    ''2009.06.08 UPD START ITO ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚ÅƒJƒ‹ƒ`ƒƒ‚ğw’è
+                    ''2009.06.08 UPD START ITO ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š
                     'xRet = "#" & CDate(pSourceString).ToString("MM/dd/yyyy hh:mm:ss") & "#"
                     ''2014.03.12 UPD START
                     'xRet = "#" & CDate(pSourceString).ToString("MM/dd/yyyy hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo) & "#"
@@ -461,7 +461,7 @@ Public Class CommonMethod
                     ''2014.03.12 UPD END
                     ''2009.06.08 UPD END ITO
                 Case BrowsefSqlStr.fSqlStr_DATE
-                    ''2009.06.08 UPD START ITO ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚ÅƒJƒ‹ƒ`ƒƒ‚ğw’è
+                    ''2009.06.08 UPD START ITO ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š
                     'xRet = "#" & CDate(pSourceString).ToString("MM/dd/yyyy") & "#"
                     xRet = "#" & CDate(pSourceString).ToString("MM/dd/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo) & "#"
                     ''2009.06.08 UPD END ITO
@@ -478,40 +478,40 @@ Public Class CommonMethod
         Return xRet
     End Function
 
-    ''' <summary>fChangeTilde -- •¶š—ñ‚Ì’†‚Ì"`"‚ÌƒR[ƒh‚ğ•ÏŠ·‚·‚é</summary>
-    ''' <param name="pString">ˆ—‚·‚é•¶š—ñ</param>
-    ''' <returns>’uŠ·Œã‚Ì•¶š—ñ</returns>
-    ''' <remarks>•H301C ‚ğ •HFF5E ‚É•ÏŠ·‚·‚é</remarks>
-    ''' <ì¬Ò>•Äˆä —DŒ°</ì¬Ò>
-    ''' <”õl>Oracle vs Microsoft ”ñŒİŠ·</”õl>
+    ''' <summary>fChangeTilde -- æ–‡å­—åˆ—ã®ä¸­ã®"ï½"ã®ã‚³ãƒ¼ãƒ‰ã‚’å¤‰æ›ã™ã‚‹</summary>
+    ''' <param name="pString">å‡¦ç†ã™ã‚‹æ–‡å­—åˆ—</param>
+    ''' <returns>ç½®æ›å¾Œã®æ–‡å­—åˆ—</returns>
+    ''' <remarks>ï¼†H301C ã‚’ ï¼†HFF5E ã«å¤‰æ›ã™ã‚‹</remarks>
+    ''' <ä½œæˆè€…>ç±³äº• å„ªé¡•</ä½œæˆè€…>
+    ''' <å‚™è€ƒ>Oracle vs Microsoft éäº’æ›</å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fChangeTilde(ByVal pString As String) As String
         pString = pString.Replace(ChrW(&H301C), ChrW(&HFF5E))
         Return pString
     End Function
 
-    ''' <summary>fCodeformat -- ”’l‚ğw’èŒ…”‚Ì‰E‹l‚ß•¶š‚Å‚à‚Ç‚·¡</summary>
-    ''' <param name="pCode">”’l</param>
-    ''' <param name="pKeta">w’èŒ…”</param>
-    ''' <param name="pFormat">ƒtƒH[ƒ}ƒbƒg•¶š(FormatŠÖ”€‹’)</param>
-    ''' <returns>‰E‹l‚ß•¶š</returns>
-    ''' <remarks>w’è”’l‚ğw’èŒ…”‚Ì•¶š”‚Å•¶š—ñ‚Æ‚µ‚Ä•Ô‚·</remarks>
-    ''' <ì¬Ò>‹àˆä@Œbj</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <summary>fCodeformat -- æ•°å€¤ã‚’æŒ‡å®šæ¡æ•°ã®å³è©°ã‚æ–‡å­—ã§ã‚‚ã©ã™ï½¡</summary>
+    ''' <param name="pCode">æ•°å€¤</param>
+    ''' <param name="pKeta">æŒ‡å®šæ¡æ•°</param>
+    ''' <param name="pFormat">ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—(Formaté–¢æ•°æº–æ‹ )</param>
+    ''' <returns>å³è©°ã‚æ–‡å­—</returns>
+    ''' <remarks>æŒ‡å®šæ•°å€¤ã‚’æŒ‡å®šæ¡æ•°ã®æ–‡å­—æ•°ã§æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã™</remarks>
+    ''' <ä½œæˆè€…>é‡‘äº•ã€€æµå²</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fCodeformat(ByVal pCode As Object, Optional ByVal pKeta As Integer = 9, Optional ByVal pFormat As String = "") As String
         Dim nP As Decimal = fToNumberEx(pCode)
         Dim xS As String
         Dim ResultStr As String
 
-        ''‘®w’è‚ª‚ ‚éê‡‚Í‘®‚ğİ’è‚·‚é
+        ''æ›¸å¼æŒ‡å®šãŒã‚ã‚‹å ´åˆã¯æ›¸å¼ã‚’è¨­å®šã™ã‚‹
         If pFormat = "" Then
             xS = Format$(nP)
         Else
             xS = Format$(nP, pFormat)
         End If
 
-        ''w’èŒ…”‚É‚Ü‚Æ‚ß‚é
+        ''æŒ‡å®šæ¡æ•°ã«ã¾ã¨ã‚ã‚‹
         Select Case pKeta
             Case Len(xS)
                 ResultStr = xS
@@ -525,16 +525,16 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>SiuFormat -- ˜a—ï‘Î‰ƒtƒH[ƒ}ƒbƒgŠÖ”</summary>
-    ''' <param name="Expression">•ÏŠ·‘ÎÛƒIƒuƒWƒFƒNƒg</param>
-    ''' <param name="Style">•ÏŠ·•¶šƒtƒH[ƒ}ƒbƒg</param>
-    ''' <returns>•ÏŠ·Œã•¶š—ñ</returns>
+    ''' <summary>SiuFormat -- å’Œæš¦å¯¾å¿œãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆé–¢æ•°</summary>
+    ''' <param name="Expression">å¤‰æ›å¯¾è±¡ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+    ''' <param name="Style">å¤‰æ›æ–‡å­—ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ</param>
+    ''' <returns>å¤‰æ›å¾Œæ–‡å­—åˆ—</returns>
     ''' <remarks></remarks>
-    ''' <history version ="2" date ="2009.06.08" name ="ˆÉ“¡ ‹§–¾">ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚Å“ú•t•ÏŠ·‚ÉƒJƒ‹ƒ`ƒƒ‚ğw’è</history>
-    ''' <history version ="3" date ="2009.08.13" name ="“à“c ‹v‹`">”N‚È‚µ‚Ì“ú•t‘®‚É‚àƒJƒ‹ƒ`ƒƒ‚ğw’è</history>
-    ''' <history version ="4" date ="2009.08.19" name ="ç—t —F‘¥">¼—ïw’è‚ÉƒJƒŒƒ“ƒg‘®‚ğg—p‚·‚é‚æ‚¤‚É•ÏX</history>
-    ''' <history version ="5" date ="2009.08.20" name ="ç—t —F‘¥">ver4‚ğ–³Œø‚É‚µ‚ÄAƒŠƒƒCƒN</history>
-    ''' <history version ="6" date ="2010.05.26" name ="´… Ÿ–ç">(‰Û‘è•\:3091)SiuFormat‚Ì˜a—ï‚Ìˆµ‚¢‚ÅƒGƒ‰[‚ª–³ŒÀƒ‹[ƒv‚·‚é‚Ì‚ğC³</history>
+    ''' <history version ="2" date ="2009.06.08" name ="ä¼Šè—¤ åŒ¡æ˜">ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§æ—¥ä»˜å¤‰æ›ã«ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š</history>
+    ''' <history version ="3" date ="2009.08.13" name ="å†…ç”° ä¹…ç¾©">å¹´ãªã—ã®æ—¥ä»˜æ›¸å¼ã«ã‚‚ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š</history>
+    ''' <history version ="4" date ="2009.08.19" name ="åƒè‘‰ å‹å‰‡">è¥¿æš¦æŒ‡å®šæ™‚ã«ã‚«ãƒ¬ãƒ³ãƒˆæ›¸å¼ã‚’ä½¿ç”¨ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´</history>
+    ''' <history version ="5" date ="2009.08.20" name ="åƒè‘‰ å‹å‰‡">ver4ã‚’ç„¡åŠ¹ã«ã—ã¦ã€ãƒªãƒ¡ã‚¤ã‚¯</history>
+    ''' <history version ="6" date ="2010.05.26" name ="æ¸…æ°´ å‹ä¹Ÿ">(èª²é¡Œè¡¨:3091)SiuFormatã®å’Œæš¦ã®æ‰±ã„ã§ã‚¨ãƒ©ãƒ¼ãŒç„¡é™ãƒ«ãƒ¼ãƒ—ã™ã‚‹ã®ã‚’ä¿®æ­£</history>
     <DebuggerStepThrough()>
     Public Shared Function SiuFormat(ByVal Expression As Object, Optional ByVal Style As String = "") As String
         Dim cul As New CultureInfo("ja-JP")
@@ -543,49 +543,49 @@ Public Class CommonMethod
         Dim strReturn As String = ""
         Dim strEra As String = ""
 
-        Dim eraKanji() As String = {"", "–¾", "‘å", "º", "•½"}
+        Dim eraKanji() As String = {"", "æ˜", "å¤§", "æ˜­", "å¹³"}
         Dim eraAlpha() As String = {"", "M", "T", "S", "H"}
 
         If IsDate(Expression) Then
             Expression = CType(Expression, Date)
         End If
 
-        If TypeOf (Expression) Is Date Then ''“ú•t‚Ìê‡‚Í
+        If TypeOf (Expression) Is Date Then ''æ—¥ä»˜ã®å ´åˆã¯
             Try
                 ExpressionDate = DirectCast(Expression, Date)
                 '' 2009.08.20 UPD START
-                '    If Style Like "*gggee*" Then                            '•½¬00'
+                '    If Style Like "*gggee*" Then                            'å¹³æˆ00'
                 '        Style = Style.Replace("gggee", "ggyy")
                 '        strReturn = ExpressionDate.ToString(Style, cul)
-                '    ElseIf Style Like "*ggge*" Then                         '•½¬0'
+                '    ElseIf Style Like "*ggge*" Then                         'å¹³æˆ0'
                 '        Style = Style.Replace("ggge", "ggy")
                 '        strReturn = ExpressionDate.ToString(Style, cul)
-                '    ElseIf Style Like "*ggee*" Then                         '•½00'
+                '    ElseIf Style Like "*ggee*" Then                         'å¹³00'
                 '        Style = Style.Replace("ggee", "yy")
-                '        ''Œ³†æ“¾
+                '        ''å…ƒå·å–å¾—
                 '        strEra = eraKanji(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                 '        strReturn = ExpressionDate.ToString(Style, cul)
                 '        strReturn = strEra & strReturn
-                '    ElseIf Style Like "*gge*" Then                          '•½0'
+                '    ElseIf Style Like "*gge*" Then                          'å¹³0'
                 '        Style = Style.Replace("gge", "y")
-                '        ''Œ³†æ“¾
+                '        ''å…ƒå·å–å¾—
                 '        strEra = eraKanji(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                 '        strReturn = ExpressionDate.ToString(Style, cul)
                 '        strReturn = strEra & strReturn
                 '    ElseIf Style Like "*gee*" Then                          'H00'
                 '        Style = Style.Replace("gee", "yy")
-                '        ''Œ³†æ“¾
+                '        ''å…ƒå·å–å¾—
                 '        strEra = eraAlpha(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                 '        strReturn = ExpressionDate.ToString(Style, cul)
                 '        strReturn = strEra & strReturn
                 '    ElseIf Style Like "*ge*" Then                           'H0'
                 '        Style = Style.Replace("ge", "y")
-                '        ''Œ³†æ“¾
+                '        ''å…ƒå·å–å¾—
                 '        strEra = eraAlpha(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                 '        strReturn = ExpressionDate.ToString(Style, cul)
                 '        strReturn = strEra & strReturn
                 '    Else
-                '        ''2009.06.08 UPD START ITO ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚ÅƒJƒ‹ƒ`ƒƒ‚ğw’è
+                '        ''2009.06.08 UPD START ITO ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š
                 '        'strReturn = Format(Expression, Style)
                 '        ''2009.08.13 UPD START
                 '        'strReturn = ExpressionDate.ToString(Style, System.Globalization.DateTimeFormatInfo.InvariantInfo)
@@ -603,18 +603,18 @@ Public Class CommonMethod
                 '    End If
 
                 ''2010.05.26 ADD START SHIMIZU
-                ' —j“ú•”•ª‚ÍƒJƒ‹ƒ`ƒƒ‚ÉŠÖ‚í‚ç‚¸˜a—ï‚Æ‚·‚é‚Ì‚Åæ‚É’uŠ·
+                ' æ›œæ—¥éƒ¨åˆ†ã¯ã‚«ãƒ«ãƒãƒ£ã«é–¢ã‚ã‚‰ãšå’Œæš¦ã¨ã™ã‚‹ã®ã§å…ˆã«ç½®æ›
                 Style = ReplaceJapaneseDayOfWeek(ExpressionDate, Style)
                 ''2010.05.26 ADD END
 
-                '' ‚Ü‚¸ugvAuev‚ªŠÜ‚Ü‚ê‚é‚©”Û‚©‚ÅƒJƒ‹ƒ`ƒƒw’è‚·‚é‚©”Û‚©‚ğ”»’f‚·‚é
+                '' ã¾ãšã€Œgã€ã€ã€Œeã€ãŒå«ã¾ã‚Œã‚‹ã‹å¦ã‹ã§ã‚«ãƒ«ãƒãƒ£æŒ‡å®šã™ã‚‹ã‹å¦ã‹ã‚’åˆ¤æ–­ã™ã‚‹
                 If Style.ToLower.IndexOf("g") > -1 OrElse Style.ToLower.IndexOf("e") > -1 Then
-                    '' ƒJƒ‹ƒ`ƒƒw’è
+                    '' ã‚«ãƒ«ãƒãƒ£æŒ‡å®š
 
-                    ''uevËuyv
+                    ''ã€Œeã€â‡’ã€Œyã€
                     Style = Style.Replace("e"c, "y"c)
 
-                    '' Œ³†‘®‚É‚ÄAugv‚Ì”‚ğæ“¾
+                    '' å…ƒå·æ›¸å¼ã«ã¦ã€ã€Œgã€ã®æ•°ã‚’å–å¾—
                     Dim eraCount As Integer = 0
                     For Each c As Char In Style.ToCharArray
                         If c.Equals("g"c) Then
@@ -622,30 +622,30 @@ Public Class CommonMethod
                         End If
                     Next
 
-                    '' •W€‚Å‘Î‰‚Å‚«‚È‚¢‘®‚ÍA”z—ñ‚©‚ç•¶šæ“¾
+                    '' æ¨™æº–ã§å¯¾å¿œã§ããªã„æ›¸å¼ã¯ã€é…åˆ—ã‹ã‚‰æ–‡å­—å–å¾—
                     Select Case eraCount
                         Case 1
-                            ''ugvÁ‹
+                            ''ã€Œgã€æ¶ˆå»
                             Style = Style.Replace("g"c, "")
-                            ''Œ³†ƒAƒ‹ƒtƒ@ƒxƒbƒgæ“¾
+                            ''å…ƒå·ã‚¢ãƒ«ãƒ•ã‚¡ãƒ™ãƒƒãƒˆå–å¾—
                             strEra = eraAlpha(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                         Case 2
-                            ''ugvÁ‹
+                            ''ã€Œgã€æ¶ˆå»
                             Style = Style.Replace("g"c, "")
-                            ''Œ³†Š¿š—ªæ“¾
+                            ''å…ƒå·æ¼¢å­—ç•¥å–å¾—
                             strEra = eraKanji(cul.DateTimeFormat.Calendar.GetEra(ExpressionDate))
                         Case Else
                             strEra = String.Empty
                     End Select
 
-                    '' Œ³† + •W€‚Å–ß‚·iŒ³†•¶š—ñ‚ª‚È‚¢ê‡‚Í•W€‚¾‚¯‚Å‘Î‰j
+                    '' å…ƒå· + æ¨™æº–ã§æˆ»ã™ï¼ˆå…ƒå·æ–‡å­—åˆ—ãŒãªã„å ´åˆã¯æ¨™æº–ã ã‘ã§å¯¾å¿œï¼‰
                     strReturn = strEra & ExpressionDate.ToString(Style, cul)
 
                 Else
-                    ''2010.05.26 DEL START SHIMIZU ˜a—ï‚Å‚Ì—áŠO‚É–³ŒÀƒ‹[ƒv‚ÌŒ´ˆö‚É‚È‚Á‚Ä‚¢‚½‚Ì‚Åíœ
-                    ' '' ¦—j“ú‚Í‚©‚È‚ç‚¸“ú–{‘®‚Å•Ô‚·
+                    ''2010.05.26 DEL START SHIMIZU å’Œæš¦ã§ã®ä¾‹å¤–æ™‚ã«ç„¡é™ãƒ«ãƒ¼ãƒ—ã®åŸå› ã«ãªã£ã¦ã„ãŸã®ã§å‰Šé™¤
+                    ' '' â€»æ›œæ—¥ã¯ã‹ãªã‚‰ãšæ—¥æœ¬æ›¸å¼ã§è¿”ã™
                     'Dim ddd As String = String.Empty
-                    ' '' —j“úw’è‘®•¶š‚ğA‚ ‚ç‚©‚¶‚ßƒJƒ‹ƒ`ƒƒw’è‚Åæ“¾‚µ‘‚«Š·‚¦‚Ä‚¨‚­
+                    ' '' æ›œæ—¥æŒ‡å®šæ›¸å¼æ–‡å­—ã‚’ã€ã‚ã‚‰ã‹ã˜ã‚ã‚«ãƒ«ãƒãƒ£æŒ‡å®šã§å–å¾—ã—æ›¸ãæ›ãˆã¦ãŠã
                     'If Style.ToLower.IndexOf("dddd") > -1 Then
                     '    ddd = ExpressionDate.ToString("dddd", cul)
                     '    Style = Style.Replace("dddd", ddd)
@@ -655,21 +655,21 @@ Public Class CommonMethod
                     'End If
                     ''2010.05.26 DEL END
 
-                    '' ƒJƒ‹ƒ`ƒƒ–³w’è
+                    '' ã‚«ãƒ«ãƒãƒ£ç„¡æŒ‡å®š
                     strReturn = ExpressionDate.ToString(Style, System.Globalization.DateTimeFormatInfo.InvariantInfo)
                 End If
                 '' 2009.08.20 UPD END
 
-            Catch ex As Exception   ''¸”s‚µ‚½‚ç‚»‚Ì‚Ü‚Ü
+            Catch ex As Exception   ''å¤±æ•—ã—ãŸã‚‰ãã®ã¾ã¾
                 '' 2009.05.19 ADD START
-                ' ¸”s‚ÍŒ³†æ“¾‚Å‚«‚È‚¢‚Æ”»’f‚µA¼—ï‚Å–ß‚·
-                ' ”N‘®‚ğˆê’Uíœ‚µA¼—ï4Œ…w’è
+                ' å¤±æ•—æ™‚ã¯å…ƒå·å–å¾—ã§ããªã„ã¨åˆ¤æ–­ã—ã€è¥¿æš¦ã§æˆ»ã™
+                ' å¹´æ›¸å¼ã‚’ä¸€æ—¦å‰Šé™¤ã—ã€è¥¿æš¦4æ¡æŒ‡å®š
                 Style = Style.Replace("g"c, "")
                 Style = Style.Replace("e"c, "")
                 Style = Style.Replace("y"c, "")
                 Style = "yyyy" & Style
                 '' 2009.05.19 ADD END
-                ''2009.06.08 UPD START ITO ƒNƒ‰ƒCƒAƒ“ƒg‚Ì“ú•t‘®‚É‰e‹¿‚³‚ê‚é‚Ì‚ÅƒJƒ‹ƒ`ƒƒ‚ğw’è
+                ''2009.06.08 UPD START ITO ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã®æ—¥ä»˜æ›¸å¼ã«å½±éŸ¿ã•ã‚Œã‚‹ã®ã§ã‚«ãƒ«ãƒãƒ£ã‚’æŒ‡å®š
                 'strReturn = Format(Expression, Style)
                 ''2009.08.13 UPD START
                 'strReturn = ExpressionDate.ToString(Style, System.Globalization.DateTimeFormatInfo.InvariantInfo)
@@ -688,7 +688,7 @@ Public Class CommonMethod
                 ''2009.06.08 UPD END ITO
 
                 ''2009.08.20 ADD 
-                '' ‘®‚ğ‘‚«Š·‚¦‚ÄAÄÀs
+                '' æ›¸å¼ã‚’æ›¸ãæ›ãˆã¦ã€å†å®Ÿè¡Œ
                 strReturn = SiuFormat(Expression, Style)
             End Try
         Else
@@ -699,40 +699,40 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' ReplaceJapaneseDayOfWeek -- —j“ú‘®‚ğ˜a—ï‚Å’uŠ·
+    ''' ReplaceJapaneseDayOfWeek -- æ›œæ—¥æ›¸å¼ã‚’å’Œæš¦ã§ç½®æ›
     ''' </summary>
-    ''' <param name="targetDate">‘ÎÛ“ú•t</param>
-    ''' <param name="style">‘®</param>
-    ''' <returns>’uŠ·‚µ‚½‘®</returns>
+    ''' <param name="targetDate">å¯¾è±¡æ—¥ä»˜</param>
+    ''' <param name="style">æ›¸å¼</param>
+    ''' <returns>ç½®æ›ã—ãŸæ›¸å¼</returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.05.26" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.05.26" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     <DebuggerStepThrough()>
     Public Shared Function ReplaceJapaneseDayOfWeek(ByVal targetDate As Date, ByVal style As String) As String
-        Dim xDay As String  ' —j“ú•Ï”
+        Dim xDay As String  ' æ›œæ—¥å¤‰æ•°
 
-        ' —j“ú‚ğæ“¾‚µ‚Ä•Ï”‚É“ú–{Œê‚ğİ’è
+        ' æ›œæ—¥ã‚’å–å¾—ã—ã¦å¤‰æ•°ã«æ—¥æœ¬èªã‚’è¨­å®š
         Select Case targetDate.DayOfWeek
             Case DayOfWeek.Sunday
-                xDay = "“ú"
+                xDay = "æ—¥"
             Case DayOfWeek.Monday
-                xDay = "Œ"
+                xDay = "æœˆ"
             Case DayOfWeek.Tuesday
-                xDay = "‰Î"
+                xDay = "ç«"
             Case DayOfWeek.Wednesday
-                xDay = "…"
+                xDay = "æ°´"
             Case DayOfWeek.Thursday
-                xDay = "–Ø"
+                xDay = "æœ¨"
             Case DayOfWeek.Friday
-                xDay = "‹à"
+                xDay = "é‡‘"
             Case DayOfWeek.Saturday
-                xDay = "“y"
+                xDay = "åœŸ"
             Case Else
                 xDay = String.Empty
         End Select
 
-        ' ‘®‚É‡‚í‚¹‚Ä’uŠ·
+        ' æ›¸å¼ã«åˆã‚ã›ã¦ç½®æ›
         If style.IndexOf("dddd") > -1 Then
-            style = style.Replace("dddd", xDay & "—j“ú")
+            style = style.Replace("dddd", xDay & "æ›œæ—¥")
         ElseIf style.IndexOf("ddd") > -1 Then
             style = style.Replace("ddd", xDay)
         End If
@@ -740,13 +740,13 @@ Public Class CommonMethod
         Return style
     End Function
 
-    ''' <summary>ConvCrLf -- vbCrLf©¨\n</summary>
-    ''' <param name="str">•ÏŠ·‘ÎÛ•¶š—ñ</param>
-    ''' <param name="mode">0:vbCrLf¨\n 1:\n¨vbCrLf</param>
-    ''' <returns>•ÏŠ·Œã•¶š—ñ</returns>
+    ''' <summary>ConvCrLf -- vbCrLfâ†â†’\n</summary>
+    ''' <param name="str">å¤‰æ›å¯¾è±¡æ–‡å­—åˆ—</param>
+    ''' <param name="mode">0:vbCrLfâ†’\n 1:\nâ†’vbCrLf</param>
+    ''' <returns>å¤‰æ›å¾Œæ–‡å­—åˆ—</returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2008.05.12" name="ç—t —F‘¥">V‹Kì¬</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <history version="1" date="2008.05.12" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     Public Shared Function ConvCrLf(ByVal str As String, ByVal mode As Integer) As String
 
         Dim xPattern As String
@@ -764,15 +764,15 @@ Public Class CommonMethod
             xReplace = vbCrLf
         End If
 
-        '' ³‹K•\Œ»‚ÅŒŸõ
+        '' æ­£è¦è¡¨ç¾ã§æ¤œç´¢
         Dim regex As New System.Text.RegularExpressions.Regex(xPattern)
 
-        '' ƒpƒ^[ƒ“ƒ}ƒbƒ`
+        '' ãƒ‘ã‚¿ãƒ¼ãƒ³ãƒãƒƒãƒ
         If Not regex.IsMatch(str) Then
             Return str
         End If
 
-        '' ’uŠ·
+        '' ç½®æ›
         Return regex.Replace(str, xReplace)
 
     End Function
@@ -783,17 +783,17 @@ Public Class CommonMethod
     ''' <param name="strTextChk"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     Public Shared Function NumDateFormat(ByVal strTextChk As String) As String
         If strTextChk Is Nothing Then
             strTextChk = String.Empty
         End If
         If Len(strTextChk) = 6 Then
-            '¼—ï‰º‚QŒ…{Œ(2Œ…){“ú(2Œ…)‚Æ”»’f‚·‚éB
+            'è¥¿æš¦ä¸‹ï¼’æ¡ï¼‹æœˆ(2æ¡)ï¼‹æ—¥(2æ¡)ã¨åˆ¤æ–­ã™ã‚‹ã€‚
             strTextChk = CDate(String.Format("{0:0000/00/00}", CDbl("20" & strTextChk)))
         ElseIf Len(strTextChk) = 8 Then
-            '¼—ï‚SŒ…{Œ(2Œ…){“ú(2Œ…)‚Æ”»’f‚·‚éB
+            'è¥¿æš¦ï¼”æ¡ï¼‹æœˆ(2æ¡)ï¼‹æ—¥(2æ¡)ã¨åˆ¤æ–­ã™ã‚‹ã€‚
             strTextChk = CDate(String.Format("{0:0000/00/00}", CDbl(strTextChk)))
         End If
 
@@ -802,15 +802,15 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' fSqlStr -- DataColumn‚©‚çŒ^‚âPROCESS‚Å‚Ì—p“r‚ğ”»’f‚µ‚ÄOracleŒ`®‚ÌSQL’l‚É•ÏŠ·
+    ''' fSqlStr -- DataColumnã‹ã‚‰å‹ã‚„PROCESSã§ã®ç”¨é€”ã‚’åˆ¤æ–­ã—ã¦Oracleå½¢å¼ã®SQLå€¤ã«å¤‰æ›
     ''' </summary>
     ''' <param name="value"></param>
     ''' <param name="col"></param>
     ''' <param name="updSyubetu"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
-    ''' <history version="2" date="2017.08.24" name="HAI-NM">SQL‚ğPROCES.S5‚©‚çSERVER2016(ƒvƒƒWƒFƒNƒg•‘ )‚ÉˆÚs‚·‚éB</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
+    ''' <history version="2" date="2017.08.24" name="HAI-NM">SQLã‚’PROCES.S5ã‹ã‚‰SERVER2016(ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆæ­¦è”µ)ã«ç§»è¡Œã™ã‚‹ã€‚</history>
     Public Shared Function fSqlStr(ByVal value As Object, ByVal col As DataColumn, ByVal updSyubetu As UpdType) As String
         Dim xSqlValue As String
 
@@ -844,7 +844,7 @@ Public Class CommonMethod
                 If IsDBNull(value) Then
                     xSqlValue = "NULL"
                 Else
-                    ' Œ^”»’f
+                    ' å‹åˆ¤æ–­
                     xSqlValue = fSqlStrType(value)
                 End If
         End Select
@@ -854,34 +854,34 @@ Public Class CommonMethod
 
 #End Region
 
-#Region " SQL¶¬ŠÖ” "
+#Region " SQLç”Ÿæˆé–¢æ•° "
 
     ''' <summary>
-    ''' fSqlStrInsert -- DataRow‚©‚çInsert•¶‚ğ¶¬
+    ''' fSqlStrInsert -- DataRowã‹ã‚‰Insertæ–‡ã‚’ç”Ÿæˆ
     ''' </summary>
     ''' <param name="tableName"></param>
     ''' <param name="source"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Shared Function fSqlStrInsert(ByVal tableName As String, ByVal source As DataRow) As String
-        ' XVí•ÊINSERT‚ÅSQL¶¬
+        ' æ›´æ–°ç¨®åˆ¥INSERTã§SQLç”Ÿæˆ
         Return fSqlStrInsert(tableName, source, UpdType.Insert)
     End Function
 
     ''' <summary>
-    ''' fSqlStrInsert -- DataRow‚©‚çInsert•¶‚ğ¶¬
+    ''' fSqlStrInsert -- DataRowã‹ã‚‰Insertæ–‡ã‚’ç”Ÿæˆ
     ''' </summary>
     ''' <param name="tableName"></param>
     ''' <param name="source"></param>
     ''' <param name="updSyubetu"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Shared Function fSqlStrInsert(ByVal tableName As String, ByVal source As DataRow, ByVal updSyubetu As UpdType) As String
         Dim sbSqlTxt As New System.Text.StringBuilder    ' SQL
-        Dim sbFieldsTxt As New System.Text.StringBuilder ' ƒtƒB[ƒ‹ƒh
-        Dim sbValuesTxt As New System.Text.StringBuilder ' ’l
+        Dim sbFieldsTxt As New System.Text.StringBuilder ' ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
+        Dim sbValuesTxt As New System.Text.StringBuilder ' å€¤
 
         sbSqlTxt.AppendLine("INSERT ")
         sbSqlTxt.AppendLine("INTO ")
@@ -907,18 +907,18 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' fSqlStrUpdate -- DataRow‚ÆKey”z—ñ‚©‚çUpdate•¶‚ğ¶¬
+    ''' fSqlStrUpdate -- DataRowã¨Keyé…åˆ—ã‹ã‚‰Updateæ–‡ã‚’ç”Ÿæˆ
     ''' </summary>
     ''' <param name="tableName"></param>
     ''' <param name="source"></param>
     ''' <param name="keyColNames"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Shared Function fSqlStrUpdate(ByVal tableName As String, ByVal source As DataRow, ByVal keyColNames() As String) As String
         Dim sbSqlTxt As New System.Text.StringBuilder    ' SQL
-        Dim sbValuesTxt As New System.Text.StringBuilder ' ’l
-        Dim sbWhereTxt As New System.Text.StringBuilder  ' ğŒ
+        Dim sbValuesTxt As New System.Text.StringBuilder ' å€¤
+        Dim sbWhereTxt As New System.Text.StringBuilder  ' æ¡ä»¶
 
         sbSqlTxt.AppendLine("UPDATE ")
         sbSqlTxt.AppendLine("		{0} ")
@@ -949,17 +949,17 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' fSqlStrDelete -- DataRow‚ÆKey”z—ñ‚©‚çDelete•¶‚ğ¶¬
+    ''' fSqlStrDelete -- DataRowã¨Keyé…åˆ—ã‹ã‚‰Deleteæ–‡ã‚’ç”Ÿæˆ
     ''' </summary>
     ''' <param name="tableName"></param>
     ''' <param name="source"></param>
     ''' <param name="keyColNames"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2010.07.02" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.07.02" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Shared Function fSqlStrDelete(ByVal tableName As String, ByVal source As DataRow, ByVal keyColNames() As String) As String
         Dim sbSqlTxt As New System.Text.StringBuilder    ' SQL
-        Dim sbWhereTxt As New System.Text.StringBuilder  ' ğŒ
+        Dim sbWhereTxt As New System.Text.StringBuilder  ' æ¡ä»¶
 
         sbSqlTxt.AppendLine("DELETE ")
         sbSqlTxt.AppendLine("FROM ")
@@ -982,19 +982,19 @@ Public Class CommonMethod
 
 #End Region
 
-#Region " ’ŠoE”äŠrŠÖ” "
+#Region " æŠ½å‡ºãƒ»æ¯”è¼ƒé–¢æ•° "
     ''***************************************************************************************************************************************************
 
-    ''' <summary>fLeftByte -- ¶•”•¶š—ñ’Šo</summary>
-    ''' <param name="pSource">‘ÎÛ•¶š—ñ</param>
-    ''' <param name="pLeftLen">’ŠoƒoƒCƒg”</param>
-    ''' <param name="pCharSet">ƒGƒ“ƒR[ƒhw’è: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
-    ''' <returns>’Šo•¶š—ñ</returns>
-    ''' <remarks>w’è•¶š—ñ‚Ì¶‚©‚çw’èƒoƒCƒg”‚ğ’Šo‚·‚é</remarks>
-    ''' <ì¬Ò>Process4‚©‚ç‚Ì•¡»ì¬</ì¬Ò>
-    ''' <”õl>‘SŠp•¶š‚Ì”¼•ª‚ÅI—¹‚·‚éê‡‚ÍØ‚èÌ‚Ä‚é</”õl>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <summary>fLeftByte -- å·¦éƒ¨æ–‡å­—åˆ—æŠ½å‡º</summary>
+    ''' <param name="pSource">å¯¾è±¡æ–‡å­—åˆ—</param>
+    ''' <param name="pLeftLen">æŠ½å‡ºãƒã‚¤ãƒˆæ•°</param>
+    ''' <param name="pCharSet">ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰æŒ‡å®š: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
+    ''' <returns>æŠ½å‡ºæ–‡å­—åˆ—</returns>
+    ''' <remarks>æŒ‡å®šæ–‡å­—åˆ—ã®å·¦ã‹ã‚‰æŒ‡å®šãƒã‚¤ãƒˆæ•°ã‚’æŠ½å‡ºã™ã‚‹</remarks>
+    ''' <ä½œæˆè€…>Process4ã‹ã‚‰ã®è¤‡è£½ä½œæˆ</ä½œæˆè€…>
+    ''' <å‚™è€ƒ>å…¨è§’æ–‡å­—ã®åŠåˆ†ã§çµ‚äº†ã™ã‚‹å ´åˆã¯åˆ‡ã‚Šæ¨ã¦ã‚‹</å‚™è€ƒ>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     <DebuggerStepThrough()>
     Public Shared Function fLeftByte(ByVal pSource As Object, ByVal pLeftLen As Integer, ByVal pCharSet As Integer) As String
         Dim xBuf As String = ""
@@ -1002,7 +1002,7 @@ Public Class CommonMethod
         Dim i As Integer
 
         Try
-            ''Null‚Ìê‡‚ÍNull‚Å•ÔM
+            ''Nullã®å ´åˆã¯Nullã§è¿”ä¿¡
             If pSource Is DBNull.Value Then
                 Return DBNull.Value.ToString
             End If
@@ -1011,16 +1011,16 @@ Public Class CommonMethod
                 Return String.Empty
             End If
 
-            ''’·‚³ƒ[ƒ‚Ìê‡‚Í‹ó•¶š•ÔM
+            ''é•·ã•ã‚¼ãƒ­ã®å ´åˆã¯ç©ºæ–‡å­—è¿”ä¿¡
             If CType(pSource, String).Length = 0 Then
                 Return ""
             End If
 
-            ''•¶š—ñƒ`ƒFƒbƒN
+            ''æ–‡å­—åˆ—ãƒã‚§ãƒƒã‚¯
             For i = 1 To Len(pSource) Step 1
                 xBuf2 = xBuf & Mid$(CType(pSource, String), i, 1)
 
-                'SJIS‚Å‚ÌƒoƒCƒg”‚Æ‚Ì”äŠr
+                'SJISã§ã®ãƒã‚¤ãƒˆæ•°ã¨ã®æ¯”è¼ƒ
                 If LenB(xBuf2, pCharSet) > pLeftLen Then
                     Exit For
                 Else
@@ -1037,18 +1037,18 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>fStrCompSJIS -- •¶š—ñ‚ğSJIS‚Å”äŠr‚·‚é</summary>
-    ''' <param name="pxFrom">ŠJn•¶š—ñ</param>
-    ''' <param name="pxTo">I—¹•¶š—ñ</param>
+    ''' <summary>fStrCompSJIS -- æ–‡å­—åˆ—ã‚’SJISã§æ¯”è¼ƒã™ã‚‹</summary>
+    ''' <param name="pxFrom">é–‹å§‹æ–‡å­—åˆ—</param>
+    ''' <param name="pxTo">çµ‚äº†æ–‡å­—åˆ—</param>
     ''' <returns>
-    ''' True  :ŠJn•¶š—ñ ƒ= I—¹•¶š—ñ
-    ''' False :ŠJn•¶š—ñ „ I—¹•¶š—ñ
+    ''' True  :é–‹å§‹æ–‡å­—åˆ— ï¼œ= çµ‚äº†æ–‡å­—åˆ—
+    ''' False :é–‹å§‹æ–‡å­—åˆ— ï¼ çµ‚äº†æ–‡å­—åˆ—
     ''' </returns>
-    ''' <remarks>•¶š—ñ‚ğSJIS‚Å”äŠr‚·‚é</remarks>
-    ''' <ì¬Ò>Process4‚©‚ç‚Ì•¡»ì¬</ì¬Ò>
-    ''' <”õl></”õl>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <remarks>æ–‡å­—åˆ—ã‚’SJISã§æ¯”è¼ƒã™ã‚‹</remarks>
+    ''' <ä½œæˆè€…>Process4ã‹ã‚‰ã®è¤‡è£½ä½œæˆ</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     <DebuggerStepThrough()>
     Public Shared Function fStrCompSJIS(ByVal pxFrom As String, ByVal pxTo As String) As Boolean
 
@@ -1066,24 +1066,24 @@ Public Class CommonMethod
             pxTo = String.Empty
         End If
 
-        'S-JIS‚Ö‚ÌƒGƒ“ƒR[ƒhƒIƒuƒWƒFƒNƒg
+        'S-JISã¸ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
         Dim SJIS_Encode As System.Text.Encoding = System.Text.Encoding.GetEncoding("Shift_JIS")
 
-        '' •Ï”‚Ì‰Šú‰»
+        '' å¤‰æ•°ã®åˆæœŸåŒ–
         fStrCompSJIS = False
         nFrom = SJIS_Encode.GetBytes(pxFrom)
         'nFrom = StrConv(pxFrom, vbFromUnicode)
         nTo = SJIS_Encode.GetBytes(pxTo)
         'nTo = StrConv(pxTo, vbFromUnicode)
 
-        '' ”äŠr‚ÌŠJnƒ|ƒCƒ“ƒ^
+        '' æ¯”è¼ƒã®é–‹å§‹ãƒã‚¤ãƒ³ã‚¿
         If LBound(nFrom) < LBound(nTo) Then
             nStart = LBound(nTo)
         Else
             nStart = LBound(nFrom)
         End If
 
-        '' ”äŠr‚ÌI—¹ƒ|ƒCƒ“ƒ^E‘S‚Äˆê’v‚ÌŒ‹‰Ê’l
+        '' æ¯”è¼ƒã®çµ‚äº†ãƒã‚¤ãƒ³ã‚¿ãƒ»å…¨ã¦ä¸€è‡´ã®çµæœå€¤
         If UBound(nFrom) > UBound(nTo) Then
             nEnd = UBound(nTo)
             bEQ = False
@@ -1092,7 +1092,7 @@ Public Class CommonMethod
             bEQ = True
         End If
 
-        '' ”äŠrƒ‹[ƒv
+        '' æ¯”è¼ƒãƒ«ãƒ¼ãƒ—
         For i = nStart To nEnd
             If nFrom(i) > nTo(i) Then
                 fStrCompSJIS = False
@@ -1103,17 +1103,17 @@ Public Class CommonMethod
             End If
         Next
 
-        '' ‘S‚Äˆê’v‚ÌŒ‹‰Ê’l
+        '' å…¨ã¦ä¸€è‡´ã®çµæœå€¤
         fStrCompSJIS = bEQ
 
     End Function
 
-    ''' <summary>SplitString -- •¶š—ñ‚ğˆê‚¸‚Â•ª‰ğ‚µ”z—ñ‚É—‚Æ‚µ‚±‚Ş</summary>
-    ''' <param name="str">‘ÎÛ•¶š—ñ</param>
+    ''' <summary>SplitString -- æ–‡å­—åˆ—ã‚’ä¸€æ™‚ãšã¤åˆ†è§£ã—é…åˆ—ã«è½ã¨ã—ã“ã‚€</summary>
+    ''' <param name="str">å¯¾è±¡æ–‡å­—åˆ—</param>
     ''' <returns></returns>
-    ''' <remarks>Split‚ÌƒZƒpƒŒ[ƒ^[‚ª–³‚¢”Å</remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <remarks>Splitã®ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿ãƒ¼ãŒç„¡ã„ç‰ˆ</remarks>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     <DebuggerStepThrough()>
     Public Shared Function SplitString(ByVal str As String) As String()
         'Dim strLength As Integer
@@ -1135,22 +1135,22 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>LenB -- ƒoƒCƒg”æ“¾</summary>
-    ''' <param name="Expression">ƒJƒEƒ“ƒg‘ÎÛ•¶š—ñ</param>
-    ''' <returns>ƒJƒEƒ“ƒgŒ‹‰Ê</returns>
+    ''' <summary>LenB -- ãƒã‚¤ãƒˆæ•°å–å¾—</summary>
+    ''' <param name="Expression">ã‚«ã‚¦ãƒ³ãƒˆå¯¾è±¡æ–‡å­—åˆ—</param>
+    ''' <returns>ã‚«ã‚¦ãƒ³ãƒˆçµæœ</returns>
     ''' <remarks></remarks>
     <DebuggerStepThrough()>
     Public Shared Function LenB(ByVal Expression As String) As Integer
         Return LenB(Expression, 1)
     End Function
 
-    ''' <summary>LenB -- ƒoƒCƒg”æ“¾</summary>
-    ''' <param name="Expression">ƒJƒEƒ“ƒg‘ÎÛ•¶š—ñ</param>
-    ''' <param name="pCodingNumber">ƒGƒ“ƒR[ƒhw’è: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
-    ''' <returns>ƒJƒEƒ“ƒgŒ‹‰Ê</returns>
+    ''' <summary>LenB -- ãƒã‚¤ãƒˆæ•°å–å¾—</summary>
+    ''' <param name="Expression">ã‚«ã‚¦ãƒ³ãƒˆå¯¾è±¡æ–‡å­—åˆ—</param>
+    ''' <param name="pCodingNumber">ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰æŒ‡å®š: 1=shift-jis 2=Unicode(16) 3=UTF8 4=UTF7 5=UTF32</param>
+    ''' <returns>ã‚«ã‚¦ãƒ³ãƒˆçµæœ</returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     <DebuggerStepThrough()>
     Public Shared Function LenB(ByVal Expression As String, ByVal pCodingNumber As Integer) As Integer
         If Expression Is Nothing Then
@@ -1175,145 +1175,145 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>SysCodeEquals -- ŠeíƒVƒXƒeƒ€ƒR[ƒh‚ÌÅ¬/Å‘å”äŠr</summary>
-    ''' <param name="value">”äŠr‘ÎÛ’l</param>
-    ''' <returns>“¯’l‚Ìê‡‚ÍTrue</returns>
-    ''' <remarks>SysMinCode‚Æ‚Ì”äŠr</remarks>
-    ''' <history version="1" date="2008.05.23" name="ç—t —F‘¥">V‹Kì¬</history>
+    ''' <summary>SysCodeEquals -- å„ç¨®ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ‰ã®æœ€å°/æœ€å¤§æ¯”è¼ƒ</summary>
+    ''' <param name="value">æ¯”è¼ƒå¯¾è±¡å€¤</param>
+    ''' <returns>åŒå€¤ã®å ´åˆã¯True</returns>
+    ''' <remarks>SysMinCodeã¨ã®æ¯”è¼ƒ</remarks>
+    ''' <history version="1" date="2008.05.23" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
     Public Shared Function SysCodeEquals(ByVal value As Object) As Boolean
         Return SysCodeEquals(value, ControlKbn.Only, SysCodeType.Code)
     End Function
 
-    ''' <summary>SysCodeEquals -- ŠeíƒVƒXƒeƒ€ƒR[ƒh‚ÌÅ¬/Å‘å”äŠr</summary>
-    ''' <param name="value">”äŠr‘ÎÛ’l</param>
-    ''' <param name="conkbn">ControlKbn—ñ‹“‘Ì</param>
-    ''' <returns>“¯’l‚Ìê‡‚ÍTrue</returns>
-    ''' <remarks>SysMinCode/SysMaxCode‚Æ‚Ì”äŠr</remarks>
-    ''' <history version="1" date="2008.05.23" name="ç—t —F‘¥">V‹Kì¬</history>
+    ''' <summary>SysCodeEquals -- å„ç¨®ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ‰ã®æœ€å°/æœ€å¤§æ¯”è¼ƒ</summary>
+    ''' <param name="value">æ¯”è¼ƒå¯¾è±¡å€¤</param>
+    ''' <param name="conkbn">ControlKbnåˆ—æŒ™ä½“</param>
+    ''' <returns>åŒå€¤ã®å ´åˆã¯True</returns>
+    ''' <remarks>SysMinCode/SysMaxCodeã¨ã®æ¯”è¼ƒ</remarks>
+    ''' <history version="1" date="2008.05.23" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
     Public Shared Function SysCodeEquals(ByVal value As Object, ByVal conkbn As Integer) As Boolean
         Return SysCodeEquals(value, conkbn, SysCodeType.Code)
     End Function
 
-    ''' <summary>SysCodeEquals -- ŠeíƒVƒXƒeƒ€ƒR[ƒh‚ÌÅ¬/Å‘å”äŠr</summary>
-    ''' <param name="value">”äŠr‘ÎÛ’l</param>
-    ''' <param name="conkbn">ControlKbn—ñ‹“‘Ì</param>
-    ''' <param name="type">SysCodeType—ñ‹“‘Ì</param>
-    ''' <returns>“¯’l‚Ìê‡‚ÍTrue</returns>
-    ''' <remarks>type‚Åw’è‚³‚ê‚½SysMin***/SysMax***‚Æ‚Ì”äŠr</remarks>
-    ''' <history version="1" date="2008.05.23" name="ç—t —F‘¥">V‹Kì¬</history>
-    ''' <history version="2" date="2009.03.02" name="‘å“à “ou–ç">•”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰</history>
+    ''' <summary>SysCodeEquals -- å„ç¨®ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ‰ã®æœ€å°/æœ€å¤§æ¯”è¼ƒ</summary>
+    ''' <param name="value">æ¯”è¼ƒå¯¾è±¡å€¤</param>
+    ''' <param name="conkbn">ControlKbnåˆ—æŒ™ä½“</param>
+    ''' <param name="type">SysCodeTypeåˆ—æŒ™ä½“</param>
+    ''' <returns>åŒå€¤ã®å ´åˆã¯True</returns>
+    ''' <remarks>typeã§æŒ‡å®šã•ã‚ŒãŸSysMin***/SysMax***ã¨ã®æ¯”è¼ƒ</remarks>
+    ''' <history version="1" date="2008.05.23" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
+    ''' <history version="2" date="2009.03.02" name="å¤§å†… ç™»å¿—ä¹Ÿ">éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ</history>
     Public Shared Function SysCodeEquals(ByVal value As Object, ByVal conkbn As Integer, ByVal type As SysCodeType) As Boolean
 
         Dim MinValue As Object
         Dim MaxValue As Object
         Dim CompValue As Object
 
-        '' ƒ^ƒCƒv•Ê‚ÉÅ¬/Å‘å‚ğæ“¾
+        '' ã‚¿ã‚¤ãƒ—åˆ¥ã«æœ€å°/æœ€å¤§ã‚’å–å¾—
         Select Case type
-            Case SysCodeType.Code           '' ƒR[ƒh
+            Case SysCodeType.Code           '' ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinCode
                 MaxValue = SysMaxCode
-            Case SysCodeType.Date           '' “ú•t
+            Case SysCodeType.Date           '' æ—¥ä»˜
                 MinValue = SysMinDate
                 MaxValue = SysMaxDate
-            Case SysCodeType.SKoj           '' WŒvH–ƒR[ƒh
+            Case SysCodeType.SKoj           '' é›†è¨ˆå·¥äº‹ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinSKoj
                 MaxValue = SysMaxSKoj
-            Case SysCodeType.Koj            '' H–ƒR[ƒh
+            Case SysCodeType.Koj            '' å·¥äº‹ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinKoj
                 MaxValue = SysMaxKoj
-            Case SysCodeType.KojUw          '' H–Ú×ƒR[ƒh
+            Case SysCodeType.KojUw          '' å·¥äº‹è©³ç´°ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinKojUw
                 MaxValue = SysMaxKojUw
-            Case SysCodeType.Tor            '' æˆøæƒR[ƒh
+            Case SysCodeType.Tor            '' å–å¼•å…ˆã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinTor
                 MaxValue = SysMaxTor
-            Case SysCodeType.Soko           '' ‘qŒÉƒR[ƒh
+            Case SysCodeType.Soko           '' å€‰åº«ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinSoko
                 MaxValue = SysMaxSoko
-            Case SysCodeType.Syohin         '' ¤•iƒR[ƒh
+            Case SysCodeType.Syohin         '' å•†å“ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinSyohin
                 MaxValue = SysMaxSyohin
-            Case SysCodeType.Jyu            '' ó’ƒR[ƒh
+            Case SysCodeType.Jyu            '' å—æ³¨ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinJyu
                 MaxValue = SysMaxJyu
-            Case SysCodeType.Hac            '' ”­’ƒR[ƒh
+            Case SysCodeType.Hac            '' ç™ºæ³¨ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinHac
                 MaxValue = SysMaxHac
-            Case SysCodeType.Syu            '' o‰×ƒR[ƒh
+            Case SysCodeType.Syu            '' å‡ºè·ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinSyu
                 MaxValue = SysMaxSyu
-            Case SysCodeType.Uri            '' ”„ãƒR[ƒh
+            Case SysCodeType.Uri            '' å£²ä¸Šã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinUri
                 MaxValue = SysMaxUri
-            Case SysCodeType.Nyu            '' “ü‰×ƒR[ƒh
+            Case SysCodeType.Nyu            '' å…¥è·ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinNyu
                 MaxValue = SysMaxNyu
-            Case SysCodeType.Sir            '' d“üƒR[ƒh
+            Case SysCodeType.Sir            '' ä»•å…¥ã‚³ãƒ¼ãƒ‰
                 MinValue = SysMinSir
                 MaxValue = SysMaxSir
-                ''2009.03.02 ADD START OOUCHI •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+                ''2009.03.02 ADD START OOUCHI éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
             Case SysCodeType.Bmn
                 MinValue = SysMinBmn
                 MaxValue = SysMaxBmn
                 ''2009.03.02 ADD END
-            Case Else                       '' ‚»‚Ì‘¼‚ÍƒR[ƒh‚Åˆ—
+            Case Else                       '' ãã®ä»–ã¯ã‚³ãƒ¼ãƒ‰ã§å‡¦ç†
                 MinValue = SysMinCode
                 MaxValue = SysMaxCode
         End Select
 
-        '' ”äŠr‚·‚é‹æ•ª‚É‚æ‚èA”äŠr’l‚ğæ“¾
+        '' æ¯”è¼ƒã™ã‚‹åŒºåˆ†ã«ã‚ˆã‚Šã€æ¯”è¼ƒå€¤ã‚’å–å¾—
         If (conkbn = ControlKbn.Only) Or (conkbn = ControlKbn.From) Then
-            '' ’P“Æ‚Ü‚½‚Í”ÍˆÍŠJn‚Æ‚ÌŠm”F‚ÍMinValue‚ÅŠm”F
+            '' å˜ç‹¬ã¾ãŸã¯ç¯„å›²é–‹å§‹ã¨ã®ç¢ºèªã¯MinValueã§ç¢ºèª
             CompValue = MinValue
         Else
-            '' ˆÈŠO‚ÍMaxValue‚ÅŠm”F
+            '' ä»¥å¤–ã¯MaxValueã§ç¢ºèª
             CompValue = MaxValue
         End If
 
-        '' ”äŠr
+        '' æ¯”è¼ƒ
         Return value.Equals(CompValue)
 
     End Function
 
 #End Region
 
-#Region " ZoŠÖ” "
+#Region " ç®—å‡ºé–¢æ•° "
     ''***************************************************************************************************************************************************
 
     ''' <summary>
-    ''' fStartDate--Œ“xŠJn“úZo
+    ''' fStartDate--æœˆåº¦é–‹å§‹æ—¥ç®—å‡º
     ''' </summary>
-    ''' <param name="pDdate">Œ“x</param>
-    ''' <param name="pSIME">’÷“ú</param>
-    ''' <returns>Œ“xŠJn“ú</returns>
-    ''' <remarks>w’èŒ“x‚ÌŠJn“ú‚ğŒ“x{’÷“ú‚ÅZo‚·‚éB</remarks>
-    ''' <ì¬Ò>Process4‚©‚ç‚Ì•¡»ì¬</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <param name="pDdate">æœˆåº¦</param>
+    ''' <param name="pSIME">ç· æ—¥</param>
+    ''' <returns>æœˆåº¦é–‹å§‹æ—¥</returns>
+    ''' <remarks>æŒ‡å®šæœˆåº¦ã®é–‹å§‹æ—¥ã‚’æœˆåº¦ï¼‹ç· æ—¥ã§ç®—å‡ºã™ã‚‹ã€‚</remarks>
+    ''' <ä½œæˆè€…>Process4ã‹ã‚‰ã®è¤‡è£½ä½œæˆ</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fStartDate(ByVal pDdate As Object, ByVal pSIME As Integer) As Date
         Dim dGaitouDate As Object
         Dim dGaitouWk As Object
 
-        ''‰Šú’lNull
+        ''åˆæœŸå€¤Null
         fStartDate = SysMinDate
 
-        ''“ú•tˆÈŠO‚¾‚Á‚½ê‡‚ÍI—¹
+        ''æ—¥ä»˜ä»¥å¤–ã ã£ãŸå ´åˆã¯çµ‚äº†
         If IsDate(pDdate) = False Then
             fStartDate = SysMinDate
             Exit Function
         End If
 
-        ''ŠY“–“ú‚Ì“ú‚ğ‚P‚É‹­§ŒÅ’è(Œ“x‚É‚·‚é)
+        ''è©²å½“æ—¥ã®æ—¥ã‚’ï¼‘ã«å¼·åˆ¶å›ºå®š(æœˆåº¦ã«ã™ã‚‹)
         dGaitouDate = DateSerial(Year(pDdate), Month(pDdate), 1)
 
-        ''•Â‚ß“ú‚ª‚R‚P‚Ìê‡‚Í‚P“ú‚ªŠY“–‚È‚Ì‚Å‚»‚Ì‚Ü‚Ü–ß‚·¡
+        ''é–‰ã‚æ—¥ãŒï¼“ï¼‘ã®å ´åˆã¯ï¼‘æ—¥ãŒè©²å½“ãªã®ã§ãã®ã¾ã¾æˆ»ã™ï½¡
         If pSIME = 31 Then
             fStartDate = dGaitouDate
             Exit Function
         End If
 
-        ''•Â‚ß“ú‚ª‚R‚P‚Ìê‡‚Í‚P“ú‚ªŠY“–‚È‚Ì‚Å‚»‚Ì‚Ü‚Ü–ß‚·¡
+        ''é–‰ã‚æ—¥ãŒï¼“ï¼‘ã®å ´åˆã¯ï¼‘æ—¥ãŒè©²å½“ãªã®ã§ãã®ã¾ã¾æˆ»ã™ï½¡
         If Microsoft.VisualBasic.Day(DateSerial(Year(dGaitouDate), Month(dGaitouDate) + 1, 1 - 1)) < pSIME Then
             If Microsoft.VisualBasic.Day(DateSerial(Year(dGaitouDate), Month(dGaitouDate), 1 - 1)) > pSIME Then
                 fStartDate = DateSerial(Year(dGaitouDate), Month(dGaitouDate) - 1, pSIME + 1)
@@ -1326,31 +1326,31 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' fEndDate--Œ“x––“úZo
+    ''' fEndDate--æœˆåº¦æœ«æ—¥ç®—å‡º
     ''' </summary>
-    ''' <param name="pDdate">Œ“x</param>
-    ''' <param name="pSIME">’÷“ú</param>
-    ''' <returns>Œ“x––“ú</returns>
-    ''' <remarks>w’èŒ“x‚ÌÅI“ú‚ğŒ“x{’÷“ú‚ÅZo‚·‚éB</remarks>
-    ''' <ì¬Ò>Process4‚©‚ç‚Ì•¡»ì¬</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <param name="pDdate">æœˆåº¦</param>
+    ''' <param name="pSIME">ç· æ—¥</param>
+    ''' <returns>æœˆåº¦æœ«æ—¥</returns>
+    ''' <remarks>æŒ‡å®šæœˆåº¦ã®æœ€çµ‚æ—¥ã‚’æœˆåº¦ï¼‹ç· æ—¥ã§ç®—å‡ºã™ã‚‹ã€‚</remarks>
+    ''' <ä½œæˆè€…>Process4ã‹ã‚‰ã®è¤‡è£½ä½œæˆ</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fEndDate(ByVal pDdate As Object, ByVal pSIME As Integer) As Date
         Dim dGaitouDate As Object
         Dim dGaitoudd As Integer
 
-        ''‰Šú’l=SysMinDate
+        ''åˆæœŸå€¤=SysMinDate
         fEndDate = SysMinDate
 
-        ''“ú•tˆÈŠO‚¾‚Á‚½ê‡‚ÍI—¹
+        ''æ—¥ä»˜ä»¥å¤–ã ã£ãŸå ´åˆã¯çµ‚äº†
         If IsDate(pDdate) = False Then
             Exit Function
         End If
 
-        ''ŠY“–“ú‚Ì“ú‚ğ‚P‚É‹­§ŒÅ’è(Œ“x‚É‚·‚é)
+        ''è©²å½“æ—¥ã®æ—¥ã‚’ï¼‘ã«å¼·åˆ¶å›ºå®š(æœˆåº¦ã«ã™ã‚‹)
         dGaitouDate = DateSerial(Year(pDdate), Month(pDdate), 1)
 
-        ''’÷“ú‚æ‚èÅI“ú‚ğZo
+        ''ç· æ—¥ã‚ˆã‚Šæœ€çµ‚æ—¥ã‚’ç®—å‡º
         If IsNumeric(pSIME) = False Then
             Exit Function
         ElseIf pSIME = 31 Then
@@ -1364,7 +1364,7 @@ Public Class CommonMethod
             Exit Function
         End If
 
-        ''ÅI“ú‚ª31‚Ìê‡‚ÍŒ•ÊÅI“ú‚ğZoCˆÈŠO‚Í‚»‚Ì‚Ü‚Ü‘ã“ü
+        ''æœ€çµ‚æ—¥ãŒ31ã®å ´åˆã¯æœˆåˆ¥æœ€çµ‚æ—¥ã‚’ç®—å‡ºï¼Œä»¥å¤–ã¯ãã®ã¾ã¾ä»£å…¥
         If dGaitoudd = 31 Then
             fEndDate = DateSerial(Year(dGaitouDate), Month(dGaitouDate) + 1, 1 - 1)
         Else
@@ -1373,34 +1373,34 @@ Public Class CommonMethod
     End Function
 
     ''' <summary>
-    ''' fProcessMonth--Œ“x‚ğZo‚·‚é
+    ''' fProcessMonth--æœˆåº¦ã‚’ç®—å‡ºã™ã‚‹
     ''' </summary>
-    ''' <param name="pDdate">ŠY“–”NŒ“ú</param>
-    ''' <param name="pSIME">’÷“ú</param>
-    ''' <returns>‘ÎÛŒ“x</returns>
-    ''' <remarks>ŠY“–“ú•t‚ª‚Ç‚ÌŒ“x‚É‘®‚·‚é‚©–ß‚·</remarks>
-    ''' <ì¬Ò>‹àˆä@Œbj</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <param name="pDdate">è©²å½“å¹´æœˆæ—¥</param>
+    ''' <param name="pSIME">ç· æ—¥</param>
+    ''' <returns>å¯¾è±¡æœˆåº¦</returns>
+    ''' <remarks>è©²å½“æ—¥ä»˜ãŒã©ã®æœˆåº¦ã«å±ã™ã‚‹ã‹æˆ»ã™</remarks>
+    ''' <ä½œæˆè€…>é‡‘äº•ã€€æµå²</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fProcessMonth(ByVal pDdate As Object, ByVal pSIME As Integer) As Date
         Dim dGaitouDate As Object
         Dim nGaitoudd As Integer
         Dim nGaitouSime As Integer
 
-        ''‰Šú’lNull
+        ''åˆæœŸå€¤Null
         fProcessMonth = SysMinDate
 
-        ''“ú•tˆÈŠO‚¾‚Á‚½ê‡‚ÍI—¹
+        ''æ—¥ä»˜ä»¥å¤–ã ã£ãŸå ´åˆã¯çµ‚äº†
         If IsDate(pDdate) = False Then
             fProcessMonth = SysMinDate
             Exit Function
         End If
 
-        ''Œ“x‚É‚·‚é
+        ''æœˆåº¦ã«ã™ã‚‹
         dGaitouDate = DateSerial(Year(pDdate), Month(pDdate), 1)
         nGaitoudd = Microsoft.VisualBasic.Day(pDdate)
 
-        ''’÷“ú‚æ‚è”»’f
+        ''ç· æ—¥ã‚ˆã‚Šåˆ¤æ–­
         If pSIME = 31 Then
             nGaitouSime = 31
         ElseIf (pSIME >= 1) And (pSIME < 31) Then
@@ -1410,7 +1410,7 @@ Public Class CommonMethod
             Exit Function
         End If
 
-        ''¡Œ‚©ŸŒ‚©”»’f
+        ''ä»Šæœˆã‹æ¬¡æœˆã‹åˆ¤æ–­
         If nGaitoudd <= nGaitouSime Then
             fProcessMonth = dGaitouDate
         Else
@@ -1418,12 +1418,12 @@ Public Class CommonMethod
         End If
     End Function
 
-    ''' <summary>fKishuMonth -- Šúñ”NŒ‚ğo‚·</summary>
-    ''' <param name="pNengetu">‰æ–Ê‚Åw’è‚³‚ê‚½”NŒ</param>
-    ''' <param name="pStart_YM">–‹ÆŠJn”NŒ</param>
-    ''' <returns>Šúñ”NŒ</returns>
-    ''' <remarks>‰æ–Ê‚Ì”NŒ‚Æ–‹ÆŠJn”NŒ‚©‚çŠúñ‚ÌŒ‚ğ‹‚ß‚é</remarks>
-    ''' <history version="" date="" name="ç—t —F‘¥">Process4‚©‚ç‚Ì•¡»</history>
+    ''' <summary>fKishuMonth -- æœŸé¦–å¹´æœˆã‚’å‡ºã™</summary>
+    ''' <param name="pNengetu">ç”»é¢ã§æŒ‡å®šã•ã‚ŒãŸå¹´æœˆ</param>
+    ''' <param name="pStart_YM">äº‹æ¥­é–‹å§‹å¹´æœˆ</param>
+    ''' <returns>æœŸé¦–å¹´æœˆ</returns>
+    ''' <remarks>ç”»é¢ã®å¹´æœˆã¨äº‹æ¥­é–‹å§‹å¹´æœˆã‹ã‚‰æœŸé¦–ã®æœˆã‚’æ±‚ã‚ã‚‹</remarks>
+    ''' <history version="" date="" name="åƒè‘‰ å‹å‰‡">Process4ã‹ã‚‰ã®è¤‡è£½</history>
     <DebuggerStepThrough()>
     Public Shared Function fKishuMonth(ByVal pNengetu As Object, ByVal pStart_YM As Object) As Date
 
@@ -1448,14 +1448,14 @@ Public Class CommonMethod
 
     End Function
 
-    ''' <summary>fRound -- ’[”ˆ—</summary>
-    ''' <param name="pKin">‘ÎÛ‹àŠz</param>
-    ''' <param name="pHasuu">’[”ˆ—‹æ•ª</param>
-    ''' <param name="pTani">ŠÛ‚ß’PˆÊ(1‚Å¬”“_ˆÈ‰ºC10‚Å10‰~ˆÈ‰º)</param>
-    ''' <returns>ŒvZŒ‹‰Ê</returns>
-    ''' <remarks>w’è’PˆÊ‚Å”’l‚ÌŠÛ‚ßˆ—‚ğs‚¢‚Ü‚·B</remarks>
-    ''' <ì¬Ò>Process4‚©‚ç‚Ì•¡»ì¬</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <summary>fRound -- ç«¯æ•°å‡¦ç†</summary>
+    ''' <param name="pKin">å¯¾è±¡é‡‘é¡</param>
+    ''' <param name="pHasuu">ç«¯æ•°å‡¦ç†åŒºåˆ†</param>
+    ''' <param name="pTani">ä¸¸ã‚å˜ä½(1ã§å°æ•°ç‚¹ä»¥ä¸‹ï¼Œ10ã§10å††ä»¥ä¸‹)</param>
+    ''' <returns>è¨ˆç®—çµæœ</returns>
+    ''' <remarks>æŒ‡å®šå˜ä½ã§æ•°å€¤ã®ä¸¸ã‚å‡¦ç†ã‚’è¡Œã„ã¾ã™ã€‚</remarks>
+    ''' <ä½œæˆè€…>Process4ã‹ã‚‰ã®è¤‡è£½ä½œæˆ</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fRound(ByVal pKin As Object, ByVal pHasuu As BrowseHasu, ByVal pTani As Object) As Decimal
         Dim nKin As Decimal
@@ -1476,11 +1476,11 @@ Public Class CommonMethod
 
         nChukan1 = nKin / nTani
         Select Case pHasuu
-            Case BrowseHasu.bHasu_Kiriage       'Ø‚èã‚°
+            Case BrowseHasu.bHasu_Kiriage       'åˆ‡ã‚Šä¸Šã’
                 nChukan2 = -System.Math.Sign(nChukan1) * Int(-System.Math.Abs(nChukan1))
-            Case BrowseHasu.bHasu_Kirisute      'Ø‚èÌ‚Ä
+            Case BrowseHasu.bHasu_Kirisute      'åˆ‡ã‚Šæ¨ã¦
                 nChukan2 = Fix(nChukan1)
-            Case BrowseHasu.bHasu_Shisyagonyu   'lÌŒÜ“ü
+            Case BrowseHasu.bHasu_Shisyagonyu   'å››æ¨äº”å…¥
                 nChukan2 = System.Math.Sign(nChukan1) * Int(System.Math.Abs(nChukan1) + 0.5D)
             Case Else
                 nChukan2 = 0
@@ -1493,14 +1493,14 @@ Public Class CommonMethod
     ''' <summary>
     ''' ZeiCalculate
     ''' </summary>
-    ''' <param name="pKin">‘ÎÛ‹àŠz</param>
-    ''' <param name="pZeiInput">Å“ü—Í‹æ•ª</param>
-    ''' <param name="pZeiRitsu">Å—¦</param>
-    ''' <param name="pHasu">’[”ˆ—‹æ•ª</param>
-    ''' <returns>ÅŠz</returns>
+    ''' <param name="pKin">å¯¾è±¡é‡‘é¡</param>
+    ''' <param name="pZeiInput">ç¨å…¥åŠ›åŒºåˆ†</param>
+    ''' <param name="pZeiRitsu">ç¨ç‡</param>
+    ''' <param name="pHasu">ç«¯æ•°å‡¦ç†åŒºåˆ†</param>
+    ''' <returns>ç¨é¡</returns>
     ''' <remarks></remarks>
-    ''' <history version ="1" date ="2010.04.08" name="•Äˆä —DŒ°">V‹Kì¬</history>
-    <DebuggerStepThrough(), Browsable(True), Description("ÅZo pKin:‘ÎÛ‹àŠz pZeiInput:1=ŠOÅ2=“àÅ pZeiRitsu:Å—¦ pHasu:’[”ˆ—‹æ•ª")>
+    ''' <history version ="1" date ="2010.04.08" name="ç±³äº• å„ªé¡•">æ–°è¦ä½œæˆ</history>
+    <DebuggerStepThrough(), Browsable(True), Description("ç¨ç®—å‡º pKin:å¯¾è±¡é‡‘é¡ pZeiInput:1=å¤–ç¨2=å†…ç¨ pZeiRitsu:ç¨ç‡ pHasu:ç«¯æ•°å‡¦ç†åŒºåˆ†")>
     Public Shared Function ZeiCalculate(ByVal pKin As Decimal, ByVal pZeiInput As Integer, ByVal pZeiRitsu As Decimal, ByVal pHasu As Integer) As Decimal
 
         Dim wZei As Decimal = 0
@@ -1521,14 +1521,14 @@ Public Class CommonMethod
 
 #End Region
 
-#Region " •ÏŠ·ŠÖ” "
+#Region " å¤‰æ›é–¢æ•° "
     ''***************************************************************************************************************************************************
 
-    ''' <summary>fNvl -- Null’u‚«Š·‚¦</summary>
-    ''' <param name="pValue">‘ÎÛ•Ï”</param>
-    ''' <param name="pRepValue">Null’u‚«Š·‚¦•Ï”</param>
-    ''' <returns>Null’u‚«Š·‚¦Œã‚Ì’l</returns>
-    ''' <remarks>pValue‚ªNothing‚Ü‚½‚ÍNull‚Ìê‡‚ÍpRepValue‚ğC‚»‚êˆÈŠO‚ÍpValue‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·</remarks>
+    ''' <summary>fNvl -- Nullç½®ãæ›ãˆ</summary>
+    ''' <param name="pValue">å¯¾è±¡å¤‰æ•°</param>
+    ''' <param name="pRepValue">Nullæ™‚ç½®ãæ›ãˆå¤‰æ•°</param>
+    ''' <returns>Nullç½®ãæ›ãˆå¾Œã®å€¤</returns>
+    ''' <remarks>pValueãŒNothingã¾ãŸã¯Nullã®å ´åˆã¯pRepValueã‚’ï¼Œãã‚Œä»¥å¤–ã¯pValueã‚’ãã®ã¾ã¾è¿”ã™</remarks>
     <DebuggerStepThrough()>
     Public Shared Function fNvl(ByVal pValue As Object, ByVal pRepValue As Object) As Object
         If pValue Is Nothing OrElse pValue Is DBNull.Value Then
@@ -1538,12 +1538,12 @@ Public Class CommonMethod
         End If
     End Function
 
-    ''' <summary>fNvlEx -- Null’u‚«Š·‚¦</summary>
-    ''' <param name="pValue">‘ÎÛ•Ï”</param>
-    ''' <param name="pRepValue">Null’u‚«Š·‚¦•Ï”</param>
+    ''' <summary>fNvlEx -- Nullç½®ãæ›ãˆ</summary>
+    ''' <param name="pValue">å¯¾è±¡å¤‰æ•°</param>
+    ''' <param name="pRepValue">Nullæ™‚ç½®ãæ›ãˆå¤‰æ•°</param>
     ''' <remarks>
-    ''' pValue‚ªNothing‚Ü‚½‚ÍNull‚Ìê‡‚ÍpRepValue‚ğC‚»‚êˆÈŠO‚ÍpValue‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·
-    ''' Option Strict = True ‚Ì‘Î‰
+    ''' pValueãŒNothingã¾ãŸã¯Nullã®å ´åˆã¯pRepValueã‚’ï¼Œãã‚Œä»¥å¤–ã¯pValueã‚’ãã®ã¾ã¾è¿”ã™
+    ''' Option Strict = True ã®å¯¾å¿œ
     ''' </remarks>
     <DebuggerStepThrough()>
     Public Shared Sub fNvlEx(ByRef pValue As Object, ByVal pRepValue As Object)
@@ -1552,9 +1552,9 @@ Public Class CommonMethod
         End If
     End Sub
 
-    ''' <summary>fToNumber -- ”’l‰»</summary>
-    ''' <param name="pVal">‘ÎÛ•Ï”</param>
-    ''' <param name="pRetType">•Ô‹p’l‚Ì”’lÀ²Ìß È—ª‚ÍDecimal‚É‚Ä•Ô‹p</param>
+    ''' <summary>fToNumber -- æ•°å€¤åŒ–</summary>
+    ''' <param name="pVal">å¯¾è±¡å¤‰æ•°</param>
+    ''' <param name="pRetType">è¿”å´å€¤ã®æ•°å€¤ï¾€ï½²ï¾Œï¾Ÿ çœç•¥æ™‚ã¯Decimalã«ã¦è¿”å´</param>
     ''' <returns></returns>
     ''' <remarks></remarks>
     <DebuggerStepThrough()>
@@ -1597,29 +1597,29 @@ Public Class CommonMethod
         Exit Function
 fToNumberErr:
         xErrm = Err.Description
-        Err.Raise(vbObjectError + 100, , "fToNumber:”’l•ÏŠ·‚É¸”s‚µ‚Ü‚µ‚½¡" & vbCrLf & xErrm)
+        Err.Raise(vbObjectError + 100, , "fToNumber:æ•°å€¤å¤‰æ›ã«å¤±æ•—ã—ã¾ã—ãŸï½¡" & vbCrLf & xErrm)
     End Function
 
-    ''' <summary>fToNumberEx -- ”’l‰»@@¦Œ^w’èÈ—ª</summary>
-    ''' <param name="pVal">‘ÎÛ•Ï”</param>
-    ''' <returns>DecimalŒ^‚Ì”’l</returns>
+    ''' <summary>fToNumberEx -- æ•°å€¤åŒ–ã€€ã€€â€»å‹æŒ‡å®šçœç•¥</summary>
+    ''' <param name="pVal">å¯¾è±¡å¤‰æ•°</param>
+    ''' <returns>Decimalå‹ã®æ•°å€¤</returns>
     ''' <remarks>
-    ''' Option Strict = True ‚Ì‘Î‰
+    ''' Option Strict = True ã®å¯¾å¿œ
     ''' </remarks>
     <DebuggerStepThrough()>
     Public Shared Function fToNumberEx(ByVal pVal As Object) As Decimal
 
-        '' DecimalŒ^‚ğw’è‚µ‚Äˆ—‚·‚é
+        '' Decimalå‹ã‚’æŒ‡å®šã—ã¦å‡¦ç†ã™ã‚‹
         Return fToNumberEx(Of Decimal)(pVal)
 
     End Function
 
-    ''' <summary>fToNumberEx -- ”’l‰»</summary>
-    ''' <typeparam name="NumericType">•Ô‹p’l‚Ì”’lÀ²Ìß</typeparam>
-    ''' <param name="pVal">‘ÎÛ•Ï”</param>
-    ''' <returns>NumericType‚Åw’è‚³‚ê‚½Œ^‚Ì”’l</returns>
+    ''' <summary>fToNumberEx -- æ•°å€¤åŒ–</summary>
+    ''' <typeparam name="NumericType">è¿”å´å€¤ã®æ•°å€¤ï¾€ï½²ï¾Œï¾Ÿ</typeparam>
+    ''' <param name="pVal">å¯¾è±¡å¤‰æ•°</param>
+    ''' <returns>NumericTypeã§æŒ‡å®šã•ã‚ŒãŸå‹ã®æ•°å€¤</returns>
     ''' <remarks>
-    ''' Option Strict = True ‚Ì‘Î‰
+    ''' Option Strict = True ã®å¯¾å¿œ
     ''' </remarks>
     <DebuggerStepThrough()>
     Public Shared Function fToNumberEx(Of NumericType)(ByVal pVal As Object) As NumericType
@@ -1628,36 +1628,36 @@ fToNumberErr:
 
         Try
 
-            '' ”’l‰»‚Å‚«‚È‚¢ê‡‚Íu0v‚Åˆµ‚¤
+            '' æ•°å€¤åŒ–ã§ããªã„å ´åˆã¯ã€Œ0ã€ã§æ‰±ã†
             If IsNumeric(pVal) = False Then
                 xRet = 0
             Else
                 xRet = pVal
             End If
 
-            '' NumericType‚ÉƒLƒƒƒXƒg‚µ‚Ä–ß‚·
+            '' NumericTypeã«ã‚­ãƒ£ã‚¹ãƒˆã—ã¦æˆ»ã™
             Return CType(xRet, NumericType)
 
         Catch ex As Exception
 
-            Throw New Exception("fToNumberEx:”’l•ÏŠ·‚É¸”s‚µ‚Ü‚µ‚½¡" & vbCrLf & ex.Message)
+            Throw New Exception("fToNumberEx:æ•°å€¤å¤‰æ›ã«å¤±æ•—ã—ã¾ã—ãŸï½¡" & vbCrLf & ex.Message)
 
         End Try
 
     End Function
 
-    ''' <summary>fToText -- •¶š‰»</summary>
-    ''' <param name="pVal">‘ÎÛ•Ï”</param>
-    ''' <returns>•¶š—ñ</returns>
-    ''' <remarks>pVal‚ğÃ·½Ä€–Ú‰»‚µ‚Ü‚·¡NULLw’è‚³‚ê‚½ê‡‚Í‹ó”’‚ª•Ô‹p‚³‚ê‚Ü‚·¡</remarks>
-    ''' <ì¬Ò></ì¬Ò>
-    ''' <”õl>DB€–Ú‚æ‚èƒeƒLƒXƒg€–Ú‚Ö‚Ì“]‹L‚È‚ÇCNull‚ª‹–‚³‚ê‚È‚¢€–Ú‚Ö‚Ì“]‹L‚Ég—p‚·‚é</”õl>
+    ''' <summary>fToText -- æ–‡å­—åŒ–</summary>
+    ''' <param name="pVal">å¯¾è±¡å¤‰æ•°</param>
+    ''' <returns>æ–‡å­—åˆ—</returns>
+    ''' <remarks>pValã‚’ï¾ƒï½·ï½½ï¾„é …ç›®åŒ–ã—ã¾ã™ï½¡NULLæŒ‡å®šã•ã‚ŒãŸå ´åˆã¯ç©ºç™½ãŒè¿”å´ã•ã‚Œã¾ã™ï½¡</remarks>
+    ''' <ä½œæˆè€…></ä½œæˆè€…>
+    ''' <å‚™è€ƒ>DBé …ç›®ã‚ˆã‚Šãƒ†ã‚­ã‚¹ãƒˆé …ç›®ã¸ã®è»¢è¨˜ãªã©ï¼ŒNullãŒè¨±ã•ã‚Œãªã„é …ç›®ã¸ã®è»¢è¨˜ã«ä½¿ç”¨ã™ã‚‹</å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fToText(ByVal pVal As Object) As String
         Dim ResultStr As String = String.Empty
 
         Try
-            If pVal Is Nothing Then ''Nothingİ’è‚Ìê‡‚Í‹ó”’•Ô‚µ
+            If pVal Is Nothing Then ''Nothingè¨­å®šã®å ´åˆã¯ç©ºç™½è¿”ã—
                 'fToText = ""
             ElseIf IsDBNull(pVal) Then
                 'fToText = ""
@@ -1674,39 +1674,39 @@ fToNumberErr:
     End Function
 
     ''' <summary>
-    ''' fTrimSingleQuotes‚ÌŠÖ”
+    ''' fTrimSingleQuotesã®é–¢æ•°
     ''' </summary>
     ''' <param name="str"></param>
     ''' <returns></returns>
-    ''' <history version="1" date="2017.09.21" name="PHONG-BTT">V‹Kì¬</history>
+    ''' <history version="1" date="2017.09.21" name="PHONG-BTT">æ–°è¦ä½œæˆ</history>
     Public Shared Function fTrimSingleQuotes(ByVal str As String) As String
 
         Return str.Trim("'")
 
     End Function
 
-    ''' <summary>fToDate -- “ú•t€–Ú‰»</summary>
-    ''' <param name="pDate">‘ÎÛ•Ï”</param>
-    ''' <param name="pErrDate">ƒGƒ‰[‚Ì’l</param>
-    ''' <param name="pRetType">•Ô‹p’l‚Ì“ú•tÀ²Ìß(È—ª‰Â 1:“ú•t+ŠÔ,2:“ú•t‚Ì‚İ,3:ŠÔ‚Ì‚İ) Šù’è’l 1:“ú•t+ŠÔ</param>
-    ''' <returns>“ú•t</returns>
-    ''' <remarks>pDate‚ğ“ú•t–Ú‰»‚µ‚Ü‚·¡“ú•t€–ÚŠO‚ªw’è‚³‚ê‚½ê‡‚Í,Êß×Ò°À2‚ğ,È—ª‚³‚ê‚½ê‡‚Í¼½ÃÑÅ¬’l‚ğ•Ô‹p‚µ‚Ü‚·</remarks>
-    ''' <ì¬Ò>•Äˆä —DŒ°</ì¬Ò>
-    ''' <”õl></”õl>
+    ''' <summary>fToDate -- æ—¥ä»˜é …ç›®åŒ–</summary>
+    ''' <param name="pDate">å¯¾è±¡å¤‰æ•°</param>
+    ''' <param name="pErrDate">ã‚¨ãƒ©ãƒ¼æ™‚ã®å€¤</param>
+    ''' <param name="pRetType">è¿”å´å€¤ã®æ—¥ä»˜ï¾€ï½²ï¾Œï¾Ÿ(çœç•¥å¯ 1:æ—¥ä»˜+æ™‚é–“,2:æ—¥ä»˜ã®ã¿,3:æ™‚é–“ã®ã¿) æ—¢å®šå€¤ 1:æ—¥ä»˜+æ™‚é–“</param>
+    ''' <returns>æ—¥ä»˜</returns>
+    ''' <remarks>pDateã‚’æ—¥ä»˜ç›®åŒ–ã—ã¾ã™ï½¡æ—¥ä»˜é …ç›®å¤–ãŒæŒ‡å®šã•ã‚ŒãŸå ´åˆã¯,ï¾Šï¾Ÿï¾—ï¾’ï½°ï¾€2ã‚’,çœç•¥ã•ã‚ŒãŸå ´åˆã¯ï½¼ï½½ï¾ƒï¾‘æœ€å°å€¤ã‚’è¿”å´ã—ã¾ã™</remarks>
+    ''' <ä½œæˆè€…>ç±³äº• å„ªé¡•</ä½œæˆè€…>
+    ''' <å‚™è€ƒ></å‚™è€ƒ>
     <DebuggerStepThrough()>
     Public Shared Function fToDate(ByVal pDate As Object, Optional ByVal pErrDate As Date = #1/1/1000#, Optional ByVal pRetType As BrowsefToDate = BrowsefToDate.fToDate_DateTime) As Date
         Dim xDate As Date
         Dim ResultDate As Date
 
         Try
-            '' “ú•t‰»‚ª‰Â”\‚©H
+            '' æ—¥ä»˜åŒ–ãŒå¯èƒ½ã‹ï¼Ÿ
             If IsDate(pDate) Then
                 xDate = CDate(pDate)
             Else
                 xDate = pErrDate
             End If
 
-            ''•Ô‹p’l•Ê‚ÉŒ^•ÏŠ·
+            ''è¿”å´å€¤åˆ¥ã«å‹å¤‰æ›
             Select Case pRetType
                 Case BrowsefToDate.fToDate_DateTime
                     ResultDate = xDate
@@ -1726,11 +1726,11 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>fToInt -- Int‰»</summary>
-    ''' <param name="pVal">•ÏŠ·‘ÎÛ’l</param>
+    ''' <summary>fToInt -- IntåŒ–</summary>
+    ''' <param name="pVal">å¤‰æ›å¯¾è±¡å€¤</param>
     ''' <returns>Integer</returns>
-    ''' <remarks>“à•”‚ÅfToNumberEx‚Öˆ—‚ğˆø‚«“n‚·</remarks>
-    ''' <history version="1" date="2008.04.07" name="ç—t —F‘¥">V‹Kì¬</history> 
+    ''' <remarks>å†…éƒ¨ã§fToNumberExã¸å‡¦ç†ã‚’å¼•ãæ¸¡ã™</remarks>
+    ''' <history version="1" date="2008.04.07" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history> 
     <DebuggerStepThrough()>
     Public Shared Function fToInt(ByVal pVal As Object) As Integer
 
@@ -1738,11 +1738,11 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>fToDbl -- Double‰»</summary>
-    ''' <param name="pVal">•ÏŠ·‘ÎÛ’l</param>
+    ''' <summary>fToDbl -- DoubleåŒ–</summary>
+    ''' <param name="pVal">å¤‰æ›å¯¾è±¡å€¤</param>
     ''' <returns>Integer</returns>
-    ''' <remarks>“à•”‚ÅfToNumberEx‚Öˆ—‚ğˆø‚«“n‚·</remarks>
-    ''' <history version="1" date="2008.04.07" name="ç—t —F‘¥">V‹Kì¬</history> 
+    ''' <remarks>å†…éƒ¨ã§fToNumberExã¸å‡¦ç†ã‚’å¼•ãæ¸¡ã™</remarks>
+    ''' <history version="1" date="2008.04.07" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history> 
     <DebuggerStepThrough()>
     Public Shared Function fToDbl(ByVal pVal As Object) As Double
 
@@ -1750,11 +1750,11 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>fToDec -- Decimal‰»</summary>
-    ''' <param name="pVal">•ÏŠ·‘ÎÛ’l</param>
+    ''' <summary>fToDec -- DecimalåŒ–</summary>
+    ''' <param name="pVal">å¤‰æ›å¯¾è±¡å€¤</param>
     ''' <returns>Integer</returns>
-    ''' <remarks>“à•”‚ÅfToNumberEx‚Öˆ—‚ğˆø‚«“n‚·</remarks>
-    ''' <history version="1" date="2008.04.07" name="ç—t —F‘¥">V‹Kì¬</history> 
+    ''' <remarks>å†…éƒ¨ã§fToNumberExã¸å‡¦ç†ã‚’å¼•ãæ¸¡ã™</remarks>
+    ''' <history version="1" date="2008.04.07" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history> 
     <DebuggerStepThrough()>
     Public Shared Function fToDec(ByVal pVal As Object) As Decimal
 
@@ -1762,18 +1762,18 @@ fToNumberErr:
 
     End Function
 
-    '¡MidB
-    ''' <summary>MidŠÖ”‚ÌƒoƒCƒg”ÅB•¶š”‚ÆˆÊ’u‚ğƒoƒCƒg”‚Åw’è‚µ‚Ä•¶š—ñ‚ğØ‚è”²‚­B</summary>
-    ''' <param name="str">‘ÎÛ‚Ì•¶š—ñ</param>
-    ''' <param name="Start">Ø‚è”²‚«ŠJnˆÊ’uB‘SŠp•¶š‚ğ•ªŠ„‚·‚é‚æ‚¤ˆÊ’u‚ªw’è‚³‚ê‚½ê‡A–ß‚è’l‚Ì•¶š—ñ‚Ìæ“ª‚ÍˆÓ–¡•s–¾‚Ì”¼Šp•¶š‚Æ‚È‚éB</param>
-    ''' <param name="Length">Ø‚è”²‚­•¶š—ñ‚ÌƒoƒCƒg”</param>
-    ''' <returns>Ø‚è”²‚©‚ê‚½•¶š—ñ</returns>
-    ''' <remarks>ÅŒã‚Ì‚PƒoƒCƒg‚ª‘SŠp•¶š‚Ì”¼•ª‚É‚È‚éê‡A‚»‚Ì‚PƒoƒCƒg‚Í–³‹‚³‚ê‚éB</remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
-    ''' <history version="3" date="2009.06.01" name="‚“ˆ ’¼÷">Ø‚è”²‚¢‚½•¶š—ñ‚ÌƒoƒCƒg”æ“¾•s³‚ğC³</history>
+    'â– MidB
+    ''' <summary>Midé–¢æ•°ã®ãƒã‚¤ãƒˆç‰ˆã€‚æ–‡å­—æ•°ã¨ä½ç½®ã‚’ãƒã‚¤ãƒˆæ•°ã§æŒ‡å®šã—ã¦æ–‡å­—åˆ—ã‚’åˆ‡ã‚ŠæŠœãã€‚</summary>
+    ''' <param name="str">å¯¾è±¡ã®æ–‡å­—åˆ—</param>
+    ''' <param name="Start">åˆ‡ã‚ŠæŠœãé–‹å§‹ä½ç½®ã€‚å…¨è§’æ–‡å­—ã‚’åˆ†å‰²ã™ã‚‹ã‚ˆã†ä½ç½®ãŒæŒ‡å®šã•ã‚ŒãŸå ´åˆã€æˆ»ã‚Šå€¤ã®æ–‡å­—åˆ—ã®å…ˆé ­ã¯æ„å‘³ä¸æ˜ã®åŠè§’æ–‡å­—ã¨ãªã‚‹ã€‚</param>
+    ''' <param name="Length">åˆ‡ã‚ŠæŠœãæ–‡å­—åˆ—ã®ãƒã‚¤ãƒˆæ•°</param>
+    ''' <returns>åˆ‡ã‚ŠæŠœã‹ã‚ŒãŸæ–‡å­—åˆ—</returns>
+    ''' <remarks>æœ€å¾Œã®ï¼‘ãƒã‚¤ãƒˆãŒå…¨è§’æ–‡å­—ã®åŠåˆ†ã«ãªã‚‹å ´åˆã€ãã®ï¼‘ãƒã‚¤ãƒˆã¯ç„¡è¦–ã•ã‚Œã‚‹ã€‚</remarks>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
+    ''' <history version="3" date="2009.06.01" name="é«˜å¶‹ ç›´æ¨¹">åˆ‡ã‚ŠæŠœã„ãŸæ–‡å­—åˆ—ã®ãƒã‚¤ãƒˆæ•°å–å¾—ä¸æ­£ã‚’ä¿®æ­£</history>
     Public Shared Function MidB(ByVal str As String, ByVal Start As Integer, Optional ByVal Length As Integer = 0) As String
-        '¥‹ó•¶š‚É‘Î‚µ‚Ä‚Íí‚É‹ó•¶š‚ğ•Ô‚·
+        'â–¼ç©ºæ–‡å­—ã«å¯¾ã—ã¦ã¯å¸¸ã«ç©ºæ–‡å­—ã‚’è¿”ã™
 
         If str Is Nothing Then
             Return String.Empty
@@ -1783,9 +1783,9 @@ fToNumberErr:
             Return ""
         End If
 
-        '¥Length‚Ìƒ`ƒFƒbƒN
+        'â–¼Lengthã®ãƒã‚§ãƒƒã‚¯
 
-        'Length‚ª0‚©AStartˆÈ~‚ÌƒoƒCƒg”‚ğƒI[ƒo[‚·‚éê‡‚ÍStartˆÈ~‚Ì‘SƒoƒCƒg‚ªw’è‚³‚ê‚½‚à‚Ì‚Æ‚İ‚È‚·B
+        'LengthãŒ0ã‹ã€Startä»¥é™ã®ãƒã‚¤ãƒˆæ•°ã‚’ã‚ªãƒ¼ãƒãƒ¼ã™ã‚‹å ´åˆã¯Startä»¥é™ã®å…¨ãƒã‚¤ãƒˆãŒæŒ‡å®šã•ã‚ŒãŸã‚‚ã®ã¨ã¿ãªã™ã€‚
 
         Dim RestLength As Integer = System.Text.Encoding.GetEncoding("Shift_JIS").GetByteCount(str) - Start + 1
 
@@ -1793,7 +1793,7 @@ fToNumberErr:
             Length = RestLength
         End If
 
-        '¥Ø‚è”²‚«
+        'â–¼åˆ‡ã‚ŠæŠœã
 
         Dim SJIS As System.Text.Encoding = System.Text.Encoding.GetEncoding("Shift-JIS")
         Dim B() As Byte = CType(Array.CreateInstance(GetType(Byte), Length), Byte())
@@ -1802,7 +1802,7 @@ fToNumberErr:
 
         Dim st1 As String = SJIS.GetString(B)
 
-        '¥Ø‚è”²‚¢‚½Œ‹‰ÊAÅŒã‚Ì‚PƒoƒCƒg‚ª‘SŠp•¶š‚Ì”¼•ª‚¾‚Á‚½ê‡A‚»‚Ì”¼•ª‚ÍØ‚èÌ‚Ä‚éB
+        'â–¼åˆ‡ã‚ŠæŠœã„ãŸçµæœã€æœ€å¾Œã®ï¼‘ãƒã‚¤ãƒˆãŒå…¨è§’æ–‡å­—ã®åŠåˆ†ã ã£ãŸå ´åˆã€ãã®åŠåˆ†ã¯åˆ‡ã‚Šæ¨ã¦ã‚‹ã€‚
 
         ''2009.06.01 UPD START TAKASHIMA
         'Dim ResultLength As Integer = System.Text.Encoding.GetEncoding("Shift_JIS").GetByteCount(st1) - Start + 1
@@ -1810,13 +1810,13 @@ fToNumberErr:
         ''2009.06.01 UPD END
 
         If Asc(Strings.Right(st1, 1)) = 0 Then
-            'VB.NET2002,2003‚Ìê‡AÅŒã‚Ì‚PƒoƒCƒg‚ª‘SŠp‚Ì”¼•ª‚Ì
+            'VB.NET2002,2003ã®å ´åˆã€æœ€å¾Œã®ï¼‘ãƒã‚¤ãƒˆãŒå…¨è§’ã®åŠåˆ†ã®æ™‚
             Return st1.Substring(0, st1.Length - 1)
         ElseIf Length = ResultLength - 1 Then
-            'VB2005‚Ìê‡‚ÅÅŒã‚Ì‚PƒoƒCƒg‚ª‘SŠp‚Ì”¼•ª‚Ì
+            'VB2005ã®å ´åˆã§æœ€å¾Œã®ï¼‘ãƒã‚¤ãƒˆãŒå…¨è§’ã®åŠåˆ†ã®æ™‚
             Return st1.Substring(0, st1.Length - 1)
         Else
-            '‚»‚Ì‘¼‚Ìê‡
+            'ãã®ä»–ã®å ´åˆ
             Return st1
         End If
 
@@ -1828,8 +1828,8 @@ fToNumberErr:
     ''' <param name="pLobStr"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     Public Shared Function LobDataDivision(ByVal pLobStr As String) As Array
 
         If pLobStr Is Nothing Then
@@ -1839,29 +1839,29 @@ fToNumberErr:
         Dim RetArr() As String
         Dim nByteLen As Decimal = LenB(pLobStr)
 
-        '' ƒoƒCƒg”‚ª‚S‚O‚O‚OƒoƒCƒg‚ğ’´‚¦‚é‚©ƒ`ƒFƒbƒN
+        '' ãƒã‚¤ãƒˆæ•°ãŒï¼”ï¼ï¼ï¼ãƒã‚¤ãƒˆã‚’è¶…ãˆã‚‹ã‹ãƒã‚§ãƒƒã‚¯
         If nByteLen > 4000 Then
-            '' ”z—ñƒTƒCƒY‚ğŒˆ’è
+            '' é…åˆ—ã‚µã‚¤ã‚ºã‚’æ±ºå®š
             Dim nArrCount As Decimal = fRound((nByteLen / 4000), 1, 1) - 1
             ReDim RetArr(nArrCount)
 
-            '' ”z—ñ‚É•ªŠ„‚µ‚Ä’l‚ğİ’è
+            '' é…åˆ—ã«åˆ†å‰²ã—ã¦å€¤ã‚’è¨­å®š
             Dim nCnt As Integer = 0
             Dim nTotalByte As Decimal = 0
 
             For i As Integer = nCnt To nArrCount
 
-                '' ƒg[ƒ^ƒ‹ƒoƒCƒg”‚Ì‰Šú‰»
+                '' ãƒˆãƒ¼ã‚¿ãƒ«ãƒã‚¤ãƒˆæ•°ã®åˆæœŸåŒ–
                 nTotalByte = 0
 
-                '' Œ»İ‚Ìƒg[ƒ^ƒ‹ƒoƒCƒg”‚ğæ“¾
+                '' ç¾åœ¨ã®ãƒˆãƒ¼ã‚¿ãƒ«ãƒã‚¤ãƒˆæ•°ã‚’å–å¾—
                 For j As Integer = 0 To nArrCount
                     If RetArr(j) <> Nothing Then
                         nTotalByte = nTotalByte + fToNumberEx(Of Decimal)(LenB(RetArr(j)))
                     End If
                 Next
 
-                '' ƒoƒCƒg•ªŠ„
+                '' ãƒã‚¤ãƒˆåˆ†å‰²
                 If i = nArrCount Then
                     RetArr(i) = MidB(pLobStr, (nTotalByte + 1), nByteLen - nTotalByte)
                 Else
@@ -1870,7 +1870,7 @@ fToNumberErr:
             Next
 
         Else
-            '' ‚S‚O‚O‚OƒoƒCƒgˆÈ“à‚Ìê‡‚Í‚»‚Ì‚Ü‚Ü•Ô‹p
+            '' ï¼”ï¼ï¼ï¼ãƒã‚¤ãƒˆä»¥å†…ã®å ´åˆã¯ãã®ã¾ã¾è¿”å´
             ReDim RetArr(0)
             RetArr(0) = pLobStr
         End If
@@ -1879,12 +1879,12 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>Camelize -- ƒAƒ“ƒ_[ƒXƒRƒAŒq‚¬‚Ì•¶š—ñ‚ğƒLƒƒƒƒ‹Œ`®EƒpƒXƒJƒ‹Œ`®‚É•ÏŠ·‚µ‚Ü‚·</summary>
-    ''' <param name="str">•¶š—ñ</param>
-    ''' <param name="toUpper">æ“ª•¶š‚ğ‘å•¶š‚É‚·‚é‚©iTrue: ‚·‚é / False: ‚µ‚È‚¢j</param>
+    ''' <summary>Camelize -- ã‚¢ãƒ³ãƒ€ãƒ¼ã‚¹ã‚³ã‚¢ç¹‹ãã®æ–‡å­—åˆ—ã‚’ã‚­ãƒ£ãƒ¡ãƒ«å½¢å¼ãƒ»ãƒ‘ã‚¹ã‚«ãƒ«å½¢å¼ã«å¤‰æ›ã—ã¾ã™</summary>
+    ''' <param name="str">æ–‡å­—åˆ—</param>
+    ''' <param name="toUpper">å…ˆé ­æ–‡å­—ã‚’å¤§æ–‡å­—ã«ã™ã‚‹ã‹ï¼ˆTrue: ã™ã‚‹ / False: ã—ãªã„ï¼‰</param>
     ''' <returns>String</returns>
-    ''' <remarks>ƒfƒtƒHƒ‹ƒg‚ÍƒLƒƒƒƒ‹Œ`®iæ“ª¬•¶šj</remarks>
-    ''' <history version="1" date="2009.08.27" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history> 
+    ''' <remarks>ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ã‚­ãƒ£ãƒ¡ãƒ«å½¢å¼ï¼ˆå…ˆé ­å°æ–‡å­—ï¼‰</remarks>
+    ''' <history version="1" date="2009.08.27" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history> 
     Public Shared Function Camelize(ByVal str As String, Optional ByVal toUpper As Boolean = False) As String
 
         Dim regex As New System.Text.RegularExpressions.Regex("[^_]+")
@@ -1903,12 +1903,12 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>Underscore -- ƒLƒƒƒƒ‹Œ`®EƒpƒXƒJƒ‹Œ`®‚Ì•¶š—ñ‚ğƒAƒ“ƒ_[ƒXƒRƒAŒq‚¬‚É•ÏŠ·‚µ‚Ü‚·</summary>
-    ''' <param name="str">•¶š—ñ</param>
-    ''' <param name="toUpper">‘å•¶š‚É‚·‚é‚©iTrue: ‘å•¶š / False: ¬•¶šj</param>
+    ''' <summary>Underscore -- ã‚­ãƒ£ãƒ¡ãƒ«å½¢å¼ãƒ»ãƒ‘ã‚¹ã‚«ãƒ«å½¢å¼ã®æ–‡å­—åˆ—ã‚’ã‚¢ãƒ³ãƒ€ãƒ¼ã‚¹ã‚³ã‚¢ç¹‹ãã«å¤‰æ›ã—ã¾ã™</summary>
+    ''' <param name="str">æ–‡å­—åˆ—</param>
+    ''' <param name="toUpper">å¤§æ–‡å­—ã«ã™ã‚‹ã‹ï¼ˆTrue: å¤§æ–‡å­— / False: å°æ–‡å­—ï¼‰</param>
     ''' <returns>String</returns>
-    ''' <remarks>ƒfƒtƒHƒ‹ƒg‚Í‘å•¶š</remarks>
-    ''' <history version="1" date="2009.08.27" name="ˆÉ“¡ ‹§–¾">V‹Kì¬</history> 
+    ''' <remarks>ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯å¤§æ–‡å­—</remarks>
+    ''' <history version="1" date="2009.08.27" name="ä¼Šè—¤ åŒ¡æ˜">æ–°è¦ä½œæˆ</history> 
     Public Shared Function Underscore(ByVal str As String, Optional ByVal toUpper As Boolean = True) As String
 
         Dim regex As New System.Text.RegularExpressions.Regex("[A-Z]+[a-z\\d]+")
@@ -1929,47 +1929,47 @@ fToNumberErr:
 
 #End Region
 
-#Region " ƒGƒ‰[’Ê’m "
+#Region " ã‚¨ãƒ©ãƒ¼é€šçŸ¥ "
 
-    ''' <summary>ShowExceptionMessage -- —áŠO‚©‚çƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚ğ•\¦‚·‚é</summary>
-    ''' <param name="ex">—áŠOƒNƒ‰ƒX</param>
-    ''' <param name="MessageTitle">ƒƒbƒZ[ƒWƒ^ƒCƒgƒ‹</param>
+    ''' <summary>ShowExceptionMessage -- ä¾‹å¤–ã‹ã‚‰ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã‚’è¡¨ç¤ºã™ã‚‹</summary>
+    ''' <param name="ex">ä¾‹å¤–ã‚¯ãƒ©ã‚¹</param>
+    ''' <param name="MessageTitle">ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¿ã‚¤ãƒˆãƒ«</param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
-    ''' <history version="3" date="2009.04.24" name="ç—t —F‘¥">ƒGƒ‰[ƒƒbƒZ[ƒW‚Ì¶¬‚ğ•Êƒƒ\ƒbƒh‚É•ª—£</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
+    ''' <history version="3" date="2009.04.24" name="åƒè‘‰ å‹å‰‡">ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ç”Ÿæˆã‚’åˆ¥ãƒ¡ã‚½ãƒƒãƒ‰ã«åˆ†é›¢</history>
     Public Shared Sub ShowExceptionMessage(ByVal ex As Exception, ByVal MessageTitle As String)
         '' =================================================================
-        ''   [MessageTitle‚ğ•\¦]
+        ''   [MessageTitleã‚’è¡¨ç¤º]
         ''   ---------------------------------------------------------    
         ''
-        ''   yƒGƒ‰[“à—ez
-        ''   [ex.Message‚ğ•\¦]    
+        ''   ã€ã‚¨ãƒ©ãƒ¼å†…å®¹ã€‘
+        ''   [ex.Messageã‚’è¡¨ç¤º]    
         ''
-        ''   y’Ç‰Áî•ñz@@@@@@@@@@@@@@@@@'''ex‚ÉInnerException‚ªİ’è‚³‚ê‚Ä‚¢‚éê‡‚É•\¦
-        ''   [ex.InnerException.Message‚ğ•\¦]    
+        ''   ã€è¿½åŠ æƒ…å ±ã€‘ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€'''exã«InnerExceptionãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã«è¡¨ç¤º
+        ''   [ex.InnerException.Messageã‚’è¡¨ç¤º]    
         ''
-        ''   yƒGƒ‰[“à—ez
-        ''   [ex.StackTrace‚ğ•\¦]    
+        ''   ã€ã‚¨ãƒ©ãƒ¼å†…å®¹ã€‘
+        ''   [ex.StackTraceã‚’è¡¨ç¤º]    
         '' =================================================================
 
         If MessageTitle Is Nothing Then
             MessageTitle = "PROCES.S5"
         End If
-        ' '' ’Ê’m“à—e‚ğ•ÒW
+        ' '' é€šçŸ¥å†…å®¹ã‚’ç·¨é›†
         'Dim Message As New System.Text.StringBuilder
-        'Message.AppendLine("yƒGƒ‰[“à—ez")
+        'Message.AppendLine("ã€ã‚¨ãƒ©ãƒ¼å†…å®¹ã€‘")
         'Message.AppendLine(ex.Message)
         'Message.AppendLine()
         'If Not IsNothing(ex.InnerException) Then
-        '    Message.AppendLine("y’Ç‰Áî•ñz")
+        '    Message.AppendLine("ã€è¿½åŠ æƒ…å ±ã€‘")
         '    Message.AppendLine(ex.InnerException.Message)
         '    Message.AppendLine()
         'End If
-        'Message.AppendLine("yƒXƒ^ƒbƒNƒgƒŒ[ƒXz")
+        'Message.AppendLine("ã€ã‚¹ã‚¿ãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã€‘")
         'Message.AppendLine(ex.StackTrace)
 
-        '' ƒƒbƒZ[ƒW•\¦
+        '' ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸è¡¨ç¤º
         MessageBox.Show(CreateExceptionString(ex), MessageTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1)
 
     End Sub
@@ -1981,18 +1981,18 @@ fToNumberErr:
     ''' <param name="lev"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2009.04.24" name="ç—t —F‘¥">V‹Kì¬</history>
+    ''' <history version="1" date="2009.04.24" name="åƒè‘‰ å‹å‰‡">æ–°è¦ä½œæˆ</history>
     Public Shared Function CreateExceptionString(ByVal ex As Exception, Optional ByVal lev As Integer = 0) As String
 
         Dim Message As New System.Text.StringBuilder
 
         If lev.Equals(0) Then
-            Message.AppendLine("ƒGƒ‰[î•ñ")
+            Message.AppendLine("ã‚¨ãƒ©ãƒ¼æƒ…å ±")
             Message.AppendLine()
         Else
             Message.AppendLine()
             Message.AppendLine("===================================================")
-            Message.AppendFormat("’Ç‰ÁƒGƒ‰[î•ñ {0}", fToText(lev)) : Message.AppendLine()
+            Message.AppendFormat("è¿½åŠ ã‚¨ãƒ©ãƒ¼æƒ…å ± {0}", fToText(lev)) : Message.AppendLine()
             Message.AppendLine()
         End If
 
@@ -2003,15 +2003,15 @@ fToNumberErr:
             exceptionType = ex.GetType().Name
         End If
 
-        Message.AppendLine("yƒGƒ‰[‚Ìí—Şz")
+        Message.AppendLine("ã€ã‚¨ãƒ©ãƒ¼ã®ç¨®é¡ã€‘")
         Message.AppendLine()
         Message.AppendLine(exceptionType)
         Message.AppendLine()
-        Message.AppendLine("y“à—ez")
+        Message.AppendLine("ã€å†…å®¹ã€‘")
         Message.AppendLine()
         Message.AppendLine(ex.Message)
         Message.AppendLine()
-        Message.AppendLine("yƒXƒ^ƒbƒNƒgƒŒ[ƒXz")
+        Message.AppendLine("ã€ã‚¹ã‚¿ãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã€‘")
         Message.AppendLine()
         Message.AppendLine(ex.StackTrace)
 
@@ -2023,20 +2023,20 @@ fToNumberErr:
 
     End Function
 
-    ''' <summary>ConvertException -- Šeí—áŠOƒNƒ‰ƒX‚ğŠî’ê—áŠOƒNƒ‰ƒX‚É•ÏŠ·‚·‚é</summary>
-    ''' <param name="ex">—áŠOƒNƒ‰ƒX</param>
-    ''' <returns>Šî’ê—áŠOƒNƒ‰ƒX</returns>
+    ''' <summary>ConvertException -- å„ç¨®ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’åŸºåº•ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã«å¤‰æ›ã™ã‚‹</summary>
+    ''' <param name="ex">ä¾‹å¤–ã‚¯ãƒ©ã‚¹</param>
+    ''' <returns>åŸºåº•ä¾‹å¤–ã‚¯ãƒ©ã‚¹</returns>
     ''' <remarks></remarks>
     Public Shared Function ConvertException(ByVal ex As Exception) As Exception
 
         Dim Result As Exception
 
         If ex.GetType Is GetType(SoapException) Then
-            '' WebƒT[ƒrƒX‚Å”­¶‚µ‚½—áŠOƒNƒ‰ƒX‚ğŠî’ê‚Ì—áŠOƒNƒ‰ƒX‚É•ÏŠ·
+            '' Webã‚µãƒ¼ãƒ“ã‚¹ã§ç™ºç”Ÿã—ãŸä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’åŸºåº•ã®ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã«å¤‰æ›
             Result = New Exception(CType(ex, SoapException).Detail.ChildNodes(0).InnerText, ex)
 
         Else
-            '' ‚±‚ê‚Ü‚Å‚Ìˆ—‚Å•ÏŠ·‚³‚ê‚È‚¢—áŠOƒNƒ‰ƒX‚ÍA’Pƒ‚É—áŠOƒNƒ‰ƒX‚ÉƒLƒƒƒXƒg‚·‚é
+            '' ã“ã‚Œã¾ã§ã®å‡¦ç†ã§å¤‰æ›ã•ã‚Œãªã„ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã¯ã€å˜ç´”ã«ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã«ã‚­ãƒ£ã‚¹ãƒˆã™ã‚‹
             Result = CType(ex, Exception)
         End If
 
@@ -2045,14 +2045,14 @@ fToNumberErr:
     End Function
 
     ''' <summary>
-    ''' WriteEventLog -- ƒCƒxƒ“ƒgƒƒO‚ğo—Í‚·‚é
+    ''' WriteEventLog -- ã‚¤ãƒ™ãƒ³ãƒˆãƒ­ã‚°ã‚’å‡ºåŠ›ã™ã‚‹
     ''' </summary>
-    ''' <param name="pEx">—áŠOƒNƒ‰ƒX</param>
-    ''' <param name="pMsg">ƒGƒ‰[ƒƒbƒZ[ƒW</param>
+    ''' <param name="pEx">ä¾‹å¤–ã‚¯ãƒ©ã‚¹</param>
+    ''' <param name="pMsg">ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸</param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
-    ''' <history version="3" date="2011.12.14" name="“à“c ‹v‹`">(SC‚Å—‚¿‚éŒ´ˆö‚É‚È‚Á‚Ä‚¢‚½ˆ×)EventLog‚Ö‚Ì‘‚«‚İƒGƒ‰[‚Í‰½‚à‚µ‚æ‚¤‚ª‚È‚¢‚Ì‚ÅƒXƒ‹[‚·‚é</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
+    ''' <history version="3" date="2011.12.14" name="å†…ç”° ä¹…ç¾©">(SCã§è½ã¡ã‚‹åŸå› ã«ãªã£ã¦ã„ãŸç‚º)EventLogã¸ã®æ›¸ãè¾¼ã¿ã‚¨ãƒ©ãƒ¼ã¯ä½•ã‚‚ã—ã‚ˆã†ãŒãªã„ã®ã§ã‚¹ãƒ«ãƒ¼ã™ã‚‹</history>
     Public Shared Sub WriteEventLog(ByVal pEx As Exception, ByVal pMsg As String)
 
         If pMsg Is Nothing Then
@@ -2074,7 +2074,7 @@ fToNumberErr:
         Try
             EventLog.WriteEntry("PROCES.S5", xMsg, EventLogEntryType.Error, 50000)
         Catch dummyex As Exception
-            ''(SC‚Å—‚¿‚éŒ´ˆö‚É‚È‚Á‚Ä‚¢‚½ˆ×)EventLog‚Ö‚Ì‘‚«‚İƒGƒ‰[‚Í‰½‚à‚µ‚æ‚¤‚ª‚È‚¢‚Ì‚ÅƒXƒ‹[‚·‚é
+            ''(SCã§è½ã¡ã‚‹åŸå› ã«ãªã£ã¦ã„ãŸç‚º)EventLogã¸ã®æ›¸ãè¾¼ã¿ã‚¨ãƒ©ãƒ¼ã¯ä½•ã‚‚ã—ã‚ˆã†ãŒãªã„ã®ã§ã‚¹ãƒ«ãƒ¼ã™ã‚‹
         End Try
         ''2011.12.14 UPD END
 
@@ -2082,10 +2082,10 @@ fToNumberErr:
 
 #End Region
 
-#Region " •ÊƒAƒvƒŠ‹N“®ˆ— "
+#Region " åˆ¥ã‚¢ãƒ—ãƒªèµ·å‹•å‡¦ç† "
 
     ' ''' <summary>
-    ' ''' ClicOnce ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚·‚é‚½‚ß‚Ì URL ‚ğì¬‚µ‚Ü‚·B
+    ' ''' ClicOnce ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’èµ·å‹•ã™ã‚‹ãŸã‚ã® URL ã‚’ä½œæˆã—ã¾ã™ã€‚
     ' ''' </summary>
     ' ''' <param name="deploymentUrl"></param>
     ' ''' <param name="kidoName"></param>
@@ -2103,7 +2103,7 @@ fToNumberErr:
     'End Function
 
     ' ''' <summary>
-    ' ''' ClicOnce ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚·‚é‚½‚ß‚Ì IE ‚ÌƒvƒƒZƒXî•ñ‚ğì¬‚µ‚Ü‚·B
+    ' ''' ClicOnce ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’èµ·å‹•ã™ã‚‹ãŸã‚ã® IE ã®ãƒ—ãƒ­ã‚»ã‚¹æƒ…å ±ã‚’ä½œæˆã—ã¾ã™ã€‚
     ' ''' </summary>
     ' ''' <param name="deploymentUrl"></param>
     ' ''' <param name="kidoName"></param>
@@ -2119,17 +2119,17 @@ fToNumberErr:
     ''' <param name="arg"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2009.07.22" name="ç—t —F‘¥">ƒI[ƒo[ƒ[ƒhÀ‘•iˆø”‚ğ‚»‚Ì‚Ü‚ÜƒZƒbƒg‚·‚éj</history>
+    ''' <history version="1" date="2009.07.22" name="åƒè‘‰ å‹å‰‡">ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰å®Ÿè£…ï¼ˆå¼•æ•°ã‚’ãã®ã¾ã¾ã‚»ãƒƒãƒˆã™ã‚‹ï¼‰</history>
     Public Shared Function CreateProcessInfo(ByVal arg As String, ByVal flg As ProcessWindowStyle) As System.Diagnostics.ProcessStartInfo
 
         Dim info As System.Diagnostics.ProcessStartInfo = New System.Diagnostics.ProcessStartInfo
 
-        ''‹N“®î•ñ‚Ìì¬i–ˆ‰ñV‚µ‚¢IE‚ğ‰î‚µ‚Ä‹N“®‚·‚é‚æ‚¤‚É•ÏXj
-        info.FileName = "IExplore.exe"                                      '' IEƒvƒƒZƒX–¼iŒÅ’èj
-        info.Arguments = arg                                                '' ˆø”‚ğƒ_ƒCƒŒƒNƒg‚ÉƒZƒbƒg
-        info.UseShellExecute = True                                         '' ƒVƒFƒ‹‹N“®
-        info.CreateNoWindow = False                                         '' V‚µ‚¢Window‚ğì¬
-        info.WindowStyle = flg                                              '' ˆø”‚ğƒ_ƒCƒŒƒNƒg‚ÉƒZƒbƒg
+        ''èµ·å‹•æƒ…å ±ã®ä½œæˆï¼ˆæ¯å›æ–°ã—ã„IEã‚’ä»‹ã—ã¦èµ·å‹•ã™ã‚‹ã‚ˆã†ã«å¤‰æ›´ï¼‰
+        info.FileName = "IExplore.exe"                                      '' IEãƒ—ãƒ­ã‚»ã‚¹åï¼ˆå›ºå®šï¼‰
+        info.Arguments = arg                                                '' å¼•æ•°ã‚’ãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã«ã‚»ãƒƒãƒˆ
+        info.UseShellExecute = True                                         '' ã‚·ã‚§ãƒ«èµ·å‹•
+        info.CreateNoWindow = False                                         '' æ–°ã—ã„Windowã‚’ä½œæˆ
+        info.WindowStyle = flg                                              '' å¼•æ•°ã‚’ãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã«ã‚»ãƒƒãƒˆ
 
         Return info
 
@@ -2137,7 +2137,7 @@ fToNumberErr:
 
 #End Region
 
-#Region " ó‘Ôƒ‰ƒxƒ‹•ÏXˆ— "
+#Region " çŠ¶æ…‹ãƒ©ãƒ™ãƒ«å¤‰æ›´å‡¦ç† "
 
     ''' <summary>
     ''' SetLabelConfig
@@ -2145,8 +2145,8 @@ fToNumberErr:
     ''' <param name="LabelControl"></param>
     ''' <param name="Index"></param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="" name="">‰”Å•s–¾</history>
-    ''' <history version="2" date="2009.03.25" name="ç—t —F‘¥">ˆø””»’è’Ç‰Á</history>
+    ''' <history version="1" date="" name="">åˆç‰ˆä¸æ˜</history>
+    ''' <history version="2" date="2009.03.25" name="åƒè‘‰ å‹å‰‡">å¼•æ•°åˆ¤å®šè¿½åŠ </history>
     Public Shared Sub SetLabelConfig(ByVal LabelControl As Label, ByVal Index As BrouseConfig)
 
         If LabelControl Is Nothing Then
@@ -2155,51 +2155,51 @@ fToNumberErr:
 
         Select Case Index
             Case BrouseConfig.NoData
-                '–¢“o˜^•¶š
-                LabelControl.Text = "ƒR[ƒh–¢“ü—Í"
+                'æœªç™»éŒ²æ–‡å­—
+                LabelControl.Text = "ã‚³ãƒ¼ãƒ‰æœªå…¥åŠ›"
                 LabelControl.ForeColor = System.Drawing.Color.Khaki
                 LabelControl.BackColor = System.Drawing.Color.Olive
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
             Case BrouseConfig.NewData
-                'V‹K“o˜^•¶š(“ü—ÍŠJn‘O)
-                LabelControl.Text = "–¢“o˜^ƒR[ƒh"
+                'æ–°è¦ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å‰)
+                LabelControl.Text = "æœªç™»éŒ²ã‚³ãƒ¼ãƒ‰"
                 LabelControl.ForeColor = System.Drawing.Color.PowderBlue
                 LabelControl.BackColor = System.Drawing.Color.Navy
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
             Case BrouseConfig.NewDataInput
-                'V‹K“o˜^•¶š(“ü—ÍŠJnŒã)
-                LabelControl.Text = "V‹K“ü—Í’†"
+                'æ–°è¦ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å¾Œ)
+                LabelControl.Text = "æ–°è¦å…¥åŠ›ä¸­"
                 LabelControl.ForeColor = System.Drawing.Color.Navy
                 LabelControl.BackColor = System.Drawing.Color.PowderBlue
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
             Case BrouseConfig.UpdData
-                'C³“o˜^•¶š(“ü—ÍŠJn‘O)
-                LabelControl.Text = "Æ‰ï•\¦’†"
+                'ä¿®æ­£ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å‰)
+                LabelControl.Text = "ç…§ä¼šè¡¨ç¤ºä¸­"
                 LabelControl.ForeColor = System.Drawing.Color.PaleGreen
                 LabelControl.BackColor = System.Drawing.Color.DarkGreen
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
             Case BrouseConfig.UpdDataInput
-                'C³“o˜^•¶š(“ü—ÍŠJnŒã)
-                LabelControl.Text = "C³“ü—Í’†"
+                'ä¿®æ­£ç™»éŒ²æ–‡å­—(å…¥åŠ›é–‹å§‹å¾Œ)
+                LabelControl.Text = "ä¿®æ­£å…¥åŠ›ä¸­"
                 LabelControl.ForeColor = System.Drawing.Color.DarkGreen
                 LabelControl.BackColor = System.Drawing.Color.PaleGreen
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
             Case BrouseConfig.NoSec
-                'Œ ŒÀ–³‚µ•¶š
-                LabelControl.Text = "–¢Œ ŒÀƒR[ƒh"
+                'æ¨©é™ç„¡ã—æ–‡å­—
+                LabelControl.Text = "æœªæ¨©é™ã‚³ãƒ¼ãƒ‰"
                 LabelControl.ForeColor = System.Drawing.Color.Red
                 LabelControl.BackColor = System.Drawing.Color.Black
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
                 ''2008.07.01 ADD START T.Nara
             Case BrouseConfig.Running
-                'ƒf[ƒ^XVÀs’†•¶š
-                LabelControl.Text = "XV’†"
+                'ãƒ‡ãƒ¼ã‚¿æ›´æ–°å®Ÿè¡Œä¸­æ–‡å­—
+                LabelControl.Text = "æ›´æ–°ä¸­"
                 LabelControl.ForeColor = System.Drawing.Color.LightPink
                 LabelControl.BackColor = System.Drawing.Color.Maroon
                 LabelControl.BorderStyle = BorderStyle.FixedSingle
                 ''2008.07.01 ADD END
             Case BrouseConfig.Initialize
-                '‰Šú‰»(ƒ‰ƒxƒ‹‚Ì”ñ•\¦)
+                'åˆæœŸåŒ–(ãƒ©ãƒ™ãƒ«ã®éè¡¨ç¤º)
                 LabelControl.Text = ""
                 LabelControl.ForeColor = LabelControl.Parent.BackColor
                 LabelControl.BackColor = LabelControl.Parent.BackColor
@@ -2210,41 +2210,41 @@ fToNumberErr:
 
 #End Region
 
-#Region " •”–åŒ ŒÀŠÖ˜A "
+#Region " éƒ¨é–€æ¨©é™é–¢é€£ "
 
-#Region " •”–åŒ ŒÀ "
+#Region " éƒ¨é–€æ¨©é™ "
     ''' <summary>
-    ''' GetWhereStrBmnSecurity -- •”–åŒ ŒÀ‚ğl—¶‚·‚é‚½‚ß‚ÌWhere‹å‚ğæ“¾
+    ''' GetWhereStrBmnSecurity -- éƒ¨é–€æ¨©é™ã‚’è€ƒæ…®ã™ã‚‹ãŸã‚ã®Whereå¥ã‚’å–å¾—
     ''' </summary>
-    ''' <param name="checkType">CheckBmnSecType—ñ‹“‘Ì</param>
+    ''' <param name="checkType">CheckBmnSecTypeåˆ—æŒ™ä½“</param>
     ''' <param name="userNo">USER_NO</param>
-    ''' <returns>Where‹å</returns>
-    ''' <remarks>SearchPanel‚©‚ç‚ÌŒÄo‚àl—¶‚µ‚ÄCommonMethod‚ÉÀ‘•
-    '''          FormƒAƒvƒŠ‚Åg—p‚·‚éê‡‚ÍBaseForm‚Ì“¯–¼Method‚ğŒÄo‚·‚±‚Æ</remarks>
-    ''' <history version="1" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <returns>Whereå¥</returns>
+    ''' <remarks>SearchPanelã‹ã‚‰ã®å‘¼å‡ºã‚‚è€ƒæ…®ã—ã¦CommonMethodã«å®Ÿè£…
+    '''          Formã‚¢ãƒ—ãƒªã§ä½¿ç”¨ã™ã‚‹å ´åˆã¯BaseFormã®åŒåMethodã‚’å‘¼å‡ºã™ã“ã¨</remarks>
+    ''' <history version="1" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Overloads Shared Function GetWhereStrBmnSecurity(ByVal checkType As CheckBmnSecType,
                                                             Optional ByVal userNo As Integer = 0) As String
-        ' ’Êí‚ÍCODE‚ÅŒ ŒÀƒ`ƒFƒbƒN
+        ' é€šå¸¸ã¯CODEã§æ¨©é™ãƒã‚§ãƒƒã‚¯
         Return GetWhereStrBmnSecurity("CODE", checkType, userNo)
     End Function
 
     ''' <summary>
-    ''' GetWhereStrBmnSecurity -- •”–åŒ ŒÀ‚ğl—¶‚·‚é‚½‚ß‚ÌWhere‹å‚ğæ“¾
+    ''' GetWhereStrBmnSecurity -- éƒ¨é–€æ¨©é™ã‚’è€ƒæ…®ã™ã‚‹ãŸã‚ã®Whereå¥ã‚’å–å¾—
     ''' </summary>
-    ''' <param name="field">Field–¼ in (Œ ŒÀƒ}ƒXƒ^.CODE)</param>
-    ''' <param name="checkType">CheckBmnSecType—ñ‹“‘Ì</param>
+    ''' <param name="field">Fieldå in (æ¨©é™ãƒã‚¹ã‚¿.CODE)</param>
+    ''' <param name="checkType">CheckBmnSecTypeåˆ—æŒ™ä½“</param>
     ''' <param name="userNo">USER_NO</param>
-    ''' <returns>Where‹å</returns>
-    ''' <remarks>SearchPanel‚©‚ç‚ÌŒÄo‚àl—¶‚µ‚ÄCommonMethod‚ÉÀ‘•
-    '''          FormƒAƒvƒŠ‚Åg—p‚·‚éê‡‚ÍBaseForm‚Ì“¯–¼Method‚ğŒÄo‚·‚±‚Æ</remarks>
-    ''' <history version="1" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <returns>Whereå¥</returns>
+    ''' <remarks>SearchPanelã‹ã‚‰ã®å‘¼å‡ºã‚‚è€ƒæ…®ã—ã¦CommonMethodã«å®Ÿè£…
+    '''          Formã‚¢ãƒ—ãƒªã§ä½¿ç”¨ã™ã‚‹å ´åˆã¯BaseFormã®åŒåMethodã‚’å‘¼å‡ºã™ã“ã¨</remarks>
+    ''' <history version="1" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Overloads Shared Function GetWhereStrBmnSecurity(ByVal field As String,
                                                             ByVal checkType As CheckBmnSecType,
                                                             Optional ByVal userNo As Integer = 0) As String
         Dim xSqlTxt As String
 
-        ' Where‹å‚ÌSQL¶¬
-        xSqlTxt = String.Format("		{0} IN ( ", field)  ' w’è‚³‚ê‚½Field‚ğg—p
+        ' Whereå¥ã®SQLç”Ÿæˆ
+        xSqlTxt = String.Format("		{0} IN ( ", field)  ' æŒ‡å®šã•ã‚ŒãŸFieldã‚’ä½¿ç”¨
         xSqlTxt &= vbCrLf & "				SELECT "
         xSqlTxt &= vbCrLf & "						CODE "
         xSqlTxt &= vbCrLf & "				FROM "
@@ -2253,43 +2253,43 @@ fToNumberErr:
         xSqlTxt &= vbCrLf & "						USER_NO	=	{1} "
         xSqlTxt &= vbCrLf & "		) "
 
-        ' ê—p‚Ì•ÏŠ·ˆ—‚ğ‚µ‚Ä•Ô‹p
+        ' å°‚ç”¨ã®å¤‰æ›å‡¦ç†ã‚’ã—ã¦è¿”å´
         Return FormatStrBmnSecurity(xSqlTxt, checkType, userNo)
     End Function
 #End Region
-#Region " •”–åŠK‘wŒ ŒÀ "
+#Region " éƒ¨é–€éšå±¤æ¨©é™ "
     ''' <summary>
-    ''' GetWhereStrBmnKaisouSecurity -- •”–åŒ ŒÀ‚ğl—¶‚·‚é‚½‚ß‚ÌWhere‹å‚ğæ“¾
+    ''' GetWhereStrBmnKaisouSecurity -- éƒ¨é–€æ¨©é™ã‚’è€ƒæ…®ã™ã‚‹ãŸã‚ã®Whereå¥ã‚’å–å¾—
     ''' </summary>
-    ''' <param name="checkType">CheckBmnSecType—ñ‹“‘Ì</param>
+    ''' <param name="checkType">CheckBmnSecTypeåˆ—æŒ™ä½“</param>
     ''' <param name="userNo">USER_NO</param>
-    ''' <returns>Where‹å</returns>
-    ''' <remarks>SearchPanel‚©‚ç‚ÌŒÄo‚àl—¶‚µ‚ÄCommonMethod‚ÉÀ‘•
-    '''          FormƒAƒvƒŠ‚Åg—p‚·‚éê‡‚ÍBaseForm‚Ì“¯–¼Method‚ğŒÄo‚·‚±‚Æ</remarks>
-    ''' <history version="1" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <returns>Whereå¥</returns>
+    ''' <remarks>SearchPanelã‹ã‚‰ã®å‘¼å‡ºã‚‚è€ƒæ…®ã—ã¦CommonMethodã«å®Ÿè£…
+    '''          Formã‚¢ãƒ—ãƒªã§ä½¿ç”¨ã™ã‚‹å ´åˆã¯BaseFormã®åŒåMethodã‚’å‘¼å‡ºã™ã“ã¨</remarks>
+    ''' <history version="1" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Overloads Shared Function GetWhereStrBmnKaisouSecurity(ByVal checkType As CheckBmnSecType,
                                                                   Optional ByVal userNo As Integer = 0) As String
-        ' ’Êí‚ÍCODE‚ÅŒ ŒÀƒ`ƒFƒbƒN
+        ' é€šå¸¸ã¯CODEã§æ¨©é™ãƒã‚§ãƒƒã‚¯
         Return GetWhereStrBmnKaisouSecurity("CODE", checkType, userNo)
     End Function
 
     ''' <summary>
-    ''' GetWhereStrBmnSecurity -- •”–åŒ ŒÀ‚ğl—¶‚·‚é‚½‚ß‚ÌWhere‹å‚ğæ“¾
+    ''' GetWhereStrBmnSecurity -- éƒ¨é–€æ¨©é™ã‚’è€ƒæ…®ã™ã‚‹ãŸã‚ã®Whereå¥ã‚’å–å¾—
     ''' </summary>
-    ''' <param name="field">Field–¼ in (Œ ŒÀƒ}ƒXƒ^.CODE)</param>
-    ''' <param name="checkType">CheckBmnSecType—ñ‹“‘Ì</param>
+    ''' <param name="field">Fieldå in (æ¨©é™ãƒã‚¹ã‚¿.CODE)</param>
+    ''' <param name="checkType">CheckBmnSecTypeåˆ—æŒ™ä½“</param>
     ''' <param name="userNo">USER_NO</param>
-    ''' <returns>Where‹å</returns>
-    ''' <remarks>SearchPanel‚©‚ç‚ÌŒÄo‚àl—¶‚µ‚ÄCommonMethod‚ÉÀ‘•
-    '''          FormƒAƒvƒŠ‚Åg—p‚·‚éê‡‚ÍBaseForm‚Ì“¯–¼Method‚ğŒÄo‚·‚±‚Æ</remarks>
-    ''' <history version="1" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <returns>Whereå¥</returns>
+    ''' <remarks>SearchPanelã‹ã‚‰ã®å‘¼å‡ºã‚‚è€ƒæ…®ã—ã¦CommonMethodã«å®Ÿè£…
+    '''          Formã‚¢ãƒ—ãƒªã§ä½¿ç”¨ã™ã‚‹å ´åˆã¯BaseFormã®åŒåMethodã‚’å‘¼å‡ºã™ã“ã¨</remarks>
+    ''' <history version="1" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Overloads Shared Function GetWhereStrBmnKaisouSecurity(ByVal field As String,
                                                                   ByVal checkType As CheckBmnSecType,
                                                                   Optional ByVal userNo As Integer = 0) As String
         Dim xSqlTxt As String
 
-        ' Where‹å‚ÌSQL¶¬
-        xSqlTxt = String.Format("		{0} IN ( ", field)  ' w’è‚³‚ê‚½Field‚ğg—p
+        ' Whereå¥ã®SQLç”Ÿæˆ
+        xSqlTxt = String.Format("		{0} IN ( ", field)  ' æŒ‡å®šã•ã‚ŒãŸFieldã‚’ä½¿ç”¨
         xSqlTxt &= vbCrLf & "				SELECT "
         xSqlTxt &= vbCrLf & "						KAISOU "
         xSqlTxt &= vbCrLf & "				FROM "
@@ -2300,40 +2300,40 @@ fToNumberErr:
         xSqlTxt &= vbCrLf & "						KAISOU "
         xSqlTxt &= vbCrLf & "		) "
 
-        ' ê—p‚Ì•ÏŠ·ˆ—‚ğ‚µ‚Ä•Ô‹p
+        ' å°‚ç”¨ã®å¤‰æ›å‡¦ç†ã‚’ã—ã¦è¿”å´
         Return FormatStrBmnSecurity(xSqlTxt, checkType, userNo)
     End Function
 #End Region
 
     ''' <summary>
-    ''' FormatStrBmnSecurity(Private) -- •”–åŒ ŒÀl—¶—p‚ÌString.Format
+    ''' FormatStrBmnSecurity(Private) -- éƒ¨é–€æ¨©é™è€ƒæ…®ç”¨ã®String.Format
     ''' </summary>
-    ''' <param name="xSqlTxt">•ÏŠ·€–Ú‚ğŠÜ‚ŞString({0}:Œ ŒÀƒ}ƒXƒ^, {1}:USER_NO)</param>
-    ''' <param name="checkType">CheckBmnSecType—ñ‹“‘Ì</param>
+    ''' <param name="xSqlTxt">å¤‰æ›é …ç›®ã‚’å«ã‚€String({0}:æ¨©é™ãƒã‚¹ã‚¿, {1}:USER_NO)</param>
+    ''' <param name="checkType">CheckBmnSecTypeåˆ—æŒ™ä½“</param>
     ''' <param name="userNo">USER_NO</param>
-    ''' <returns>•ÏŠ·Œã‚ÌString</returns>
+    ''' <returns>å¤‰æ›å¾Œã®String</returns>
     ''' <remarks>Private</remarks>
-    ''' <history version="1" date="2010.05.13" name="´… Ÿ–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2010.05.13" name="æ¸…æ°´ å‹ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Private Shared Function FormatStrBmnSecurity(ByVal xSqlTxt As String, ByVal checkType As CheckBmnSecType, ByVal userNo As Integer) As String
 
         Dim xBmnSecMaster As String
         Select Case checkType
             Case CheckBmnSecType.Sansyo
-                xBmnSecMaster = "S_BMN_UW" ' QÆŒ ŒÀ
+                xBmnSecMaster = "S_BMN_UW" ' å‚ç…§æ¨©é™
             Case CheckBmnSecType.Input
-                xBmnSecMaster = "I_BMN_UW" ' “ü—ÍŒ ŒÀ
+                xBmnSecMaster = "I_BMN_UW" ' å…¥åŠ›æ¨©é™
             Case Else
-                xBmnSecMaster = "S_BMN_UW" ' QÆŒ ŒÀ(Else)
+                xBmnSecMaster = "S_BMN_UW" ' å‚ç…§æ¨©é™(Else)
         End Select
 
         Dim oUserNo As Object
         If userNo = 0 Then
-            oUserNo = "@SYSUSERNO@" ' ServiceCommon‚Å’uŠ·‚³‚ê‚éUSER_NO‚Ì‘ã‘ÖText
+            oUserNo = "@SYSUSERNO@" ' ServiceCommonã§ç½®æ›ã•ã‚Œã‚‹USER_NOã®ä»£æ›¿Text
         Else
             oUserNo = fSqlStr(userNo, BrowsefSqlStr.fSqlStr_Integer)
         End If
 
-        ' •ÏŠ·‚µ‚Ä•Ô‹p
+        ' å¤‰æ›ã—ã¦è¿”å´
         Return String.Format(xSqlTxt, xBmnSecMaster, oUserNo)
     End Function
 

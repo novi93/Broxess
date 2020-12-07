@@ -1,29 +1,29 @@
 
-#Region "importséŒ¾"
+#Region "importså®£è¨€"
 'Imports SiU.Process.Common.Functions.CommonMethod
 
 #End Region
 
 
 ''' <summary>
-''' ƒVƒXƒeƒ€•Ï”
+''' ã‚·ã‚¹ãƒ†ãƒ å¤‰æ•°
 ''' </summary>
 ''' <remarks></remarks>
-''' <history version="5.0.0.0" date="2008/04/07" name="‹{–{ ~–ç">V‹Kì¬</history> 
-''' <history version="5.0.0.0" date="2008/04/08" name="ç—t —F‘¥">ˆóüw¦‚Åg—p‚·‚é‰Šú’lİ’è€–Ú‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2008/04/08-2" name="ç—t —F‘¥">SysUserNo’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2008/04/22" name="Î› Œ’m">SysMindate‚ğ1000/01/01‚ÉC³ASysDefCodeN,SysDefCodeX‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2008/05/01" name="Î› Œ’m">•¶šƒR[ƒh”’l‰^—pŒ…”(SysCharKeta)‚Ì’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2008.07.16" name="ç—t —F‘¥">WF—p•ª—£ƒtƒ@ƒCƒ‹‚ğ¶¬</history>
-''' <history version="5.0.0.0" date="2009.02.25" name="ÎàV á”T">•”–åƒR[ƒh‚Ì•¶š—ñ‰»‘Î‰</history>
-''' <history version="5.0.0.0" date="2009.03.28" name="“à“c ‹v‹`">SysMinCode,SysMaxCode‚Ì•¶šŒ^SysMinCodeX,SysMaxCodeX‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2009.05.27" name="“à“c ‹v‹`">SysBmnKaisou‚Ì“ü—Í—p(SysBmnKaisouIn)‚ğ’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2009.11.05" name="‹{–{ ~–ç">Œ»ê—p‹¤’Ê•Ï”‚Ì’Ç‰Á</history>
-''' <history version="5.0.0.0" date="2010.03.05" name="‹{–{ ~–ç">Œ»ê—p‹¤’Ê•Ï”‚ÌŠî–{—\Z”Ô†‚Ì’Ç‰Á</history>
-''' <history version="5.0.1.1" date="2011.12.15" name="“à“c ‹v‹`">ƒAƒZƒ“ƒuƒŠî•ñEQÆİ’è‚ğ³‚µ‚­İ’è‚µ’¼‚µ</history>
-''' <history version="5.0.2.0" date="2012.09.15" name="“à“c ‹v‹`">ƒ_ƒ~[‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ğ’Ç‰Á</history>
+''' <history version="5.0.0.0" date="2008/04/07" name="å®®æœ¬ æ·³ä¹Ÿ">æ–°è¦ä½œæˆ</history> 
+''' <history version="5.0.0.0" date="2008/04/08" name="åƒè‘‰ å‹å‰‡">å°åˆ·æŒ‡ç¤ºã§ä½¿ç”¨ã™ã‚‹åˆæœŸå€¤è¨­å®šé …ç›®ã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2008/04/08-2" name="åƒè‘‰ å‹å‰‡">SysUserNoè¿½åŠ </history>
+''' <history version="5.0.0.0" date="2008/04/22" name="çŸ³å¯º å¥å£«">SysMindateã‚’1000/01/01ã«ä¿®æ­£ã€SysDefCodeN,SysDefCodeXã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2008/05/01" name="çŸ³å¯º å¥å£«">æ–‡å­—ã‚³ãƒ¼ãƒ‰æ•°å€¤é‹ç”¨æ™‚æ¡æ•°(SysCharKeta)ã®è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2008.07.16" name="åƒè‘‰ å‹å‰‡">WFç”¨åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆ</history>
+''' <history version="5.0.0.0" date="2009.02.25" name="çŸ³æ¾¤ é›ªä¹ƒ">éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—åˆ—åŒ–å¯¾å¿œ</history>
+''' <history version="5.0.0.0" date="2009.03.28" name="å†…ç”° ä¹…ç¾©">SysMinCode,SysMaxCodeã®æ–‡å­—å‹SysMinCodeX,SysMaxCodeXã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2009.05.27" name="å†…ç”° ä¹…ç¾©">SysBmnKaisouã®å…¥åŠ›ç”¨(SysBmnKaisouIn)ã‚’è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2009.11.05" name="å®®æœ¬ æ·³ä¹Ÿ">ç¾å ´ç”¨å…±é€šå¤‰æ•°ã®è¿½åŠ </history>
+''' <history version="5.0.0.0" date="2010.03.05" name="å®®æœ¬ æ·³ä¹Ÿ">ç¾å ´ç”¨å…±é€šå¤‰æ•°ã®åŸºæœ¬äºˆç®—ç•ªå·ã®è¿½åŠ </history>
+''' <history version="5.0.1.1" date="2011.12.15" name="å†…ç”° ä¹…ç¾©">ã‚¢ã‚»ãƒ³ãƒ–ãƒªæƒ…å ±ãƒ»å‚ç…§è¨­å®šã‚’æ­£ã—ãè¨­å®šã—ç›´ã—</history>
+''' <history version="5.0.2.0" date="2012.09.15" name="å†…ç”° ä¹…ç¾©">ãƒ€ãƒŸãƒ¼ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚’è¿½åŠ </history>
 Public Class SystemValue
-#Region "ƒvƒƒpƒeƒB"
+#Region "ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£"
     Public Shared SysOpid As String = String.Empty
     Public Shared SysUserNo As Integer = 0
     Public Shared SysKais As Integer = 0
@@ -35,7 +35,7 @@ Public Class SystemValue
     Public Shared SysDnoEnd As Integer = 0
     Public Shared SysTant As Integer = 0
 
-    ''2009.02.25 UPD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+    ''2009.02.25 UPD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
     Public Shared SysBmnUw As String = String.Empty
     Public Shared SysBmnUwIn As String = String.Empty
 
@@ -56,14 +56,14 @@ Public Class SystemValue
     Public Shared ReadOnly SysDefCodeN As Integer = -1
     Public Shared ReadOnly SysDefCodeX As String = " "
     ''==========================================================
-    '' ŠÇ—ƒ}ƒXƒ^@CODE=1 ƒAƒCƒeƒ€
+    '' ç®¡ç†ãƒã‚¹ã‚¿ã€€CODE=1 ã‚¢ã‚¤ãƒ†ãƒ 
     Public Shared SysDateFormat As Integer = 0
 
     Public Shared SysDatePrint As Integer = 0
     Public Shared SysKaisPrint As Integer = 0
     Public Shared SysReportPrint As Integer = 0
     ''==========================================================
-    '' ŠÇ—ƒ}ƒXƒ^@CODE=2 ƒAƒCƒeƒ€
+    '' ç®¡ç†ãƒã‚¹ã‚¿ã€€CODE=2 ã‚¢ã‚¤ãƒ†ãƒ 
     Public Shared SysSKojFormatType As Integer = 0
     Public Shared SysKojFormatType As Integer = 0
     Public Shared SysKojUwFormatType As Integer = 0
@@ -91,8 +91,8 @@ Public Class SystemValue
     Public Shared SysMaxTor As String = "ZZZZZZZZZ"
     Public Shared SysKojUwKihon As String = String.Empty
     ''==========================================================
-    ''2009.02.25 ADD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
-    '' ŠÇ—ƒ}ƒXƒ^@CODE=4 ƒAƒCƒeƒ€
+    ''2009.02.25 ADD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
+    '' ç®¡ç†ãƒã‚¹ã‚¿ã€€CODE=4 ã‚¢ã‚¤ãƒ†ãƒ 
     Public Shared SysBmnFormatType As Integer = 0
     Public Shared SysBmnFormat As String = String.Empty
     Public Shared SysMinBmn As String = String.Empty
@@ -101,18 +101,18 @@ Public Class SystemValue
 
 #End Region
 
-#Region " “à•”•Ï”"
-    Private Ret As Boolean              ' ”»’è—p
+#Region " å†…éƒ¨å¤‰æ•°"
+    Private Ret As Boolean              ' åˆ¤å®šç”¨
 #End Region
 
-#Region "ƒRƒ“ƒXƒgƒ‰ƒNƒ^"
+#Region "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿"
 
     ''2012.09.15 ADD START
     ''' <summary>
     ''' New
     ''' </summary>
-    ''' <remarks>ƒ_ƒ~[</remarks>
-    ''' <history version="1" date="2012.09.15" name="“à“c ‹v‹`">V‹Kì¬</history>
+    ''' <remarks>ãƒ€ãƒŸãƒ¼</remarks>
+    ''' <history version="1" date="2012.09.15" name="å†…ç”° ä¹…ç¾©">æ–°è¦ä½œæˆ</history>
     Public Sub New()
 
     End Sub
@@ -123,39 +123,39 @@ Public Class SystemValue
     ''' </summary>
     ''' <param name="dr"></param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2008/04/07" name="‹{–{ ~–ç">V‹Kì¬</history>
+    ''' <history version="1" date="2008/04/07" name="å®®æœ¬ æ·³ä¹Ÿ">æ–°è¦ä½œæˆ</history>
     Public Sub New(ByVal dr As DataRow)
 
-        ''”z—ñ‚Éæ“¾’l‚ğİ’è‚µ‚Ü‚·B
+        ''é…åˆ—ã«å–å¾—å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
         'SetSystemSetting(dr)
 
     End Sub
 
 #End Region
 
-    '#Region "ƒƒ\ƒbƒh"
+    '#Region "ãƒ¡ã‚½ãƒƒãƒ‰"
     '    ''' <summary>
-    '    ''' •Ï”’l‚Ì“WŠJ
+    '    ''' å¤‰æ•°å€¤ã®å±•é–‹
     '    ''' </summary>
-    '    ''' <param name="dr">SystemLoad‚Åæ“¾‚µ‚½ƒVƒXƒeƒ€ƒf[ƒ^—ñ</param>
+    '    ''' <param name="dr">SystemLoadã§å–å¾—ã—ãŸã‚·ã‚¹ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿åˆ—</param>
     '    ''' <remarks></remarks>
-    '    ''' <history version="1" date="2008/04/07" name="‹{–{ ~–ç">V‹Kì¬</history> 
-    '    ''' <history version="2" date="2008/04/08" name="ç—t —F‘¥">SysUserNo‚ğ’Ç‰Á</history>
-    '    ''' <history version="3" date="2008/04/22" name="Î› Œ’m">SysDefCodeN,SysDefCodeX‚ğ’Ç‰Á</history> 
-    '    ''' <history version="4" date="2008/05/01" name="Î› Œ’m">•¶šƒR[ƒh”’l‰^—pŒ…”(SysCharKeta)‚Ì’Ç‰Á</history>
-    '    ''' <history version="5" date="2008/06/23" name="“Ş—Ç Fu">SysDDate‚Ì•”•ªœŠO</history>
-    '    ''' <history version="6" date="2008.07.16" name="ç—t —F‘¥">WFİ’è—p‚ÌŒÄ‚Ño‚µƒƒ\ƒbƒh‚ğ’Ç‰Á</history>
-    '    ''' <history version="7" date="2009.01.07" name="’†R rj">”Ì”„ŠÇ—İ’è—p‚ÌŒÄ‚Ño‚µƒƒ\ƒbƒh‚ğ’Ç‰Á</history>
-    '    ''' <history version="8" date="2009.02.25" name="ÎàV á”T">•”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰</history>
-    '    ''' <history version="9" date="2009.03.28" name="“à“c ‹v‹`">SysMinCode,SysMaxCode‚Ì•¶šŒ^SysMinCodeX,SysMaxCodeX‚ğ’Ç‰Á</history>
-    '    ''' <history version="10" date="2009.05.27" name="“à“c ‹v‹`">SysBmnKaisou‚Ì“ü—Í—p(SysBmnKaisouIn)‚ğ’Ç‰Á</history>
-    '    ''' <history version="11" date="2009.11.05" name="‹{–{ ~–ç">Œ»êİ’è—p‚ÌŒÄ‚Ño‚µƒƒ\ƒbƒh‚ğ’Ç‰Á</history>
+    '    ''' <history version="1" date="2008/04/07" name="å®®æœ¬ æ·³ä¹Ÿ">æ–°è¦ä½œæˆ</history> 
+    '    ''' <history version="2" date="2008/04/08" name="åƒè‘‰ å‹å‰‡">SysUserNoã‚’è¿½åŠ </history>
+    '    ''' <history version="3" date="2008/04/22" name="çŸ³å¯º å¥å£«">SysDefCodeN,SysDefCodeXã‚’è¿½åŠ </history> 
+    '    ''' <history version="4" date="2008/05/01" name="çŸ³å¯º å¥å£«">æ–‡å­—ã‚³ãƒ¼ãƒ‰æ•°å€¤é‹ç”¨æ™‚æ¡æ•°(SysCharKeta)ã®è¿½åŠ </history>
+    '    ''' <history version="5" date="2008/06/23" name="å¥ˆè‰¯ å­å¿—">SysDDateã®æ™‚åˆ»éƒ¨åˆ†é™¤å¤–</history>
+    '    ''' <history version="6" date="2008.07.16" name="åƒè‘‰ å‹å‰‡">WFè¨­å®šç”¨ã®å‘¼ã³å‡ºã—ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ </history>
+    '    ''' <history version="7" date="2009.01.07" name="ä¸­å±± ä¿Šå²">è²©å£²ç®¡ç†è¨­å®šç”¨ã®å‘¼ã³å‡ºã—ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ </history>
+    '    ''' <history version="8" date="2009.02.25" name="çŸ³æ¾¤ é›ªä¹ƒ">éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ</history>
+    '    ''' <history version="9" date="2009.03.28" name="å†…ç”° ä¹…ç¾©">SysMinCode,SysMaxCodeã®æ–‡å­—å‹SysMinCodeX,SysMaxCodeXã‚’è¿½åŠ </history>
+    '    ''' <history version="10" date="2009.05.27" name="å†…ç”° ä¹…ç¾©">SysBmnKaisouã®å…¥åŠ›ç”¨(SysBmnKaisouIn)ã‚’è¿½åŠ </history>
+    '    ''' <history version="11" date="2009.11.05" name="å®®æœ¬ æ·³ä¹Ÿ">ç¾å ´è¨­å®šç”¨ã®å‘¼ã³å‡ºã—ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ </history>
     '    Public Shared Sub SetSystemSetting(ByVal dr As DataRow)
 
     '        SysOpid = fToText(dr("SysOpid"))
     '        SysUserNo = fToInt(dr("SysUserNo"))
     '        SysKais = fToInt(dr("SysKais"))
-    '        ''2008.06.23 UPD START T.Nara •”•ªœŠO
+    '        ''2008.06.23 UPD START T.Nara æ™‚åˆ»éƒ¨åˆ†é™¤å¤–
     '        'SysDDate = fToDate(dr("SysDDate"))
     '        SysDDate = fToDate(dr("SysDDate"), #1/1/1000#, BrowsefToDate.fToDate_DateOnly)
     '        ''2008.06.23 UPD END
@@ -166,7 +166,7 @@ Public Class SystemValue
     '        SysDnoEnd = fToInt(dr("SysDnoEnd"))
     '        SysTant = fToInt(dr("SysTant"))
 
-    '        ''2009.02.25 UPD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+    '        ''2009.02.25 UPD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
     '        SysBmnUw = fToText(dr("SysBmnUw"))
     '        SysBmnUwIn = fToText(dr("SysBmnUwIn"))
     '        'SysBmnUw = fToInt(dr("SysBmnUw"))
@@ -182,7 +182,7 @@ Public Class SystemValue
     '        SysKojFormatType = fToInt(dr("SysKojFormatType"))
     '        SysKojUwFormatType = fToInt(dr("SysKojUwFormatType"))
     '        SysTorFormatType = fToInt(dr("SysTorFormatType"))
-    '        ''2009.02.25 ADD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+    '        ''2009.02.25 ADD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
     '        SysBmnFormatType = fToInt(dr("SysBmnFormatType"))
     '        ''2009.02.25 ADD END
 
@@ -192,7 +192,7 @@ Public Class SystemValue
     '        SysKojFormat = fToText(dr("SysKojFormat"))
     '        SysKojUwFormat = fToText(dr("SysKojUwFormat"))
     '        SysTorFormat = fToText(dr("SysTorFormat"))
-    '        ''2009.02.25 ADD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+    '        ''2009.02.25 ADD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
     '        SysBmnFormat = fToText(dr("SysBmnFormat"))
     '        ''2009.02.25 ADD END
 
@@ -214,7 +214,7 @@ Public Class SystemValue
     '        SysMaxKojUw = fToText(dr("SysMaxKojUw"))
     '        SysMinTor = fToText(dr("SysMinTor"))
     '        SysMaxTor = fToText(dr("SysMaxTor"))
-    '        ''2009.02.25 ADD START ISHIZAWA •”–åƒR[ƒh‚Ì•¶šƒR[ƒh‰»‘Î‰
+    '        ''2009.02.25 ADD START ISHIZAWA éƒ¨é–€ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰åŒ–å¯¾å¿œ
     '        SysMinBmn = fToText(dr("SysMinBmn"))
     '        SysMaxBmn = fToText(dr("SysMaxBmn"))
     '        ''2009.02.25 ADD END
@@ -225,11 +225,11 @@ Public Class SystemValue
     '        SysKaisPrint = fToInt(dr("SysKaisPrint"))
     '        SysReportPrint = fToInt(dr("SysReportPrint"))
 
-    '        ' '' WF‚Åg—p‚·‚éİ’è‚ğƒZƒbƒg
+    '        ' '' WFã§ä½¿ç”¨ã™ã‚‹è¨­å®šã‚’ã‚»ãƒƒãƒˆ
     '        'SetSystemSettingWF(dr)
 
     '        ' ''2009.01.07 ADD START NAKAYAMA
-    '        ' '' ”Ì”„‚Åg—p‚·‚éİ’è‚ğƒZƒbƒg
+    '        ' '' è²©å£²ã§ä½¿ç”¨ã™ã‚‹è¨­å®šã‚’ã‚»ãƒƒãƒˆ
     '        'SetSystemSettingHanbai(dr)
     '        ' ''2009.01.07 ADD END
 

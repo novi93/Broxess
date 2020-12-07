@@ -1,12 +1,12 @@
 
-#Region "importséŒ¾"
+#Region "importså®£è¨€"
 'Imports SiU.Process.Common.Functions.CommonMethod
 
 #End Region
 
-'' SystemValueƒNƒ‰ƒX•ª—£ƒtƒ@ƒCƒ‹@WFê—p 
+'' SystemValueã‚¯ãƒ©ã‚¹åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã€€WFå°‚ç”¨ 
 Partial Class SystemValue
-#Region "ƒvƒƒpƒeƒB"
+#Region "ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£"
 
     Public Shared SysValueGet As Boolean = False
     'Public Shared SysLoginDate As Date = #12/31/2087#
@@ -15,12 +15,12 @@ Partial Class SystemValue
 
 #End Region
 
-#Region "ƒƒ\ƒbƒh"
-    ''' <summary>SetSystemSettingWF -- WF—p•Ï”’l‚Ì“WŠJ</summary>
-    ''' <param name="dr">SystemLoad‚Åæ“¾‚µ‚½ƒVƒXƒeƒ€ƒf[ƒ^—ñ</param>
+#Region "ãƒ¡ã‚½ãƒƒãƒ‰"
+    ''' <summary>SetSystemSettingWF -- WFç”¨å¤‰æ•°å€¤ã®å±•é–‹</summary>
+    ''' <param name="dr">SystemLoadã§å–å¾—ã—ãŸã‚·ã‚¹ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿åˆ—</param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2008.07.16" name="ç—t —F‘¥">NĞSetSystemSetting‚æ‚èAWF•”•ª‚Ì‚İ•ª—£‚µ‚½ƒƒ\ƒbƒh</history>
-    ''' <history version="2" date="2008.07.29" name="ç—t —F‘¥">WFİ’è‚ÌƒvƒƒOƒ‰ƒ€ƒR[ƒh‚ğ’Ç‰Á</history>
+    ''' <history version="1" date="2008.07.16" name="åƒè‘‰ å‹å‰‡">Nç¤¾SetSystemSettingã‚ˆã‚Šã€WFéƒ¨åˆ†ã®ã¿åˆ†é›¢ã—ãŸãƒ¡ã‚½ãƒƒãƒ‰</history>
+    ''' <history version="2" date="2008.07.29" name="åƒè‘‰ å‹å‰‡">WFè¨­å®šã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ </history>
     Public Shared Sub SetSystemSettingWF(ByVal dr As DataRow)
 
         'SysLoginDate = fToDate(dr("SysLoginDate"))

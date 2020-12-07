@@ -1,17 +1,17 @@
 
-#Region "importséŒ¾"
+#Region "importså®£è¨€"
 'Imports SiU.Process.Common.Functions.CommonMethod
 
 #End Region
 
-'' SystemValueƒNƒ‰ƒX•ª—£ƒtƒ@ƒCƒ‹@”Ì”„ŠÇ—ê—p 
+'' SystemValueã‚¯ãƒ©ã‚¹åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã€€è²©å£²ç®¡ç†å°‚ç”¨ 
 Partial Class SystemValue
-#Region "ƒvƒƒpƒeƒB"
+#Region "ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£"
 
     ''2009.03.20 ADD START NAKAYAMA
-    '' æˆøæƒR[ƒhŒŸõ‚Ìƒ\[ƒg‡(1:ƒR[ƒh‡A2:ƒJƒi‡)
+    '' å–å¼•å…ˆã‚³ãƒ¼ãƒ‰æ¤œç´¢æ™‚ã®ã‚½ãƒ¼ãƒˆé †(1:ã‚³ãƒ¼ãƒ‰é †ã€2:ã‚«ãƒŠé †)
     Public Shared SysHanSortTor As Integer = 0
-    '' æˆøæƒR[ƒhˆÈŠOŒŸõ‚Ìƒ\[ƒg‡(1:ƒR[ƒh‡A2:ƒJƒi‡)
+    '' å–å¼•å…ˆã‚³ãƒ¼ãƒ‰ä»¥å¤–æ¤œç´¢æ™‚ã®ã‚½ãƒ¼ãƒˆé †(1:ã‚³ãƒ¼ãƒ‰é †ã€2:ã‚«ãƒŠé †)
     Public Shared SysHanSort As Integer = 0
     ''2009.03.20 ADD END
     Public Shared SysSokoFormatType As Integer = 0
@@ -50,13 +50,13 @@ Partial Class SystemValue
 
 #End Region
 
-#Region "ƒƒ\ƒbƒh"
+#Region "ãƒ¡ã‚½ãƒƒãƒ‰"
 
-    ''' <summary>SetSystemSettingHanbai -- ”Ì”„ŠÇ——p•Ï”’l‚Ì“WŠJ</summary>
-    ''' <param name="dr">SystemLoad‚Åæ“¾‚µ‚½ƒVƒXƒeƒ€ƒf[ƒ^—ñ</param>
+    ''' <summary>SetSystemSettingHanbai -- è²©å£²ç®¡ç†ç”¨å¤‰æ•°å€¤ã®å±•é–‹</summary>
+    ''' <param name="dr">SystemLoadã§å–å¾—ã—ãŸã‚·ã‚¹ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿åˆ—</param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2009.01.07" name="’†R rj">SetSystemSetting‚æ‚èA”Ì”„ŠÇ—•”•ª‚Ì‚İ•ª—£‚µ‚½ƒƒ\ƒbƒh(¦•ª—£ƒtƒ@ƒCƒ‹‚ÉˆÚs‚µ‚Ü‚·)</history>
-    ''' <history version="2" date="2009.03.20" name="’†R rj">ŒŸõ‰æ–Ê‚Ìƒ\[ƒg‡‚ğŠÇ—‚·‚é•Ï”‚ğ’Ç‰Á</history>
+    ''' <history version="1" date="2009.01.07" name="ä¸­å±± ä¿Šå²">SetSystemSettingã‚ˆã‚Šã€è²©å£²ç®¡ç†éƒ¨åˆ†ã®ã¿åˆ†é›¢ã—ãŸãƒ¡ã‚½ãƒƒãƒ‰(â€»åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã«ç§»è¡Œã—ã¾ã™)</history>
+    ''' <history version="2" date="2009.03.20" name="ä¸­å±± ä¿Šå²">æ¤œç´¢ç”»é¢ã®ã‚½ãƒ¼ãƒˆé †ã‚’ç®¡ç†ã™ã‚‹å¤‰æ•°ã‚’è¿½åŠ </history>
     Public Shared Sub SetSystemSettingHanbai(ByVal dr As DataRow)
 
         ' ''2009.03.20 ADD START NAKAYAMA

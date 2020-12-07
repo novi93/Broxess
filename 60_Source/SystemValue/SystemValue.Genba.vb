@@ -1,12 +1,12 @@
 
-#Region "importséŒ¾"
+#Region "importså®£è¨€"
 'Imports SiU.Process.Common.Functions.CommonMethod
 
 #End Region
 
-'' SystemValueƒNƒ‰ƒX•ª—£ƒtƒ@ƒCƒ‹@Œ»êŠÇ—ê—p 
+'' SystemValueã‚¯ãƒ©ã‚¹åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã€€ç¾å ´ç®¡ç†å°‚ç”¨ 
 Partial Class SystemValue
-#Region "ƒvƒƒpƒeƒB"
+#Region "ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£"
 
     Public Shared SysSekkeiFormatType As Integer = 0
 
@@ -19,22 +19,22 @@ Partial Class SystemValue
 
 #End Region
 
-#Region "ƒƒ\ƒbƒh"
+#Region "ãƒ¡ã‚½ãƒƒãƒ‰"
 
-    ''' <summary>SetSystemSettingHanbai -- Œ»ê—p•Ï”’l‚Ì“WŠJ</summary>
-    ''' <param name="dr">SystemLoad‚Åæ“¾‚µ‚½ƒVƒXƒeƒ€ƒf[ƒ^—ñ</param>
+    ''' <summary>SetSystemSettingHanbai -- ç¾å ´ç”¨å¤‰æ•°å€¤ã®å±•é–‹</summary>
+    ''' <param name="dr">SystemLoadã§å–å¾—ã—ãŸã‚·ã‚¹ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿åˆ—</param>
     ''' <remarks></remarks>
-    ''' <history version="1" date="2009.11.05" name="‹{–{ ~–ç">SetSystemSetting‚æ‚èAŒ»ê•”•ª‚Ì‚İ•ª—£‚µ‚½ƒƒ\ƒbƒh(¦•ª—£ƒtƒ@ƒCƒ‹‚ÉˆÚs‚µ‚Ü‚·)</history>
+    ''' <history version="1" date="2009.11.05" name="å®®æœ¬ æ·³ä¹Ÿ">SetSystemSettingã‚ˆã‚Šã€ç¾å ´éƒ¨åˆ†ã®ã¿åˆ†é›¢ã—ãŸãƒ¡ã‚½ãƒƒãƒ‰(â€»åˆ†é›¢ãƒ•ã‚¡ã‚¤ãƒ«ã«ç§»è¡Œã—ã¾ã™)</history>
     Public Shared Sub SetSystemSettingGenba(ByVal dr As DataRow)
 
-        ''ŠÇ—Ï½À‚Ì’l‚ğQÆ‚µ‚½Web‚©‚ç‚Ìƒf[ƒ^ˆø“n‚µ‚É‚Â‚¢‚Ä‚ÍŒã‚É‘Î‰
+        ''ç®¡ç†ï¾ï½½ï¾€ã®å€¤ã‚’å‚ç…§ã—ãŸWebã‹ã‚‰ã®ãƒ‡ãƒ¼ã‚¿å¼•æ¸¡ã—ã«ã¤ã„ã¦ã¯å¾Œã«å¯¾å¿œ
         'SysSekkeiFormatType = fToInt(dr("SysSekkeiFormatType"))
         'SysSekkeiFormat = fToText(dr("SysSekkeiFormat"))
         'SysMinSekkei = fToText(dr("SysMinSekkei"))
         'SysMaxSekkei = fToText(dr("SysMaxSekkei"))
         'SysSekkeiKihon = fToText(dr("SysSekkeiKihon"))
         ''2010.03.05 UPD START MIYAMOTO
-        ''b’è’lİ’è
+        ''æš«å®šå€¤è¨­å®š
         'SysSekkeiFormatType = 1
         'SysSekkeiFormat = "000-00"
         'SysMinSekkei = "000-00"
@@ -42,9 +42,9 @@ Partial Class SystemValue
         ' ''2010.03.05 ADD START MIYAMOTO
         'SysSekkeiKihon = "001-00"
         ' ''2010.03.05 ADD END
-        ''Œ»êƒVƒXƒeƒ€ƒpƒ‰ƒ[ƒ^‚Ì”»’è‚ªs‚¦‚È‚¢ê‡‚Íb’è‚Ì€–Ú‚ÖA‚»‚êˆÈŠO‚ÍWeb‚æ‚èæ“¾‚·‚é
+        ''ç¾å ´ã‚·ã‚¹ãƒ†ãƒ ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®åˆ¤å®šãŒè¡Œãˆãªã„å ´åˆã¯æš«å®šã®é …ç›®ã¸ã€ãã‚Œä»¥å¤–ã¯Webã‚ˆã‚Šå–å¾—ã™ã‚‹
         If dr.Table.Columns.Contains("SysSekkeiFormatType") = False Then
-            'b’è’lİ’è
+            'æš«å®šå€¤è¨­å®š
             SysSekkeiFormatType = 1
             SysSekkeiFormat = "000-00"
             SysMinSekkei = "000-00"
