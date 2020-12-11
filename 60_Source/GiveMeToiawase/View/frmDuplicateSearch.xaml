@@ -14,8 +14,9 @@
     Closing="MetroWindow_Closing"
     Icon="pack://siteoforigin:,,,/Assets/stupidBear.png"
     Loaded="Window_Loaded"
+    ShowIconOnTitleBar="False"
     WindowStartupLocation="CenterOwner"
-    mc:Ignorable="d" ShowIconOnTitleBar="False">
+    mc:Ignorable="d">
     <Controls:MetroWindow.Resources />
     <Grid>
         <Grid.ColumnDefinitions>
