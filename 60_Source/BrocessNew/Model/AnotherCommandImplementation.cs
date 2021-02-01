@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 
 namespace BrocessNew.Model
 {
@@ -22,7 +23,7 @@ namespace BrocessNew.Model
 
             _execute = execute;
             _canExecute = canExecute ?? (x => true);
-        }s
+        }
 
         public bool CanExecute(object parameter) => _canExecute(parameter);
 
