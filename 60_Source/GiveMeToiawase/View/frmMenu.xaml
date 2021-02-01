@@ -85,15 +85,15 @@
             Style="{StaticResource BaseTileStyle}"
             TabIndex="130" />
         <Controls:Tile
-        	x:Name="tltSetupV5"
-        	Title="PROCES.S5"
-        	Grid.Row="4"
-        	Width="Auto"
-        	Height="Auto"
-        	Margin="10,10,10,20"
-        	Content="Setup"
-        	Style="{StaticResource BaseTileStyle}"
-        	TabIndex="130" />
+            x:Name="tltSetupV5"
+            Title="PROCES.S5"
+            Grid.Row="4"
+            Width="Auto"
+            Height="Auto"
+            Margin="10,10,10,20"
+            Content="Setup"
+            Style="{StaticResource BaseTileStyle}"
+            TabIndex="130" />
 
     </Grid>
 </Controls:MetroWindow>

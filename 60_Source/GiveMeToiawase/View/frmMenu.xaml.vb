@@ -32,6 +32,7 @@ Public Class frmMenu
 
     Private Sub frm_Loaded(sender As Object, e As RoutedEventArgs) Handles frmExport.Loaded
         Dim config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
+
         Me.Title = String.Format("{0} [{1}]",
                                  Me.Title,
                                 config.AppSettings.Settings("Version").Value)
